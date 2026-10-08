@@ -300,6 +300,144 @@ class TestRefreshMerge(unittest.TestCase):
         self.assertNotIn("groq/llama-3.1-8b-instant", [m["uid"] for m in later])  # pruned after 3 days
 
 
+class TestMistralRows(unittest.TestCase):
+    def test_mistral_base_type_is_kept_and_non_chat_dropped(self):
+        cfg = freellm.GATEWAYS["mistral"]
+        chat = {"id": "mistral-large-latest", "type": "base", "max_context_length": 131072,
+                "capabilities": {"completion_chat": True, "function_calling": True, "vision": False}}
+        vis = {"id": "pixtral-large-latest", "type": "base", "max_context_length": 131072,
+               "capabilities": {"completion_chat": True, "function_calling": True, "vision": True}}
+        emb = {"id": "mistral-embed", "type": "base", "capabilities": {"completion_chat": False}}
+        ocr = {"id": "mistral-ocr-latest", "type": "base", "capabilities": {"completion_chat": False}}
+        m = freellm.normalize_row("mistral", cfg, chat)
+        self.assertIsNotNone(m)
+        self.assertTrue(m["capabilities"]["tools"])
+        self.assertEqual(m["capability_source"], "declared")
+        self.assertEqual(m["context_class"], "long")
+        self.assertTrue(freellm.normalize_row("mistral", cfg, vis)["capabilities"]["vision"])
+        self.assertIsNone(freellm.normalize_row("mistral", cfg, emb))
+        self.assertIsNone(freellm.normalize_row("mistral", cfg, ocr))
+
+    def test_together_style_types_still_filtered(self):
+        cfg = freellm.GATEWAYS["together"]
+        self.assertIsNone(freellm.normalize_row("together", cfg, {"id": "x/y-8b", "type": "embedding"}))
+        self.assertIsNotNone(freellm.normalize_row("together", cfg, {"id": "x/y-8b", "type": "chat",
+                                                                    "pricing": {"input": 0, "output": 0}}))
+
+    def test_tokenharbor_url(self):
+        self.assertEqual(freellm.GATEWAYS["tokenharbor"]["base_url"], "https://tokenharbor.ai/v1")
+
+
+class TestAutoContext(unittest.TestCase):
+    def setUp(self):
+        os.environ.update(GROQ_API_KEY="k", CEREBRAS_API_KEY="k", OPENROUTER_API_KEY="k")
+        self.env = Env()
+
+    def test_small_prompt_may_use_short_context_model(self):
+        llm = self.env.llm()
+        ids = [m["model_id"] for m in llm.candidates("fast")]
+        self.assertIn("meta/some-8b:free", ids)            # 4K-context model is eligible for small prompts
+        self.assertLess(llm.estimate_tokens([{"role": "user", "content": "hi"}]), 2000)
+
+    def test_big_prompt_skips_small_context_models(self):
+        llm = self.env.llm()
+        big = "x" * 200_000                                  # ~50K tokens
+        res = llm.chat(big, task="fast")
+        self.assertIn(res.model_id, {"llama-3.3-70b-versatile", "llama-3.1-8b-instant", "gpt-oss-120b"})
+        used = {m for _, m in self.env.calls}
+        self.assertNotIn("meta/some-8b:free", used)          # 4K
+        self.assertNotIn("qwen-2.5-coder-32b", used)         # 32K < ~58K needed
+
+    def test_nothing_fits_gives_clear_error(self):
+        llm = self.env.llm()
+        with self.assertRaises(AllModelsFailed) as cm:
+            llm.chat("x" * 2_000_000)                        # ~500K tokens
+        self.assertIn("tokens of context", str(cm.exception))
+        self.assertEqual(self.env.calls, [])                 # failed before wasting any request
+
+    def test_can_disable(self):
+        llm = self.env.llm()
+        res = llm.chat("x" * 200_000, task="fast", auto_context=False)
+        self.assertTrue(res.text)
+
+    def test_task_floor_not_lowered_by_explicit_min_context(self):
+        llm = self.env.llm()
+        ctxs = [m["context_length"] for m in llm.candidates("long_doc", min_context=1000)]
+        self.assertTrue(all(c >= 64000 for c in ctxs))
+
+
+class TestTables(unittest.TestCase):
+    def setUp(self):
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+        import render_tables
+        self.rt = render_tables
+
+    def test_markdown_and_csv(self):
+        reg = freellm.seed_registry()
+        md = self.rt.render_markdown(reg)
+        for heading in ("Which context size do I need?", "Best picks per task", "grouped by context class"):
+            self.assertIn(heading, md)
+        self.assertIn("| groq | `llama-3.3-70b-versatile` | 70B | 128K |", md)
+        d = Path(tempfile.mkdtemp())
+        self.rt.write_tables(reg, d)
+        rows = (d / "models.csv").read_text().splitlines()
+        self.assertEqual(len(rows), 1 + len(reg["models"]))
+        self.assertTrue(rows[0].startswith("gateway,model_id,size_b"))
+
+    def test_pipe_in_names_is_escaped(self):
+        self.assertEqual(self.rt.esc("a|b"), "a\\|b")
+
+    def test_fmt_ctx(self):
+        f = self.rt.fmt_ctx
+        self.assertEqual((f(131072), f(1048576), f(32768), f(None), f(96000)), ("128K", "1M", "32K", "?", "96K"))
+        self.assertEqual(f(1048576, "hint"), "1M≈")
+
+
+class TestHeuristics(unittest.TestCase):
+    def test_context_hint_only_for_gemini(self):
+        cer = freellm.normalize_row("cerebras", freellm.GATEWAYS["cerebras"], {"id": "gpt-oss-120b"})
+        gem = freellm.normalize_row("gemini", freellm.GATEWAYS["gemini"], {"id": "models/gemini-2.5-flash"})
+        self.assertIsNone(cer["context_length"])
+        self.assertEqual(cer["context_class"], "unknown")
+        self.assertEqual(gem["context_length"], 1_048_576)
+
+    def test_family_quality_prior_for_unsized_models(self):
+        q = lambda g, i: freellm.normalize_row(g, freellm.GATEWAYS[g], {"id": i})["quality_hint"]
+        self.assertGreater(q("gemini", "gemini-2.5-pro"), q("gemini", "gemini-2.5-flash"))
+        self.assertGreater(q("gemini", "gemini-2.5-flash"), q("gemini", "gemini-2.5-flash-lite"))
+        self.assertGreater(q("mistral", "mistral-large-latest"), q("mistral", "mistral-small-latest"))
+        self.assertGreaterEqual(q("gemini", "gemini-2.5-pro"), 85)
+
+
+class TestIntelligence(unittest.TestCase):
+    def test_tiers_follow_size(self):
+        def tier(g, i):
+            return freellm.normalize_row(g, freellm.GATEWAYS[g], {"id": i})["intelligence_tier"]
+        self.assertEqual(tier("groq", "tiny-1b-instruct"), 1)
+        self.assertEqual(tier("groq", "llama-3.1-8b-instant"), 2)
+        self.assertEqual(tier("groq", "gemma-27b"), 3)
+        self.assertEqual(tier("groq", "llama-3.3-70b-versatile"), 4)
+        self.assertEqual(tier("groq", "huge-405b"), 5)
+        self.assertEqual(tier("gemini", "gemini-2.5-pro"), 5)
+        self.assertEqual(freellm.normalize_row("groq", freellm.GATEWAYS["groq"], {"id": "llama-3.3-70b-versatile"})
+                         ["intelligence_label"], "Strong")
+
+    def test_router_filter_and_table_column(self):
+        os.environ.update(GROQ_API_KEY="k", CEREBRAS_API_KEY="k", OPENROUTER_API_KEY="k")
+        llm = Env().llm()
+        strong = llm.candidates("chat", min_intelligence=4)
+        self.assertTrue(strong)
+        self.assertTrue(all(m["intelligence_tier"] >= 4 for m in strong))
+        self.assertLess(len(strong), len(llm.candidates("chat")))
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+        import render_tables
+        md = render_tables.render_markdown(freellm.seed_registry())
+        self.assertIn("| Intelligence |", md)
+        self.assertIn("★★★★☆ Strong (86)", md)
+        old_row = {"quality_hint": 86}                      # registry written before this field existed
+        self.assertEqual(render_tables.tier_of(old_row), 4)
+
+
 class TestRefreshLog(unittest.TestCase):
     def test_record_log_and_table(self):
         sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))

@@ -100,9 +100,14 @@ def all_gateways() -> dict[str, dict]:
 NON_CHAT = ("embed", "whisper", "tts", "guard", "moderat", "rerank", "transcri", "imagen",
             "veo", "orpheus", "playai", "aqa", "dall-e", "stable-diffusion", "flux")
 FAST_WORDS = {"instant", "flash", "lite", "mini", "turbo", "nano", "small", "haiku", "fast"}
-CONTEXT_HINTS = [  # conservative, used ONLY when the gateway does not report context
-    (r"gemini", 1_048_576), (r"gpt-oss", 131_072), (r"llama-?3\.[123]", 131_072),
-    (r"qwen-?3", 32_768), (r"deepseek", 65_536),
+# Used ONLY when the gateway does not report context. Deliberately tiny: free tiers often cap context
+# below the model's native window (e.g. Cerebras), so guessing elsewhere would mislead.
+CONTEXT_HINTS = [("gemini", r"gemini", 1_048_576)]   # (gateway, name pattern, tokens)
+# Rough quality prior for models whose name carries no size ("7B"). Heuristics, not benchmarks.
+FAMILY_QUALITY = [
+    (r"gemini.*pro", 90), (r"gemini.*flash-lite", 60), (r"gemini.*flash", 75), (r"gemini", 70),
+    (r"mistral-(large|medium)", 82), (r"mistral-small|ministral", 62), (r"codestral|devstral", 72),
+    (r"qwen3-coder", 85),
 ]
 
 
@@ -138,6 +143,15 @@ def size_class(b: Optional[float]) -> str:
     if b <= 100:
         return "large"     # 41-100B (70B ...)
     return "xlarge"        # >100B
+
+
+INTELLIGENCE_LABELS = {1: "Basic", 2: "Fair", 3: "Good", 4: "Strong", 5: "Top"}
+
+
+def intelligence_tier(score: float) -> int:
+    """1-5 tier from the 0-100 quality score (itself derived from model size).
+    <45 Basic (~1-3B) | 45-59 Fair (~4-12B) | 60-74 Good (~13-30B) | 75-87 Strong (~32-100B) | 88+ Top (100B+ / frontier)."""
+    return 1 if score < 45 else 2 if score < 60 else 3 if score < 75 else 4 if score < 88 else 5
 
 
 def context_class(ctx: Optional[int]) -> str:
@@ -202,8 +216,8 @@ def normalize_row(gateway: str, cfg: dict, row: dict) -> Optional[dict]:
     ctx_src = "api"
     if not ctx:
         ctx, ctx_src = None, "unknown"
-        for pat, val in CONTEXT_HINTS:
-            if re.search(pat, low):
+        for gw, pat, val in CONTEXT_HINTS:
+            if gw == gateway and re.search(pat, low):
                 ctx, ctx_src = val, "hint"
                 break
 
@@ -261,7 +275,11 @@ def normalize_row(gateway: str, cfg: dict, row: dict) -> Optional[dict]:
     if (size_b is not None and size_b <= 14) or toks & FAST_WORDS:
         cats.append("fast")
 
-    q = 35.0 if size_b is None else min(95.0, 25 + 10 * math.log2(max(size_b, 1)))
+    if size_b is not None:
+        q = min(95.0, 25 + 10 * math.log2(max(size_b, 1)))
+    else:
+        q = next((v for pat, v in FAMILY_QUALITY if re.search(pat, low)), 35)
+        q = float(q)
     q += 5 if reasoning else 0
     sp = float(cfg.get("speed_base", 50)) - 8 * math.log2(max(size_b or 20, 1) / 8)
 
@@ -286,6 +304,8 @@ def normalize_row(gateway: str, cfg: dict, row: dict) -> Optional[dict]:
         "capability_source": cap_src,
         "categories": cats,
         "quality_hint": round(min(100.0, q)),
+        "intelligence_tier": intelligence_tier(min(100.0, q)),
+        "intelligence_label": INTELLIGENCE_LABELS[intelligence_tier(min(100.0, q))],
         "speed_hint": round(max(5.0, min(100.0, sp))),
         "status": "active",
         "available": True,
@@ -480,6 +500,7 @@ TASKS: dict[str, dict] = {
     "agent":      dict(cat="agent", need_tools=True, prefer="quality"),
 }
 _WEIGHTS = {"balanced": (0.5, 0.5), "quality": (0.9, 0.1), "speed": (0.1, 0.9)}
+AUTO_CONTEXT_MIN_TOKENS = 6_000   # above this, chat() filters out models with too small a context window
 
 
 class FreeLLM:
@@ -617,7 +638,7 @@ class FreeLLM:
                    need_json: Optional[bool] = None, need_vision: Optional[bool] = None,
                    min_context: Optional[int] = None, context: Optional[str] = None,
                    min_size_b: Optional[float] = None, max_size_b: Optional[float] = None,
-                   prefer: Optional[str] = None, gateways: Optional[list] = None,
+                   min_intelligence: Optional[int] = None, prefer: Optional[str] = None, gateways: Optional[list] = None,
                    exclude: Optional[list] = None, explain: bool = False) -> list[dict]:
         """Ranked list of usable models for a task. Skips exhausted/cooling gateways and models."""
         with self._lock:
@@ -626,7 +647,8 @@ class FreeLLM:
             need_tools = spec.get("need_tools", False) if need_tools is None else need_tools
             need_json = spec.get("need_json", False) if need_json is None else need_json
             need_vision = spec.get("need_vision", False) if need_vision is None else need_vision
-            min_context = spec.get("min_context") if min_context is None else min_context
+            needs = [x for x in (min_context, spec.get("min_context")) if x]   # task floor is never lowered
+            min_context = max(needs) if needs else None
             if context == "long":
                 min_context = max(min_context or 0, 64_000)
             wq, ws = _WEIGHTS[prefer or spec.get("prefer", "balanced")]
@@ -659,6 +681,9 @@ class FreeLLM:
                     continue
                 if max_size_b and sb is not None and sb > max_size_b:
                     continue
+                if min_intelligence and m.get("intelligence_tier", intelligence_tier(m.get("quality_hint", 0))) \
+                        < min_intelligence:
+                    continue
                 score = 100.0 if spec.get("cat") in m.get("categories", []) else 0.0
                 score += wq * m.get("quality_hint", 40) + ws * m.get("speed_hint", 40)
                 score += 30 * self._remaining_fraction(g, uid)          # spread load across free quotas
@@ -671,17 +696,43 @@ class FreeLLM:
             return out
 
     # ---- calling ----------------------------------------------------------
+    @staticmethod
+    def estimate_tokens(messages: list, tools: Optional[list] = None, max_tokens: Optional[int] = None) -> int:
+        """Cheap size estimate (about 4 characters per token) of prompt + tools + reply budget."""
+        chars = 0
+        for m in messages:
+            c = m.get("content") if isinstance(m, dict) else m
+            if isinstance(c, str):
+                chars += len(c)
+            elif isinstance(c, list):
+                chars += sum(len(p["text"]) for p in c if isinstance(p, dict) and isinstance(p.get("text"), str))
+            if isinstance(m, dict) and m.get("tool_calls"):
+                chars += len(json.dumps(m["tool_calls"]))
+        if tools:
+            chars += len(json.dumps(tools))
+        return chars // 4 + (max_tokens or 1024)
+
     def chat(self, messages: list | str, *, task: str = "chat", tools: Optional[list] = None,
              tool_choice: Any = None, response_format: Optional[dict] = None,
              temperature: Optional[float] = None, max_tokens: Optional[int] = None,
-             extra: Optional[dict] = None, **filters) -> LLMResult:
+             extra: Optional[dict] = None, auto_context: bool = True, **filters) -> LLMResult:
         if isinstance(messages, str):
             messages = [{"role": "user", "content": messages}]
         if tools:
             filters.setdefault("need_tools", True)
         if response_format:
             filters.setdefault("need_json", True)
+        need = self.estimate_tokens(messages, tools, max_tokens)
+        auto_set = False
+        if auto_context and not filters.get("min_context") and need > AUTO_CONTEXT_MIN_TOKENS:
+            # big prompt: only consider models whose context window can hold it (+15% margin)
+            filters["min_context"] = int(need * 1.15)
+            auto_set = True
         cands = self.candidates(task, **filters)
+        if not cands and auto_set:
+            raise AllModelsFailed([("(router)", f"prompt needs ~{need:,} tokens of context but no usable free model "
+                                                f"has {filters['min_context']:,}+ (models with unknown context are "
+                                                f"skipped for big prompts). Shorten the input or pass auto_context=False")])
         attempts: list = []
         tried = 0
         for m in cands:

@@ -39,6 +39,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import httpx  # noqa: E402
 
 import freellm  # noqa: E402
+import render_tables  # noqa: E402  (same folder)
 
 OUT = Path("registry/models.json")
 LOG = Path("registry/refresh_log.jsonl")
@@ -195,6 +196,7 @@ def main() -> None:
                        for g in sorted({m["gateway"] for m in models})},
     }
     out.write_text(json.dumps(registry, indent=2, ensure_ascii=False) + "\n", "utf-8")
+    render_tables.write_tables(registry, out.parent)      # MODELS.md + models.csv for easy viewing on GitHub
     print(f"Models: {registry['summary']['total']}  free+active: {registry['summary']['free_active']}")
 
     if record:
