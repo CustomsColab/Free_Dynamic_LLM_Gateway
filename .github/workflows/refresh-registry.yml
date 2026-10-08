@@ -18,6 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Uses the optional REGISTRY_PUSH_TOKEN secret if you created one (see README, Troubleshooting);
+          # otherwise the built-in token, which works when the workflow's own `permissions` are honoured.
+          token: ${{ secrets.REGISTRY_PUSH_TOKEN || github.token }}
 
       - uses: actions/setup-python@v5
         with:
@@ -50,11 +54,23 @@ jobs:
         run: |
           git config user.name "llm-registry-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add registry/models.json registry/refresh_log.jsonl
+          git add registry/    # everything the refresh generates: models.json, refresh_log.jsonl, MODELS.md, models.csv
           if git diff --cached --quiet; then
             echo "No changes"
-          else
-            git commit -m "Refresh LLM registry"
-            git pull --rebase origin "${GITHUB_REF_NAME}"
-            git push
+            exit 0
           fi
+          git commit -m "Refresh LLM registry"
+          # Two refreshes can overlap (manual run + schedule). Both files are GENERATED, so a
+          # conflict must never fail the job: on conflict our fresh models.json wins, and the
+          # run-log keeps the lines from both runs (union merge). Retry a few times, never force-push.
+          echo "registry/refresh_log.jsonl merge=union" >> .git/info/attributes
+          for attempt in 1 2 3; do
+            if git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Push attempt ${attempt} failed, retrying..."
+            sleep $((attempt * 5))
+          done
+          echo "Could not push after 3 attempts" >&2
+          exit 1
