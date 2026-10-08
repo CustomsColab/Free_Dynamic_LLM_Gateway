@@ -1,0 +1,60 @@
+name: Refresh dynamic LLM registry
+
+on:
+  schedule:
+    # every 6 hours (UTC). Odd minute on purpose: :00 is the busiest time on GitHub.
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: registry-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Refresh model registry
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
+          TOKEN_HARBOR_API_KEY: ${{ secrets.TOKEN_HARBOR_API_KEY }}
+          FASTROUTER_API_KEY: ${{ secrets.FASTROUTER_API_KEY }}
+          # optional: any other OpenAI-compatible gateway
+          CUSTOM_LLM_BASE_URL: ${{ secrets.CUSTOM_LLM_BASE_URL }}
+          CUSTOM_LLM_API_KEY: ${{ secrets.CUSTOM_LLM_API_KEY }}
+        run: python scripts/refresh_registry.py
+
+      - name: Commit registry
+        run: |
+          git config user.name "llm-registry-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add registry/models.json registry/refresh_log.jsonl
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Refresh LLM registry"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi
