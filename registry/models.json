@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-08T18:38:25Z",
+  "updated_at": "2026-10-08T23:23:39Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -17181,7 +17181,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.31e-08,
+      "input_price": 1.73e-08,
       "output_price": 1.28e-06,
       "capabilities": {
         "chat": true,
@@ -17224,7 +17224,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.6e-09,
+      "input_price": 1.37e-08,
       "output_price": 1.28e-06,
       "capabilities": {
         "chat": true,
@@ -19143,8 +19143,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9e-08,
-      "output_price": 3e-07,
+      "input_price": 7.65e-08,
+      "output_price": 2.55e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -21703,7 +21703,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.9e-08,
+      "input_price": 2.9e-08,
       "output_price": 3e-08,
       "capabilities": {
         "chat": true,
@@ -22243,7 +22243,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.375e-07,
+      "input_price": 4.344e-07,
       "output_price": 2.45e-06,
       "capabilities": {
         "chat": true,
@@ -22328,8 +22328,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9.9e-07,
-      "output_price": 1.4e-05,
+      "input_price": 8.2e-07,
+      "output_price": 1.35e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -26633,6 +26633,90 @@
       "missing_since": null
     },
     {
+      "uid": "openrouter/openai/gpt-6.1-sol-pro:batch",
+      "gateway": "openrouter",
+      "model_id": "openai/gpt-6.1-sol-pro:batch",
+      "display_name": "OpenAI: GPT-6.1 Sol Pro (batch)",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1050000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1e-06,
+      "output_price": 5e-06,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-08T23:23:39Z",
+      "missing_since": null
+    },
+    {
+      "uid": "openrouter/openai/gpt-6.1-sol:batch",
+      "gateway": "openrouter",
+      "model_id": "openai/gpt-6.1-sol:batch",
+      "display_name": "OpenAI: GPT-6.1 Sol (batch)",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1050000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1e-06,
+      "output_price": 5e-06,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-08T23:23:39Z",
+      "missing_since": null
+    },
+    {
       "uid": "openrouter/openai/gpt-audio",
       "gateway": "openrouter",
       "model_id": "openai/gpt-audio",
@@ -29652,8 +29736,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.5e-07,
-      "output_price": 3e-06,
+      "input_price": 5.5e-07,
+      "output_price": 3.5e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32904,8 +32988,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3e-08,
-      "output_price": 1e-05,
+      "input_price": 6.9e-08,
+      "output_price": 4.3e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32945,8 +33029,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1e-07,
-      "output_price": 4.2e-06,
+      "input_price": 3.9e-08,
+      "output_price": 3.39e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33408,7 +33492,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.83e-08,
+      "input_price": 1.2e-08,
       "output_price": 1.2e-06,
       "capabilities": {
         "chat": true,
@@ -33452,7 +33536,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.271e-07,
+      "input_price": 1.08e-07,
       "output_price": 8e-06,
       "capabilities": {
         "chat": true,
@@ -33494,8 +33578,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.68e-09,
-      "output_price": 5.49104e-07,
+      "input_price": 1.096e-08,
+      "output_price": 5.32795e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33622,7 +33706,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.3e-07,
+      "input_price": 8.1e-07,
       "output_price": 1.3e-05,
       "capabilities": {
         "chat": true,
@@ -33918,7 +34002,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 3.2e-08,
-      "output_price": 3.52495e-06,
+      "output_price": 2.798391e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33960,8 +34044,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 6e-08,
-      "output_price": 1.2e-05,
+      "input_price": 3.12e-08,
+      "output_price": 4.4e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33984,6 +34068,45 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "tokenharbor/apex",
+      "gateway": "tokenharbor",
+      "model_id": "apex",
+      "display_name": "apex",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 262144,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": null,
+      "output_price": null,
+      "capabilities": {
+        "chat": true,
+        "json": false,
+        "tools": false,
+        "vision": false,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "inferred",
+      "categories": [
+        "general",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-08T23:23:39Z",
       "missing_since": null
     },
     {
@@ -36641,25 +36764,28 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-08T18:38:25Z",
+    "time": "2026-10-08T23:23:39Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 328,
-        "models_listed": 467,
-        "chat_models": 465,
+        "latency_ms": 374,
+        "models_listed": 469,
+        "chat_models": 467,
         "free_models": 19,
         "error": null,
-        "added_count": 0,
+        "added_count": 2,
         "removed_count": 0,
-        "added": [],
+        "added": [
+          "openrouter/openai/gpt-6.1-sol-pro:batch",
+          "openrouter/openai/gpt-6.1-sol:batch"
+        ],
         "removed": []
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 93,
+        "latency_ms": 162,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36681,7 +36807,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 110,
+        "latency_ms": 131,
         "models_listed": 62,
         "chat_models": 48,
         "free_models": 48,
@@ -36694,7 +36820,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 301,
+        "latency_ms": 399,
         "models_listed": 46,
         "chat_models": 27,
         "free_models": 27,
@@ -36707,7 +36833,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 141,
+        "latency_ms": 134,
         "models_listed": 80,
         "chat_models": 69,
         "free_models": 69,
@@ -36720,7 +36846,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 161,
+        "latency_ms": 126,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36738,20 +36864,22 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 219,
-        "models_listed": 67,
-        "chat_models": 67,
+        "latency_ms": 181,
+        "models_listed": 68,
+        "chat_models": 68,
         "free_models": 0,
         "error": null,
-        "added_count": 0,
+        "added_count": 1,
         "removed_count": 0,
-        "added": [],
+        "added": [
+          "tokenharbor/apex"
+        ],
         "removed": []
       },
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 249,
+        "latency_ms": 488,
         "models_listed": 210,
         "chat_models": 189,
         "free_models": 23,
@@ -36767,7 +36895,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 882,
+    "total": 885,
     "free_active": 193,
     "by_gateway": {
       "cerebras": 3,

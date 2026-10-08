@@ -518,6 +518,8 @@ openrouter,openai/gpt-6-sol-pro:batch,,unknown,1050000,ultra,True,False,paid,Tru
 openrouter,openai/gpt-6-sol:batch,,unknown,1050000,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,openai/gpt-6.1-sol,,unknown,1050000,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,openai/gpt-6.1-sol-pro,,unknown,1050000,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
+openrouter,openai/gpt-6.1-sol-pro:batch,,unknown,1050000,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T23:23:39Z
+openrouter,openai/gpt-6.1-sol:batch,,unknown,1050000,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T23:23:39Z
 openrouter,openai/gpt-chat-latest,,unknown,400000,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,openrouter/auto,,unknown,2000000,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,openrouter/auto-beta,,unknown,2000000,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
@@ -587,6 +589,7 @@ openrouter,~openai/gpt-terra-latest,,unknown,1050000,ultra,True,False,paid,True,
 openrouter,~x-ai/grok-latest,,unknown,500000,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,~z-ai/glm-flash-latest,,unknown,1048576,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc fast,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,~z-ai/glm-latest,,unknown,1048576,ultra,True,False,paid,True,True,False,False,False,general extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
+tokenharbor,apex,,unknown,262144,ultra,True,False,paid,False,False,False,False,False,general long_doc,1,Basic,35,29,inferred,api,active,2026-10-08T23:23:39Z
 tokenharbor,claude-fable-5,,unknown,1000000,ultra,True,False,paid,False,False,False,False,False,general long_doc,1,Basic,35,29,inferred,api,active,2026-10-08T18:12:57Z
 tokenharbor,claude-fable-5.1,,unknown,1000000,ultra,True,False,paid,False,False,False,False,False,general long_doc,1,Basic,35,29,inferred,api,active,2026-10-08T18:12:57Z
 tokenharbor,claude-haiku-5.5,,unknown,1000000,ultra,True,False,paid,False,False,False,False,False,general long_doc fast,1,Basic,35,29,inferred,api,active,2026-10-08T18:12:57Z
