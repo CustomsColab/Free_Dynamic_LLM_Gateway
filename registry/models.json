@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-08T18:31:00Z",
+  "updated_at": "2026-10-08T18:38:25Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -36641,12 +36641,12 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-08T18:31:00Z",
+    "time": "2026-10-08T18:38:25Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 297,
+        "latency_ms": 328,
         "models_listed": 467,
         "chat_models": 465,
         "free_models": 19,
@@ -36659,7 +36659,7 @@
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 209,
+        "latency_ms": 93,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36681,7 +36681,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 128,
+        "latency_ms": 110,
         "models_listed": 62,
         "chat_models": 48,
         "free_models": 48,
@@ -36694,7 +36694,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 258,
+        "latency_ms": 301,
         "models_listed": 46,
         "chat_models": 27,
         "free_models": 27,
@@ -36707,7 +36707,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 101,
+        "latency_ms": 141,
         "models_listed": 80,
         "chat_models": 69,
         "free_models": 69,
@@ -36720,7 +36720,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 132,
+        "latency_ms": 161,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36738,7 +36738,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 147,
+        "latency_ms": 219,
         "models_listed": 67,
         "chat_models": 67,
         "free_models": 0,
@@ -36751,7 +36751,7 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 271,
+        "latency_ms": 249,
         "models_listed": 210,
         "chat_models": 189,
         "free_models": 23,
