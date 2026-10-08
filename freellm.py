@@ -70,7 +70,9 @@ GATEWAYS: dict[str, dict] = {
     "fireworks":  dict(base_url="https://api.fireworks.ai/inference/v1", key_env="FIREWORKS_API_KEY",
                        free_mode="price", daily_scope="gateway", tools_default=True, speed_base=65,
                        limits=dict(rpm=60, rpd=None, approximate=True)),
-    "tokenharbor": dict(base_url="https://tokenharbor.ai/api/v1", key_env="TOKEN_HARBOR_API_KEY",
+    # Token Harbor's own docs: GET https://tokenharbor.ai/v1/models (keys look like thk_live_...).
+    # Its /models returns ids only - no prices - so none of its models can be detected as free.
+    "tokenharbor": dict(base_url="https://tokenharbor.ai/v1", key_env="TOKEN_HARBOR_API_KEY",
                         free_mode="price", daily_scope="gateway", tools_default=False, speed_base=40,
                         limits=dict(rpm=None, rpd=None, approximate=True)),
     # FastRouter gives free starting CREDITS, not free models: only zero-priced models count as free.
@@ -182,8 +184,13 @@ def normalize_row(gateway: str, cfg: dict, row: dict) -> Optional[dict]:
     low = model_id.lower()
     if any(w in low for w in NON_CHAT):
         return None
-    if row.get("type") and str(row["type"]).lower() not in ("chat", "language", "text"):
-        return None  # e.g. Together: embedding / image / rerank
+    rtype = str(row.get("type") or "").lower()
+    if rtype in ("embedding", "embeddings", "image", "rerank", "audio", "moderation",
+                 "transcribe", "video", "tts", "stt"):
+        return None  # e.g. Together: embedding / image / rerank   (Mistral says "base": keep)
+    declared_caps = row.get("capabilities") if isinstance(row.get("capabilities"), dict) else None
+    if declared_caps is not None and "completion_chat" in declared_caps and not declared_caps["completion_chat"]:
+        return None  # Mistral: embeddings / moderation / OCR models
 
     display = row.get("display_name") or row.get("name") or model_id
     text = f"{low} {str(display).lower()}"
@@ -213,16 +220,20 @@ def normalize_row(gateway: str, cfg: dict, row: dict) -> Optional[dict]:
     declared = row.get("supported_parameters")
     arch = row.get("architecture") or {}
     modalities = arch.get("input_modalities") or []
-    cap_src = "declared" if (declared is not None or "supports_tools" in row) else "inferred"
+    cap_src = "declared" if (declared is not None or "supports_tools" in row
+                             or (declared_caps is not None and "function_calling" in declared_caps)) else "inferred"
     td = bool(cfg.get("tools_default")) and (size_b is None or size_b >= 7) and "r1" not in toks
     if declared is not None:
         tools = "tools" in declared or "tool_choice" in declared
         js = "response_format" in declared or "structured_outputs" in declared
     elif "supports_tools" in row:
         tools, js = bool(row["supports_tools"]), bool(row["supports_tools"])
+    elif declared_caps is not None and "function_calling" in declared_caps:   # Mistral
+        tools, js = bool(declared_caps["function_calling"]), True
     else:
         tools, js = td, bool(cfg.get("tools_default"))
     vision = ("image" in modalities or bool(row.get("supports_image_input"))
+              or bool(declared_caps and declared_caps.get("vision"))
               or bool(toks & {"vision", "vl", "multimodal", "llava", "pixtral", "vlm"})
               or "gemini" in low or "llama-4" in low
               or ("gemma-3" in low and (size_b or 0) >= 4))
