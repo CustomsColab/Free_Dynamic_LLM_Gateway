@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-10-09T06:13:44Z** | source: **live** | **193** free models on **7** gateways
+Updated **2026-10-09T13:24:43Z** | source: **live** | **193** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Spreadsheet version: [models.csv](models.csv).
 
@@ -288,7 +288,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
 | tokenharbor | no_free_models | 200 | 0 | 0 | 0 |  |
-| fastrouter | ok | 200 | 23 | 0 | 0 |  |
+| fastrouter | ok | 200 | 23 | 1 | 0 |  |
 
 Full history: [refresh_log.jsonl](refresh_log.jsonl).
 

@@ -424,7 +424,7 @@ openrouter,deepseek/deepseek-v4.1-flash:batch,,unknown,1048576,ultra,True,False,
 openrouter,fireworks/ember-1,,unknown,1048576,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,inception/mercury-2.5,,unknown,260000,ultra,True,False,paid,True,True,False,False,False,general extraction agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,inclusionai/ling-3.0-flash,,unknown,262144,ultra,True,False,paid,True,True,False,False,False,general extraction agent long_doc fast,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
-openrouter,inclusionai/ling-3.0-flash-fin,,unknown,262144,ultra,True,False,paid,True,True,False,False,False,general extraction agent long_doc fast,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
+openrouter,inclusionai/ling-3.0-flash-fin,,unknown,262144,ultra,True,False,paid,True,False,False,False,False,general agent long_doc fast,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,inclusionai/ling-3.0-flash-sante,,unknown,262144,ultra,True,False,paid,True,False,False,False,False,general agent long_doc fast,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,inclusionai/ling-3.0-flash-vl,,unknown,262144,ultra,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc fast,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
 openrouter,meituan/longcat-2.0,,unknown,1048756,ultra,True,False,paid,True,False,False,False,False,general agent long_doc,1,Basic,35,29,declared,api,active,2026-10-08T17:59:10Z
@@ -672,6 +672,7 @@ openrouter,openai/gpt-oss-20b:batch,20.0,medium,131072,long,True,False,paid,True
 openrouter,cognitivecomputations/dolphin-mistral-24b-venice-edition,24.0,medium,128000,long,True,False,paid,False,True,False,False,False,general extraction long_doc,3,Good,71,27,declared,api,active,2026-10-08T17:59:10Z
 openrouter,mistralai/mistral-small-3.1-24b-instruct,24.0,medium,128000,long,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc fast,3,Good,71,27,declared,api,active,2026-10-08T17:59:10Z
 openrouter,thedrummer/cydonia-24b-v4.1,24.0,medium,131072,long,True,False,paid,False,True,False,False,False,general extraction long_doc,3,Good,71,27,declared,api,active,2026-10-08T17:59:10Z
+fastrouter,google/gemini-nano-banana-2.1,,unknown,131072,long,True,False,paid,False,True,True,False,False,general vision extraction long_doc fast,3,Good,70,39,declared,api,active,2026-10-09T13:24:43Z
 openrouter,google/gemini-nano-banana-2.1,,unknown,65536,long,True,False,paid,True,True,True,False,False,general vision extraction agent long_doc fast,3,Good,70,29,declared,api,active,2026-10-08T17:59:10Z
 fastrouter,Qwen/Qwen3-14B,14.0,small,40960,long,False,False,paid,False,True,False,False,True,general reasoning extraction fast,3,Good,68,44,declared,api,active,2026-10-08T17:59:10Z
 openrouter,qwen/qwen3-14b,14.0,small,131072,long,True,False,paid,True,True,False,False,True,general reasoning extraction agent long_doc fast,3,Good,68,34,declared,api,active,2026-10-08T17:59:10Z
