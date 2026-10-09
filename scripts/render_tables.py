@@ -4,7 +4,9 @@
 
 Writes next to the registry:
   MODELS.md    GitHub shows it as formatted tables (free + active models only)
-  models.csv   GitHub shows it as a table; open in Excel/Sheets to sort and filter (all models)
+  models.csv   GitHub shows it as a table: free models only, same model clubbed across gateways,
+               ordered by intelligence, vision specialists below, emoji colour markers
+  models.xlsx  same table with real cell colours and filters (needs openpyxl)
 
 Called automatically by refresh_registry.py after every refresh.
 """
@@ -19,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import freellm  # noqa: E402
 
+TABLE_FORMAT_VERSION = 2   # v2 = grouped + colour-coded models.csv / models.xlsx
 CLASS_ORDER = ["ultra", "long", "medium", "short", "unknown"]
 CLASS_GUIDE = {
     "ultra":   ("over 200K", "~150K+ words", "whole books, huge codebases, dozens of documents at once",
@@ -100,11 +103,11 @@ def render_markdown(registry: dict) -> str:
     a = L.append
     a("# Free LLM models: decision tables")
     a("")
-    a(f"Updated **{registry.get('updated_at', '?')}** | source: **{registry.get('source', '?')}** | "
+    a(f"Updated **{registry.get('updated_at', '?')}** | source: **{registry.get('source', '?')}** | table format v{TABLE_FORMAT_VERSION} | "
       f"**{len(models)}** free models on **{len(gateways)}** gateways")
     a("")
     a("> Generated file. Do not edit by hand: it is rebuilt after every registry refresh. "
-      "Spreadsheet version: [models.csv](models.csv).")
+      "Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).")
     a("")
     a("## 1. Which context size do I need?")
     a("")
@@ -192,44 +195,279 @@ def render_markdown(registry: dict) -> str:
     return "\n".join(L)
 
 
-CSV_COLS = ["gateway", "model_id", "size_b", "size_class", "context_length", "context_class", "long_context",
-            "is_free", "free_kind", "tools", "json", "vision", "coding", "reasoning", "categories",
-            "intelligence_tier", "intelligence_label", "quality_hint", "speed_hint", "capability_source", "context_source", "status", "first_seen"]
+# --------------------------------------------------------------------------- #
+# Decision table: models.csv (plain, emoji colour markers) + models.xlsx (real colours)
+#   * free + active models only
+#   * the same model offered by several gateways is clubbed into one group (adjacent rows)
+#   * groups ordered by intelligence (highest first), then context, then name
+#   * vision-specialist models are listed in a separate block BELOW the main table
+# --------------------------------------------------------------------------- #
+import re  # noqa: E402
+
+TIER_EMOJI = {5: "🟣", 4: "🟢", 3: "🔵", 2: "🟡", 1: "🔴"}
+CTX_EMOJI = {"ultra": "🔵", "long": "🟢", "medium": "🟡", "short": "🟠", "unknown": "⚪"}
+CTX_LABEL = {"ultra": "Ultra (>200K)", "long": "Long (32K-200K)", "medium": "Medium (8K-32K)",
+             "short": "Short (<=8K)", "unknown": "Unknown"}
+TIER_FILL = {5: "D5B8EA", 4: "C6EFCE", 3: "DDEBF7", 2: "FFF2CC", 1: "F8CBAD"}
+CTX_FILL = {"ultra": "A9D6F5", "long": "C6EFCE", "medium": "FFF2CC", "short": "F8CBAD", "unknown": "D9D9D9"}
+
+# Names containing one of these tokens are treated as vision-SPECIALISTS (listed below the main table).
+# General multimodal models (Gemini, Gemma 3, Pixtral, Llama 4...) are NOT matched: they stay on top.
+VISION_SPECIALIST_TOKENS = {"vl", "vlm", "vision", "llava", "paligemma", "florence", "neva", "vila", "kosmos",
+                            "ocr", "cogvlm", "internvl", "molmo", "fuyu", "idefics", "image"}
+# Words dropped when deciding that two gateways serve "the same model".
+_DROP_WORDS = {"instruct", "it", "versatile", "instant", "latest", "fp8", "bf16", "awq", "int4", "free"}
+
+COLUMNS = ["Rank", "Model", "Intelligence", "Tier (1-5)", "Size", "Gateway", "Gateway model id",
+           "Context class", "Context (tokens)", "Modality", "Tools", "JSON", "Reasoning", "Coding",
+           "Speed (0-100)", "Free type", "Best for", "Gateways in group"]
+COL_IDX = {name: i for i, name in enumerate(COLUMNS)}
+
+
+def canonical_key(model_id: str) -> str:
+    """Key under which the same model on different gateways collapses together.
+    'openai/gpt-oss-120b:free' == 'gpt-oss-120b';  'llama3.1-8b' == 'meta/llama-3.1-8b-instruct' == 'llama-3.1-8b-instant';
+    'qwen-3-32b' == 'qwen/qwen3-32b'.  'flash' and 'flash-lite' stay different."""
+    s = model_id.lower().split(":")[0].rsplit("/", 1)[-1]
+    parts = [p for p in re.split(r"[-_]", s) if p and p not in _DROP_WORDS]
+    return "".join(re.sub(r"[^a-z0-9]", "", p) for p in parts)
+
+
+def clean_name(model_id: str) -> str:
+    return model_id.split(":")[0].rsplit("/", 1)[-1]
+
+
+def is_vision_specialist(model_id: str) -> bool:
+    return bool(set(re.split(r"[^a-z0-9]+", model_id.lower())) & VISION_SPECIALIST_TOKENS)
+
+
+def yes(m: dict, cap: str) -> str:
+    if not m["capabilities"].get(cap):
+        return "No"
+    return "Yes" if m.get("capability_source") == "declared" else "Yes~"
+
+
+def build_groups(registry: dict) -> tuple[list[dict], list[dict]]:
+    """Return (main_groups, vision_groups), each already sorted; every group has its rows ready."""
+    models = [m for m in registry.get("models", []) if m.get("is_free") and m.get("status", "active") == "active"]
+    by_key: dict[str, list[dict]] = {}
+    for m in models:
+        by_key.setdefault(canonical_key(m["model_id"]), []).append(m)
+    groups = []
+    for key, ms in by_key.items():
+        names = [clean_name(m["model_id"]) for m in ms]
+        vendor_named = [clean_name(m["model_id"]) for m in ms if "/" in m["model_id"]]   # 'meta/llama-...' = official spelling
+        display = sorted(set(names), key=lambda n: (-(2 * vendor_named.count(n) + names.count(n)), len(n), n))[0]
+        sizes = [m["size_b"] for m in ms if m.get("size_b")]
+        groups.append({
+            "key": key, "display": display, "models": ms,
+            "tier": max(tier_of(m) for m in ms),
+            "quality": max(m.get("quality_hint", 0) for m in ms),
+            "ctx_max": max((m.get("context_length") or 0) for m in ms),
+            "size": f"{max(sizes):g}B" if sizes else "unknown",
+            "vision_only": any(is_vision_specialist(m["model_id"]) for m in ms),
+        })
+    order = lambda g: (-g["tier"], -g["quality"], -g["ctx_max"], g["display"])
+    main = sorted((g for g in groups if not g["vision_only"]), key=order)
+    vis = sorted((g for g in groups if g["vision_only"]), key=order)
+    for g in main + vis:
+        g["models"].sort(key=lambda m: (-(m.get("context_length") or 0), -m.get("speed_hint", 0), m["gateway"]))
+    return main, vis
+
+
+def group_rows(groups: list[dict]) -> list[list]:
+    """Flat list of table rows (plain values, no emoji). Each row also carries its group index at the end."""
+    rows = []
+    for rank, g in enumerate(groups, 1):
+        for m in g["models"]:
+            modality = ("Vision specialist" if g["vision_only"]
+                        else "Text + Vision" if m["capabilities"].get("vision") else "Text")
+            best = ", ".join(x for x in m["categories"] if x != "general") or "general"
+            rows.append([rank, g["display"], freellm.INTELLIGENCE_LABELS[g["tier"]], g["tier"], g["size"],
+                         m["gateway"], m["model_id"], m["context_class"], m.get("context_length") or "",
+                         modality, yes(m, "tools"), yes(m, "json"), yes(m, "reasoning"), yes(m, "coding"),
+                         m.get("speed_hint", ""), "Free tier" if m["free_kind"] == "free_tier" else "Price 0",
+                         best, len(g["models"])])
+    return rows
+
+
+def csv_cells(row: list) -> list:
+    """Same row with colour-marker emoji so the CSV is readable on GitHub / Excel without real colours."""
+    r = list(row)
+    r[COL_IDX["Intelligence"]] = f"{TIER_EMOJI[row[COL_IDX['Tier (1-5)']]]} {row[COL_IDX['Intelligence']]}"
+    cls = row[COL_IDX["Context class"]]
+    r[COL_IDX["Context class"]] = f"{CTX_EMOJI[cls]} {CTX_LABEL[cls]}"
+    return r
+
+
+VISION_BANNER = "VISION-SPECIALIST MODELS (image models, listed separately; skip these if you only need text)"
 
 
 def write_csv(registry: dict, path: Path) -> None:
-    models = sorted(registry.get("models", []),
-                    key=lambda m: (not m.get("is_free"), freellm_class_rank(m), -m.get("quality_hint", 0), m["uid"]))
+    main, vis = build_groups(registry)
     with path.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
-        w.writerow(CSV_COLS)
-        for m in models:
-            c = m["capabilities"]
-            w.writerow([m["gateway"], m["model_id"], m.get("size_b") or "", m["size_class"],
-                        m.get("context_length") or "", m["context_class"], m["long_context"],
-                        m["is_free"], m["free_kind"], c["tools"], c["json"], c["vision"], c["coding"],
-                        c["reasoning"], " ".join(m["categories"]), tier_of(m),
-                        freellm.INTELLIGENCE_LABELS[tier_of(m)], m["quality_hint"], m["speed_hint"],
-                        m.get("capability_source", ""), m.get("context_source", ""),
-                        m.get("status", "active"), m.get("first_seen", "")])
+        w.writerow(COLUMNS)
+        for r in group_rows(main):
+            w.writerow(csv_cells(r))
+        if vis:
+            w.writerow([""] * len(COLUMNS))
+            w.writerow([VISION_BANNER] + [""] * (len(COLUMNS) - 1))
+            w.writerow(COLUMNS)
+            for r in group_rows(vis):
+                w.writerow(csv_cells(r))
 
 
-def freellm_class_rank(m: dict) -> int:
-    c = m.get("context_class", "unknown")
-    return CLASS_ORDER.index(c) if c in CLASS_ORDER else len(CLASS_ORDER)
+LEGEND = [
+    ("What this is", "Free, active models only. The same model offered by several gateways is clubbed into one group "
+                     "(adjacent rows with the same Rank). Groups are ordered by Intelligence (highest first), then context size."),
+    ("Rank", "Position of the model group. All gateways serving the same model share one rank."),
+    ("Row order inside a group", "Largest context first, then fastest. The first row is usually the best gateway to try first."),
+    ("Intelligence", "1-5 rating derived from model size (parameters), with family estimates for models that publish no size "
+                     "(Gemini, Mistral Large...). Top = 100B+/frontier, Strong = ~32-100B, Good = ~13-30B, Fair = ~4-12B, Basic = ~1-3B. "
+                     "A rough proxy, not a benchmark: newer small models can beat older big ones."),
+    ("Context class", "Ultra >200K tokens | Long 32K-200K | Medium 8K-32K | Short <=8K | Unknown = the gateway does not report it "
+                      "(treated as short for big prompts). 1 token is about 4 characters."),
+    ("Tools / JSON / Reasoning / Coding", "Yes = declared by the gateway. Yes~ = inferred from the model name (not declared). No = not supported or unknown."),
+    ("Speed", "0-100 heuristic from the gateway's hardware and the model size. Not a measurement."),
+    ("Vision", "'Text + Vision' models stay in the main table. Models named like -vl / vision / llava are vision "
+               "specialists and are listed in the separate block below the main table."),
+    ("Same-model matching", "Done by name (vendor prefix, ':free' and words like instruct / versatile / instant are ignored). "
+                            "Gateways may serve quantised or context-limited variants of the same name: check 'Context (tokens)' per row."),
+    ("Colours", "Intelligence: purple Top, green Strong, blue Good, yellow Fair, red Basic. Context: blue Ultra, green Long, "
+                "yellow Medium, orange Short, grey Unknown. The CSV shows the same colours as emoji."),
+]
+
+
+def write_xlsx(registry: dict, path: Path) -> bool:
+    try:
+        from openpyxl import Workbook
+        from openpyxl.formatting.rule import ColorScaleRule
+        from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
+        from openpyxl.utils import get_column_letter
+    except ImportError:
+        print("openpyxl not installed: skipped models.xlsx (pip install openpyxl)", file=sys.stderr)
+        return False
+    main, vis = build_groups(registry)
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Free models"
+    base = Font(name="Arial", size=10)
+    bold = Font(name="Arial", size=10, bold=True)
+    grey = Font(name="Arial", size=10, color="808080")
+    fill = lambda hex_: PatternFill("solid", start_color=hex_, end_color=hex_)
+    thin = Side(style="thin", color="D9D9D9")
+    thick = Side(style="medium", color="404040")
+    head_font, head_fill = Font(name="Arial", size=10, bold=True, color="FFFFFF"), fill("305496")
+    band = [fill("FFFFFF"), fill("F2F2F2")]
+    CENTER = {"Rank", "Tier (1-5)", "Size", "Context class", "Speed (0-100)", "Tools", "JSON", "Reasoning",
+              "Coding", "Gateways in group", "Free type", "Intelligence", "Modality"}
+
+    def header(row: int) -> None:
+        for c, name in enumerate(COLUMNS, 1):
+            cell = ws.cell(row, c, name)
+            cell.font, cell.fill = head_font, head_fill
+            cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+        ws.row_dimensions[row].height = 30
+
+    def block(start_row: int, groups: list[dict]) -> int:
+        r = start_row
+        last_rank, band_i = None, -1
+        for row in group_rows(groups):
+            rank = row[0]
+            first_in_group = rank != last_rank
+            if first_in_group:
+                band_i += 1
+            last_rank = rank
+            for c, name in enumerate(COLUMNS, 1):
+                v = row[c - 1]
+                cell = ws.cell(r, c, v if v != "" else None)
+                cell.font = bold if (name == "Model" and first_in_group) else (grey if (name == "Model") else base)
+                cell.fill = band[band_i % 2]
+                cell.alignment = Alignment(horizontal="center" if name in CENTER else "left", vertical="center")
+                cell.border = Border(top=thick if first_in_group else thin, bottom=thin, left=thin, right=thin)
+                if name == "Context (tokens)":
+                    cell.number_format = "#,##0"
+                if name == "Intelligence":
+                    cell.fill, cell.font = fill(TIER_FILL[row[COL_IDX["Tier (1-5)"]]]), bold
+                if name == "Context class":
+                    cls = row[c - 1]
+                    cell.value = CTX_LABEL[cls]
+                    cell.fill = fill(CTX_FILL[cls])
+                if name in ("Tools", "JSON", "Reasoning", "Coding"):
+                    if v == "Yes":
+                        cell.fill = fill("C6EFCE")
+                    elif v == "Yes~":
+                        cell.fill, cell.font = fill("E2EFDA"), Font(name="Arial", size=10, italic=True)
+                    else:
+                        cell.font = grey
+            r += 1
+        return r
+
+    header(1)
+    end_main = block(2, main)                      # first free row after the main table
+    last_main = max(end_main - 1, 1)
+    if main:
+        ws.auto_filter.ref = f"A1:{get_column_letter(len(COLUMNS))}{last_main}"
+        sp = COL_IDX["Speed (0-100)"] + 1
+        ws.conditional_formatting.add(
+            f"{get_column_letter(sp)}2:{get_column_letter(sp)}{last_main}",
+            ColorScaleRule(start_type="num", start_value=0, start_color="F8CBAD",
+                           mid_type="num", mid_value=50, mid_color="FFEB9C",
+                           end_type="num", end_value=100, end_color="C6EFCE"))
+    if vis:
+        r = end_main + 1
+        ws.cell(r, 1, VISION_BANNER)
+        for c in range(1, len(COLUMNS) + 1):
+            ws.cell(r, c).fill, ws.cell(r, c).font = fill("7F6000"), Font(name="Arial", size=11, bold=True, color="FFFFFF")
+        ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=len(COLUMNS))
+        header(r + 1)
+        block(r + 2, vis)
+    widths = {"Rank": 6, "Model": 30, "Intelligence": 14, "Tier (1-5)": 8, "Size": 9, "Gateway": 12,
+              "Gateway model id": 36, "Context class": 18, "Context (tokens)": 14, "Modality": 17, "Tools": 8,
+              "JSON": 8, "Reasoning": 11, "Coding": 8, "Speed (0-100)": 10, "Free type": 11, "Best for": 44,
+              "Gateways in group": 10}
+    for name, w in widths.items():
+        ws.column_dimensions[get_column_letter(COL_IDX[name] + 1)].width = w
+    ws.freeze_panes = "C2"
+
+    lg = wb.create_sheet("How to read")
+    lg.column_dimensions["A"].width = 34
+    lg.column_dimensions["B"].width = 120
+    lg["A1"], lg["B1"] = "Item", "Meaning"
+    for c in ("A1", "B1"):
+        lg[c].font, lg[c].fill = head_font, head_fill
+    for i, (k, v) in enumerate(LEGEND, 2):
+        lg.cell(i, 1, k).font = bold
+        lg.cell(i, 2, v).font = base
+        lg.cell(i, 2).alignment = Alignment(wrap_text=True, vertical="top")
+        lg.cell(i, 1).alignment = Alignment(vertical="top")
+    r0 = len(LEGEND) + 3
+    lg.cell(r0, 1, "Intelligence colours").font = bold
+    for j, t in enumerate((5, 4, 3, 2, 1)):
+        cell = lg.cell(r0 + 1 + j, 1, freellm.INTELLIGENCE_LABELS[t])
+        cell.fill, cell.font = fill(TIER_FILL[t]), base
+    lg.cell(r0, 2, "Context colours").font = bold
+    for j, cl in enumerate(CLASS_ORDER):
+        cell = lg.cell(r0 + 1 + j, 2, CTX_LABEL[cl])
+        cell.fill, cell.font = fill(CTX_FILL[cl]), base
+    lg.cell(r0 + 8, 1, f"Registry updated {registry.get('updated_at', '?')} (source: {registry.get('source', '?')})").font = grey
+    wb.save(path)
+    return True
 
 
 def write_tables(registry: dict, out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "MODELS.md").write_text(render_markdown(registry) + "\n", "utf-8")
     write_csv(registry, out_dir / "models.csv")
+    write_xlsx(registry, out_dir / "models.xlsx")
 
 
 def main() -> None:
     src = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("registry/models.json")
     registry = json.loads(src.read_text("utf-8"))
     write_tables(registry, src.parent)
-    print(f"Wrote {src.parent / 'MODELS.md'} and {src.parent / 'models.csv'}")
+    print(f"Wrote MODELS.md, models.csv and models.xlsx in {src.parent}")
 
 
 if __name__ == "__main__":

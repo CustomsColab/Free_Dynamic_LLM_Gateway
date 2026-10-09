@@ -380,9 +380,8 @@ class TestTables(unittest.TestCase):
         self.assertIn("| groq | `llama-3.3-70b-versatile` | 70B | 128K |", md)
         d = Path(tempfile.mkdtemp())
         self.rt.write_tables(reg, d)
-        rows = (d / "models.csv").read_text().splitlines()
-        self.assertEqual(len(rows), 1 + len(reg["models"]))
-        self.assertTrue(rows[0].startswith("gateway,model_id,size_b"))
+        self.assertTrue((d / "models.csv").exists())
+        self.assertTrue((d / "models.xlsx").exists())
 
     def test_pipe_in_names_is_escaped(self):
         self.assertEqual(self.rt.esc("a|b"), "a\\|b")
@@ -407,6 +406,125 @@ class TestHeuristics(unittest.TestCase):
         self.assertGreater(q("gemini", "gemini-2.5-flash"), q("gemini", "gemini-2.5-flash-lite"))
         self.assertGreater(q("mistral", "mistral-large-latest"), q("mistral", "mistral-small-latest"))
         self.assertGreaterEqual(q("gemini", "gemini-2.5-pro"), 85)
+
+
+class TestDecisionTable(unittest.TestCase):
+    def setUp(self):
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+        import render_tables
+        self.rt = render_tables
+        gws = freellm.all_gateways()
+        self.reg = freellm.seed_registry()
+        paid = freellm.normalize_row("openrouter", gws["openrouter"], {
+            "id": "vendor/paid-70b", "context_length": 65536, "pricing": {"prompt": "0.001", "completion": "0.002"}})
+        vis = [("nvidia", {"id": "meta/llama-3.2-11b-vision-instruct"}),
+               ("openrouter", {"id": "qwen/qwen2.5-vl-72b-instruct:free", "context_length": 32768,
+                               "pricing": {"prompt": "0", "completion": "0"}})]
+        self.reg["models"] += [paid] + [freellm.normalize_row(g, gws[g], r) for g, r in vis]
+        gone = freellm.normalize_row("groq", gws["groq"], {"id": "removed-8b"})
+        gone["status"] = "missing"
+        self.reg["models"].append(gone)
+
+    def read_csv(self):
+        import csv
+        d = Path(tempfile.mkdtemp())
+        self.rt.write_tables(self.reg, d)
+        with open(d / "models.csv", encoding="utf-8", newline="") as fh:
+            return d, list(csv.reader(fh))
+
+    def test_canonical_key_clubs_same_model_only(self):
+        k = self.rt.canonical_key
+        self.assertEqual(k("openai/gpt-oss-120b:free"), k("gpt-oss-120b"))
+        self.assertEqual(k("llama3.1-8b"), k("meta/llama-3.1-8b-instruct"))
+        self.assertEqual(k("llama-3.1-8b-instant"), k("llama3.1-8b"))
+        self.assertEqual(k("qwen-3-32b"), k("qwen/qwen3-32b"))
+        self.assertEqual(k("llama-3.3-70b-versatile"), k("meta-llama/llama-3.3-70b-instruct:free"))
+        self.assertNotEqual(k("gemini-2.5-flash"), k("gemini-2.5-flash-lite"))
+        self.assertNotEqual(k("llama-3.3-70b-instruct"), k("llama-3.1-70b-instruct"))
+        self.assertNotEqual(k("gpt-oss-20b"), k("gpt-oss-120b"))
+
+    def test_free_only_grouped_and_ordered(self):
+        _, rows = self.read_csv()
+        header, data = rows[0], rows[1:]
+        self.assertEqual(header, self.rt.COLUMNS)
+        main = []
+        for r in data:
+            if not r[0]:
+                break
+            main.append(r)
+        ids = [r[6] for r in main]
+        self.assertNotIn("vendor/paid-70b", " ".join(ids))       # paid excluded
+        self.assertNotIn("removed-8b", " ".join(ids))            # missing excluded
+        ranks = [int(r[0]) for r in main]
+        self.assertEqual(ranks, sorted(ranks))                   # groups contiguous, numbered in order
+        tiers = [int(r[3]) for r in main]
+        self.assertEqual(tiers, sorted(tiers, reverse=True))     # highest intelligence first
+        gpt = [r for r in main if r[1] == "gpt-oss-120b"]
+        self.assertEqual({r[5] for r in gpt}, {"groq", "cerebras"})   # same model, two gateways, one group
+        self.assertEqual(len({r[0] for r in gpt}), 1)
+        self.assertEqual(gpt[0][17], "2")
+        llama = [r for r in main if r[0] == [x for x in main if x[1].startswith("llama-3.3-70b")][0][0]]
+        self.assertEqual({r[5] for r in llama}, {"groq", "openrouter", "nvidia"})
+        ctxs = [int(r[8]) if r[8] else 0 for r in llama]
+        self.assertEqual(ctxs, sorted(ctxs, reverse=True))       # largest context first inside a group
+
+    def test_labels_and_emoji(self):
+        _, rows = self.read_csv()
+        top = [r for r in rows[1:] if r[1] == "gpt-oss-120b"][0]
+        self.assertEqual(top[2], "🟣 Top")
+        self.assertTrue(top[7].startswith("🟢 Long"))
+        unknown = [r for r in rows[1:] if r[5] == "cerebras"][0]
+        self.assertTrue(unknown[7].startswith("⚪ Unknown"))
+        self.assertTrue(any(r[7].startswith("🔵 Ultra") for r in rows[1:]))
+
+    def test_vision_specialists_below_dual_stay_on_top(self):
+        _, rows = self.read_csv()
+        banner = [i for i, r in enumerate(rows) if r[0].startswith("VISION-SPECIALIST")]
+        self.assertEqual(len(banner), 1)
+        b = banner[0]
+        self.assertEqual(rows[b - 1], [""] * len(self.rt.COLUMNS))
+        self.assertEqual(rows[b + 1], self.rt.COLUMNS)
+        above = [r[1] for r in rows[1:b - 1]]
+        below = [r[1] for r in rows[b + 2:]]
+        self.assertIn("gemini-2.5-pro", above)                    # dual (text + vision) stays on top
+        self.assertIn("gemma-3-27b-it", above)
+        self.assertTrue(any(r[9] == "Text + Vision" for r in rows[1:b - 1]))
+        self.assertEqual(set(below), {"qwen2.5-vl-72b-instruct", "llama-3.2-11b-vision-instruct"})
+        self.assertTrue(all(r[9] == "Vision specialist" for r in rows[b + 2:]))
+
+    def test_vision_specialist_detection(self):
+        v = self.rt.is_vision_specialist
+        for name in ("qwen/qwen2.5-vl-72b-instruct", "meta/llama-3.2-11b-vision-instruct", "llava-1.6", "nvidia/neva-22b"):
+            self.assertTrue(v(name), name)
+        for name in ("gemini-2.5-pro", "google/gemma-3-27b-it", "mistral-small-latest", "pixtral-large-latest",
+                     "llama-3.3-70b-versatile"):
+            self.assertFalse(v(name), name)
+
+    def test_xlsx_colours_filter_and_freeze(self):
+        from openpyxl import load_workbook
+        d, rows = self.read_csv()
+        wb = load_workbook(d / "models.xlsx")
+        ws = wb["Free models"]
+        self.assertIn("How to read", wb.sheetnames)
+        n_main = next(i for i, r in enumerate(rows) if not r[0]) - 1          # data rows above the blank row
+        self.assertEqual(ws.auto_filter.ref, f"A1:R{n_main + 1}")             # filter covers the main table only
+        self.assertEqual(ws.freeze_panes, "C2")
+        col = {c.value: c.column for c in ws[1]}
+        fill = lambda r, name: ws.cell(r, col[name]).fill.start_color.rgb[-6:]
+        self.assertEqual(ws.cell(2, col["Intelligence"]).value, "Top")
+        self.assertEqual(fill(2, "Intelligence"), "D5B8EA")                   # Top = purple
+        self.assertEqual(fill(2, "Context class"), "C6EFCE")                  # Long = green
+        gem = next(r for r in range(2, n_main + 2) if ws.cell(r, col["Model"]).value == "gemini-2.5-pro")
+        self.assertEqual(fill(gem, "Context class"), "A9D6F5")                # Ultra = blue
+        unk = next(r for r in range(2, n_main + 2) if ws.cell(r, col["Gateway"]).value == "cerebras")
+        self.assertEqual(fill(unk, "Context class"), "D9D9D9")                # Unknown = grey
+        banner_row = n_main + 3
+        self.assertTrue(str(ws.cell(banner_row, 1).value).startswith("VISION-SPECIALIST"))
+
+    def test_empty_registry_does_not_crash(self):
+        d = Path(tempfile.mkdtemp())
+        self.rt.write_tables({"models": [], "updated_at": "x", "source": "t"}, d)
+        self.assertEqual(len((d / "models.csv").read_text().splitlines()), 1)
 
 
 class TestIntelligence(unittest.TestCase):
