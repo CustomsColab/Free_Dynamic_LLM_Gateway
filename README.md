@@ -28,7 +28,17 @@ Every refresh also writes two files that GitHub displays as tables:
 * **`registry/MODELS.md`** - open it in the repo and GitHub renders it. It has: a guide to which context class
   (short / medium / long / ultra) you need, a gateway x context-class count, the best 3 picks per task, every free model
   grouped by context class with size, context, tools/JSON/vision/code/reasoning, quality and speed, and the health of the last refresh.
-* **`registry/models.csv`** - GitHub shows a table; download it and open in Excel/Sheets to sort and filter (includes paid models, `is_free` column).
+* **`registry/models.csv`** - the decision table. GitHub shows it as a table. Free + active models only; the same model offered by several
+  gateways is **clubbed into one group** (adjacent rows, same `Rank`), groups ordered by **intelligence** (highest first), then context size.
+  Labelled columns: `Intelligence` (Top / Strong / Good / Fair / Basic) and `Context class` (Ultra / Long / Medium / Short / Unknown), each with a
+  colour marker emoji (CSV cannot hold real colours). **Vision-specialist** models (names like `-vl`, `vision`, `llava`) are listed in a separate
+  block **below** the main table; general multimodal models (Gemini, Gemma 3...) stay on top with `Modality = Text + Vision`.
+* **`registry/models.xlsx`** - the same table with **real cell colours**, frozen header, and filters (the filter covers the main table only).
+  Download it from GitHub and open in Excel / Google Sheets. A second sheet, "How to read", explains every column and colour.
+
+Colours: Intelligence = purple Top, green Strong, blue Good, yellow Fair, red Basic. Context = blue Ultra, green Long, yellow Medium, orange Short, grey Unknown.
+Row order inside a group: largest context first, then fastest. "Same model" is matched by name (vendor prefix, `:free`, `instruct/versatile/instant/latest` ignored),
+so check `Context (tokens)` per row: a gateway may serve a context-limited variant. Edit `VISION_SPECIALIST_TOKENS` in `scripts/render_tables.py` to change what counts as vision-only.
 
 `models.json` stays the machine-readable source for your apps.
 
