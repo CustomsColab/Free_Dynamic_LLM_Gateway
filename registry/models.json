@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-09T13:24:43Z",
+  "updated_at": "2026-10-09T16:50:32Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -17223,7 +17223,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.28e-08,
+      "input_price": 1.31e-08,
       "output_price": 1.28e-06,
       "capabilities": {
         "chat": true,
@@ -17266,7 +17266,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.9e-09,
+      "input_price": 6.5e-09,
       "output_price": 1.28e-06,
       "capabilities": {
         "chat": true,
@@ -17353,8 +17353,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.9406e-07,
-      "output_price": 5.8812e-07,
+      "input_price": 2.44818e-07,
+      "output_price": 4.89636e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22284,7 +22284,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.41e-07,
+      "input_price": 4.344e-07,
       "output_price": 2.45e-06,
       "capabilities": {
         "chat": true,
@@ -22369,8 +22369,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5e-07,
-      "output_price": 1.2e-05,
+      "input_price": 8.2e-07,
+      "output_price": 1.35e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -28480,10 +28480,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen2.5-vl-72b-instruct",
@@ -28535,9 +28535,9 @@
       "size_b": 14.0,
       "size_label": "14B",
       "size_class": "small",
-      "context_length": 131072,
+      "context_length": 40960,
       "context_class": "long",
-      "long_context": true,
+      "long_context": false,
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
@@ -28557,7 +28557,6 @@
         "reasoning",
         "extraction",
         "agent",
-        "long_doc",
         "fast"
       ],
       "quality_hint": 68,
@@ -28606,10 +28605,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 5,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-235b-a22b-2507",
@@ -28662,17 +28661,17 @@
       "size_b": 235.0,
       "size_label": "235B",
       "size_class": "xlarge",
-      "context_length": 131072,
+      "context_length": 128000,
       "context_class": "long",
       "long_context": true,
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.3e-07,
-      "output_price": 2.3e-06,
+      "input_price": 4.5e-07,
+      "output_price": 3.5e-06,
       "capabilities": {
         "chat": true,
-        "json": true,
+        "json": false,
         "tools": true,
         "vision": false,
         "coding": false,
@@ -28682,7 +28681,6 @@
       "categories": [
         "general",
         "reasoning",
-        "extraction",
         "agent",
         "long_doc"
       ],
@@ -28704,9 +28702,9 @@
       "size_b": 30.0,
       "size_label": "30B",
       "size_class": "medium",
-      "context_length": 131072,
+      "context_length": 40960,
       "context_class": "long",
-      "long_context": true,
+      "long_context": false,
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
@@ -28725,8 +28723,7 @@
         "general",
         "reasoning",
         "extraction",
-        "agent",
-        "long_doc"
+        "agent"
       ],
       "quality_hint": 79,
       "intelligence_tier": 4,
@@ -28816,10 +28813,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 25,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-32b",
@@ -28901,10 +28898,10 @@
       "intelligence_tier": 3,
       "intelligence_label": "Good",
       "speed_hint": 40,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-coder",
@@ -29117,10 +29114,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-coder:free",
@@ -29199,10 +29196,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-max-thinking",
@@ -29241,10 +29238,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-next-80b-a3b-instruct",
@@ -29411,10 +29408,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 5,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-vl-30b-a3b-instruct",
@@ -29474,8 +29471,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-07,
-      "output_price": 2.4e-06,
+      "input_price": 2.9e-07,
+      "output_price": 1e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -29540,10 +29537,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 24,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-vl-8b-instruct",
@@ -29560,8 +29557,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.17e-07,
-      "output_price": 4.55e-07,
+      "input_price": 2.5e-07,
+      "output_price": 7.5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -29628,10 +29625,10 @@
       "intelligence_tier": 3,
       "intelligence_label": "Good",
       "speed_hint": 40,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3.5-122b-a10b",
@@ -29994,8 +29991,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.5e-07,
-      "output_price": 2.7e-06,
+      "input_price": 3.2e-07,
+      "output_price": 3.2e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -30146,10 +30143,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3.6-plus",
@@ -31331,8 +31328,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.32e-07,
-      "output_price": 5.28e-07,
+      "input_price": 8.25e-08,
+      "output_price": 3.3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31412,8 +31409,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.34e-07,
-      "output_price": 2.501e-06,
+      "input_price": 7.506e-07,
+      "output_price": 2.2509e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33071,7 +33068,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 4e-08,
-      "output_price": 3.6e-06,
+      "output_price": 7e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33577,8 +33574,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.7688e-07,
-      "output_price": 5.3064e-07,
+      "input_price": 1.282e-07,
+      "output_price": 8e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33619,8 +33616,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 6.32e-09,
-      "output_price": 4.2074e-08,
+      "input_price": 5.28e-09,
+      "output_price": 2.0123e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34043,7 +34040,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 3.2e-08,
-      "output_price": 4.03472e-07,
+      "output_price": 2.14422e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -36805,20 +36802,31 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-09T13:24:43Z",
+    "time": "2026-10-09T16:50:32Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 722,
-        "models_listed": 469,
-        "chat_models": 467,
+        "latency_ms": 302,
+        "models_listed": 458,
+        "chat_models": 456,
         "free_models": 19,
         "error": null,
         "added_count": 0,
-        "removed_count": 0,
+        "removed_count": 11,
         "added": [],
-        "removed": []
+        "removed": [
+          "openrouter/qwen/qwen-plus-2025-07-28",
+          "openrouter/qwen/qwen3-235b-a22b",
+          "openrouter/qwen/qwen3-30b-a3b-thinking-2507",
+          "openrouter/qwen/qwen3-8b",
+          "openrouter/qwen/qwen3-coder-plus",
+          "openrouter/qwen/qwen3-max",
+          "openrouter/qwen/qwen3-max-thinking",
+          "openrouter/qwen/qwen3-vl-235b-a22b-thinking",
+          "openrouter/qwen/qwen3-vl-32b-instruct",
+          "openrouter/qwen/qwen3-vl-8b-thinking"
+        ]
       },
       "groq": {
         "status": "ok",
@@ -36845,7 +36853,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 120,
+        "latency_ms": 147,
         "models_listed": 62,
         "chat_models": 48,
         "free_models": 48,
@@ -36858,7 +36866,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 228,
+        "latency_ms": 453,
         "models_listed": 46,
         "chat_models": 27,
         "free_models": 27,
@@ -36871,7 +36879,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 107,
+        "latency_ms": 85,
         "models_listed": 80,
         "chat_models": 69,
         "free_models": 69,
@@ -36884,7 +36892,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 121,
+        "latency_ms": 108,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36902,7 +36910,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 193,
+        "latency_ms": 242,
         "models_listed": 68,
         "chat_models": 68,
         "free_models": 0,
@@ -36915,16 +36923,14 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 216,
+        "latency_ms": 165,
         "models_listed": 211,
         "chat_models": 190,
         "free_models": 23,
         "error": null,
-        "added_count": 1,
+        "added_count": 0,
         "removed_count": 0,
-        "added": [
-          "fastrouter/google/gemini-nano-banana-2.1"
-        ],
+        "added": [],
         "removed": []
       }
     },
