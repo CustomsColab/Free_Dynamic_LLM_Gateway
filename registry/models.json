@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-11T12:55:38Z",
+  "updated_at": "2026-10-11T22:01:04Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -10111,85 +10111,6 @@
       "missing_since": null
     },
     {
-      "uid": "groq/llama-3.1-8b-instant",
-      "gateway": "groq",
-      "model_id": "llama-3.1-8b-instant",
-      "display_name": "llama-3.1-8b-instant",
-      "kind": "chat",
-      "size_b": 8.0,
-      "size_label": "8B",
-      "size_class": "small",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": true,
-      "free_kind": "free_tier",
-      "input_price": null,
-      "output_price": null,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "inferred",
-      "categories": [
-        "general",
-        "extraction",
-        "agent",
-        "long_doc",
-        "fast"
-      ],
-      "quality_hint": 55,
-      "speed_hint": 85,
-      "status": "missing",
-      "available": false,
-      "source": "seed",
-      "missing_since": "2026-10-08T17:59:10Z"
-    },
-    {
-      "uid": "groq/llama-3.3-70b-versatile",
-      "gateway": "groq",
-      "model_id": "llama-3.3-70b-versatile",
-      "display_name": "llama-3.3-70b-versatile",
-      "kind": "chat",
-      "size_b": 70.0,
-      "size_label": "70B",
-      "size_class": "large",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": true,
-      "free_kind": "free_tier",
-      "input_price": null,
-      "output_price": null,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "inferred",
-      "categories": [
-        "general",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 86,
-      "speed_hint": 60,
-      "status": "missing",
-      "available": false,
-      "source": "seed",
-      "missing_since": "2026-10-08T17:59:10Z"
-    },
-    {
       "uid": "groq/openai/gpt-oss-120b",
       "gateway": "groq",
       "model_id": "openai/gpt-oss-120b",
@@ -10272,46 +10193,6 @@
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
       "missing_since": null
-    },
-    {
-      "uid": "groq/qwen/qwen3-32b",
-      "gateway": "groq",
-      "model_id": "qwen/qwen3-32b",
-      "display_name": "qwen/qwen3-32b",
-      "kind": "chat",
-      "size_b": 32.0,
-      "size_label": "32B",
-      "size_class": "medium",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": true,
-      "free_kind": "free_tier",
-      "input_price": null,
-      "output_price": null,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "inferred",
-      "categories": [
-        "general",
-        "reasoning",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 80,
-      "speed_hint": 69,
-      "status": "missing",
-      "available": false,
-      "source": "seed",
-      "missing_since": "2026-10-08T17:59:10Z"
     },
     {
       "uid": "groq/qwen/qwen3.8-27b",
@@ -10947,45 +10828,6 @@
       "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
       "missing_since": null
-    },
-    {
-      "uid": "mistral/mistral-large-latest",
-      "gateway": "mistral",
-      "model_id": "mistral-large-latest",
-      "display_name": "mistral-large-latest",
-      "kind": "chat",
-      "size_b": null,
-      "size_label": "unknown",
-      "size_class": "unknown",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": true,
-      "free_kind": "free_tier",
-      "input_price": null,
-      "output_price": null,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "inferred",
-      "categories": [
-        "general",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 35,
-      "speed_hint": 44,
-      "status": "missing",
-      "available": false,
-      "source": "seed",
-      "missing_since": "2026-10-08T17:59:10Z"
     },
     {
       "uid": "mistral/mistral-medium",
@@ -12424,46 +12266,6 @@
       "missing_since": null
     },
     {
-      "uid": "nvidia/meta/llama-3.1-8b-instruct",
-      "gateway": "nvidia",
-      "model_id": "meta/llama-3.1-8b-instruct",
-      "display_name": "meta/llama-3.1-8b-instruct",
-      "kind": "chat",
-      "size_b": 8.0,
-      "size_label": "8B",
-      "size_class": "small",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "hint",
-      "is_free": true,
-      "free_kind": "free_tier",
-      "input_price": null,
-      "output_price": null,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "inferred",
-      "categories": [
-        "general",
-        "extraction",
-        "agent",
-        "long_doc",
-        "fast"
-      ],
-      "quality_hint": 55,
-      "speed_hint": 45,
-      "status": "missing",
-      "available": false,
-      "source": "seed",
-      "missing_since": "2026-10-08T17:59:10Z"
-    },
-    {
       "uid": "nvidia/meta/llama-3.2-11b-vision-instruct",
       "gateway": "nvidia",
       "model_id": "meta/llama-3.2-11b-vision-instruct",
@@ -12545,45 +12347,6 @@
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
       "missing_since": null
-    },
-    {
-      "uid": "nvidia/meta/llama-3.3-70b-instruct",
-      "gateway": "nvidia",
-      "model_id": "meta/llama-3.3-70b-instruct",
-      "display_name": "meta/llama-3.3-70b-instruct",
-      "kind": "chat",
-      "size_b": 70.0,
-      "size_label": "70B",
-      "size_class": "large",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "hint",
-      "is_free": true,
-      "free_kind": "free_tier",
-      "input_price": null,
-      "output_price": null,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "inferred",
-      "categories": [
-        "general",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 86,
-      "speed_hint": 20,
-      "status": "missing",
-      "available": false,
-      "source": "seed",
-      "missing_since": "2026-10-08T17:59:10Z"
     },
     {
       "uid": "nvidia/meta/llama2-70b",
@@ -17266,7 +17029,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.8e-08,
+      "input_price": 1.61e-08,
       "output_price": 6.4e-07,
       "capabilities": {
         "chat": true,
@@ -19091,45 +18854,6 @@
       "missing_since": null
     },
     {
-      "uid": "openrouter/google/gemma-3-27b-it:free",
-      "gateway": "openrouter",
-      "model_id": "google/gemma-3-27b-it:free",
-      "display_name": "google/gemma-3-27b-it:free",
-      "kind": "chat",
-      "size_b": 27.0,
-      "size_label": "27B",
-      "size_class": "medium",
-      "context_length": 96000,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": true,
-      "free_kind": "zero_price",
-      "input_price": 0.0,
-      "output_price": 0.0,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": false,
-        "vision": true,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "vision",
-        "extraction",
-        "long_doc"
-      ],
-      "quality_hint": 73,
-      "speed_hint": 26,
-      "status": "missing",
-      "available": false,
-      "source": "seed",
-      "missing_since": "2026-10-08T17:59:10Z"
-    },
-    {
       "uid": "openrouter/google/gemma-3-4b-it",
       "gateway": "openrouter",
       "model_id": "google/gemma-3-4b-it",
@@ -20235,45 +19959,6 @@
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
       "missing_since": null
-    },
-    {
-      "uid": "openrouter/meta-llama/llama-3.3-70b-instruct:free",
-      "gateway": "openrouter",
-      "model_id": "meta-llama/llama-3.3-70b-instruct:free",
-      "display_name": "meta-llama/llama-3.3-70b-instruct:free",
-      "kind": "chat",
-      "size_b": 70.0,
-      "size_label": "70B",
-      "size_class": "large",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": true,
-      "free_kind": "zero_price",
-      "input_price": 0.0,
-      "output_price": 0.0,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 86,
-      "speed_hint": 15,
-      "status": "missing",
-      "available": false,
-      "source": "seed",
-      "missing_since": "2026-10-08T17:59:10Z"
     },
     {
       "uid": "openrouter/meta-llama/llama-4-maverick",
@@ -22369,8 +22054,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8e-07,
-      "output_price": 1e-05,
+      "input_price": 7.3e-07,
+      "output_price": 1.35e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -27051,46 +26736,6 @@
       "missing_since": null
     },
     {
-      "uid": "openrouter/openai/gpt-oss-20b:free",
-      "gateway": "openrouter",
-      "model_id": "openai/gpt-oss-20b:free",
-      "display_name": "openai/gpt-oss-20b:free",
-      "kind": "chat",
-      "size_b": 20.0,
-      "size_label": "20B",
-      "size_class": "medium",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": true,
-      "free_kind": "zero_price",
-      "input_price": 0.0,
-      "output_price": 0.0,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "reasoning",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 73,
-      "speed_hint": 29,
-      "status": "missing",
-      "available": false,
-      "source": "seed",
-      "missing_since": "2026-10-08T17:59:10Z"
-    },
-    {
       "uid": "openrouter/openai/o1",
       "gateway": "openrouter",
       "model_id": "openai/o1",
@@ -29118,46 +28763,6 @@
       "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
       "missing_since": "2026-10-09T16:50:32Z"
-    },
-    {
-      "uid": "openrouter/qwen/qwen3-coder:free",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3-coder:free",
-      "display_name": "qwen/qwen3-coder:free",
-      "kind": "chat",
-      "size_b": null,
-      "size_label": "unknown",
-      "size_class": "unknown",
-      "context_length": 262144,
-      "context_class": "ultra",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": true,
-      "free_kind": "zero_price",
-      "input_price": 0.0,
-      "output_price": 0.0,
-      "capabilities": {
-        "chat": true,
-        "json": false,
-        "tools": true,
-        "vision": false,
-        "coding": true,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "coding",
-        "reasoning",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 40,
-      "speed_hint": 29,
-      "status": "missing",
-      "available": false,
-      "source": "seed",
-      "missing_since": "2026-10-08T17:59:10Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-max",
@@ -31328,8 +30933,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.32e-07,
-      "output_price": 5.28e-07,
+      "input_price": 8.25e-08,
+      "output_price": 3.3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31409,8 +31014,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.34e-07,
-      "output_price": 2.501e-06,
+      "input_price": 7.506e-07,
+      "output_price": 2.2509e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33067,7 +32672,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7e-08,
+      "input_price": 7.9e-08,
       "output_price": 4.8e-06,
       "capabilities": {
         "chat": true,
@@ -33574,8 +33179,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.1912e-07,
-      "output_price": 6.5736e-07,
+      "input_price": 2.0988e-07,
+      "output_price": 6.2964e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33616,7 +33221,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.8e-08,
+      "input_price": 1.61e-08,
       "output_price": 6.4e-07,
       "capabilities": {
         "chat": true,
@@ -33744,8 +33349,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.5e-07,
-      "output_price": 1.49e-05,
+      "input_price": 6.2e-07,
+      "output_price": 1.65e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34082,7 +33687,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7e-08,
+      "input_price": 7.9e-08,
       "output_price": 4.8e-06,
       "capabilities": {
         "chat": true,
@@ -36802,12 +36407,12 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-11T12:55:38Z",
+    "time": "2026-10-11T22:01:04Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 670,
+        "latency_ms": 333,
         "models_listed": 458,
         "chat_models": 456,
         "free_models": 19,
@@ -36820,7 +36425,7 @@
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 120,
+        "latency_ms": 244,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36842,7 +36447,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 115,
+        "latency_ms": 171,
         "models_listed": 62,
         "chat_models": 48,
         "free_models": 48,
@@ -36855,7 +36460,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 329,
+        "latency_ms": 433,
         "models_listed": 46,
         "chat_models": 27,
         "free_models": 27,
@@ -36868,7 +36473,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 147,
+        "latency_ms": 154,
         "models_listed": 80,
         "chat_models": 69,
         "free_models": 69,
@@ -36881,7 +36486,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 110,
+        "latency_ms": 294,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36899,7 +36504,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 357,
+        "latency_ms": 599,
         "models_listed": 68,
         "chat_models": 68,
         "free_models": 0,
@@ -36912,7 +36517,7 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 220,
+        "latency_ms": 487,
         "models_listed": 211,
         "chat_models": 190,
         "free_models": 23,
@@ -36928,7 +36533,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 886,
+    "total": 876,
     "free_active": 193,
     "by_gateway": {
       "cerebras": 3,
