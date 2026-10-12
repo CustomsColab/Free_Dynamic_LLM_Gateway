@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-12T06:03:35Z",
+  "updated_at": "2026-10-12T15:32:51Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -1746,8 +1746,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-07,
-      "output_price": 6e-07,
+      "input_price": 1.4e-07,
+      "output_price": 4.2e-07,
       "capabilities": {
         "chat": true,
         "json": false,
@@ -3388,7 +3388,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.9e-08,
+      "input_price": 2.9e-08,
       "output_price": 3e-08,
       "capabilities": {
         "chat": true,
@@ -7480,6 +7480,44 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "fastrouter/x-ai/grok-imagine-image-2-0",
+      "gateway": "fastrouter",
+      "model_id": "x-ai/grok-imagine-image-2-0",
+      "display_name": "xAI: Grok Imagine Image 2.0",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 4096,
+      "context_class": "short",
+      "long_context": false,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": null,
+      "output_price": null,
+      "capabilities": {
+        "chat": true,
+        "json": false,
+        "tools": false,
+        "vision": false,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 39,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-12T15:32:51Z",
       "missing_since": null
     },
     {
@@ -16986,7 +17024,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.31e-08,
+      "input_price": 3e-08,
       "output_price": 1.28e-06,
       "capabilities": {
         "chat": true,
@@ -17116,8 +17154,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9.5526e-07,
-      "output_price": 1.91052e-06,
+      "input_price": 4.27518e-07,
+      "output_price": 8.55036e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17200,8 +17238,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3e-07,
-      "output_price": 1.2e-06,
+      "input_price": 1.5e-07,
+      "output_price": 6e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -18909,8 +18947,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.2e-08,
-      "output_price": 2.2e-07,
+      "input_price": 9e-08,
+      "output_price": 3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -20017,8 +20055,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1e-07,
-      "output_price": 3e-07,
+      "input_price": 1.8e-07,
+      "output_price": 5.9e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32713,8 +32751,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
-      "output_price": 5e-07,
+      "input_price": 2.32e-08,
+      "output_price": 1.2e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33135,8 +33173,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.36e-08,
-      "output_price": 1.188e-06,
+      "input_price": 3.33e-08,
+      "output_price": 1.332e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33179,8 +33217,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.5e-07,
-      "output_price": 5e-06,
+      "input_price": 2.4948e-07,
+      "output_price": 7.4844e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33349,8 +33387,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.5e-07,
-      "output_price": 1.8e-05,
+      "input_price": 7.3e-07,
+      "output_price": 1e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33644,7 +33682,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.2e-08,
+      "input_price": 2.32e-08,
       "output_price": 1.2e-06,
       "capabilities": {
         "chat": true,
@@ -33687,8 +33725,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.9e-08,
-      "output_price": 4.8e-06,
+      "input_price": 5.5e-08,
+      "output_price": 5e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33747,10 +33785,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T23:23:39Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-fable-5",
@@ -33786,10 +33824,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-fable-5.1",
@@ -33825,10 +33863,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-haiku-5.5",
@@ -33865,10 +33903,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-haiku-5.5:free",
@@ -33905,10 +33943,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-opus-4.8",
@@ -33943,10 +33981,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-opus-5",
@@ -33982,10 +34020,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-opus-5-fast",
@@ -34022,10 +34060,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-opus-5.5",
@@ -34061,10 +34099,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-opus-5.5-fast",
@@ -34101,10 +34139,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-sonnet-4.6",
@@ -34139,10 +34177,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-sonnet-5",
@@ -34178,10 +34216,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/claude-sonnet-5.5",
@@ -34217,10 +34255,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/deepseek-v3.2",
@@ -34256,10 +34294,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/deepseek-v4-flash",
@@ -34297,10 +34335,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/deepseek-v4-flash:free",
@@ -34338,10 +34376,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/deepseek-v4-pro",
@@ -34377,10 +34415,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/deepseek-v4.1-flash",
@@ -34418,10 +34456,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/deepseek-v4.1-flash:free",
@@ -34459,10 +34497,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gemini-3.6-flash",
@@ -34500,10 +34538,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gemini-3.7-flash",
@@ -34541,10 +34579,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gemini-3.8-flash",
@@ -34582,10 +34620,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/glm-5.1",
@@ -34620,10 +34658,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/glm-5.2",
@@ -34659,10 +34697,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/glm-5.3",
@@ -34698,10 +34736,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/glm-5.3-fast",
@@ -34738,10 +34776,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/glm-5.3-flash",
@@ -34778,10 +34816,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/glm-5.3-flashx",
@@ -34817,10 +34855,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-5.5",
@@ -34855,10 +34893,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-5.6-luna",
@@ -34893,10 +34931,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-5.6-luna-fast",
@@ -34933,10 +34971,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-5.6-sol",
@@ -34971,10 +35009,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-5.6-sol-fast",
@@ -35011,10 +35049,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-5.6-terra",
@@ -35049,10 +35087,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-5.6-terra-fast",
@@ -35089,10 +35127,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-6-astra",
@@ -35128,10 +35166,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-6-astra-fast",
@@ -35168,10 +35206,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-6-luna",
@@ -35206,10 +35244,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-6-luna-fast",
@@ -35246,10 +35284,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-6-sol",
@@ -35285,10 +35323,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-6-sol-fast",
@@ -35325,10 +35363,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-6.1-sol",
@@ -35364,10 +35402,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/gpt-6.1-sol-fast",
@@ -35404,10 +35442,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/grok-4.5",
@@ -35443,10 +35481,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/grok-4.6",
@@ -35482,10 +35520,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/grok-4.7",
@@ -35520,10 +35558,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/kimi-k2.6",
@@ -35559,10 +35597,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/kimi-k3",
@@ -35598,10 +35636,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/kimi-k3-fast",
@@ -35638,10 +35676,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/mimo-v2.5",
@@ -35677,10 +35715,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/mimo-v2.5-pro",
@@ -35716,10 +35754,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/mimo-v2.5:free",
@@ -35755,10 +35793,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/mimo-v2.6-flash",
@@ -35795,10 +35833,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/mimo-v2.6-flash:free",
@@ -35835,10 +35873,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/mimo-v2.6-pro",
@@ -35874,10 +35912,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/mistral-large-2512",
@@ -35913,10 +35951,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/mistral-large-4",
@@ -35952,10 +35990,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/muse-spark-1-3",
@@ -35991,10 +36029,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/muse-spark-1.1",
@@ -36030,10 +36068,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/muse-spark-1.2",
@@ -36069,10 +36107,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/qwen3.5-27b",
@@ -36108,10 +36146,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 26,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/qwen3.6-27b",
@@ -36147,10 +36185,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 26,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/qwen3.6-flash",
@@ -36187,10 +36225,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/qwen3.7-flash",
@@ -36227,10 +36265,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/qwen3.7-max",
@@ -36266,10 +36304,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/qwen3.8-27b",
@@ -36306,10 +36344,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 26,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/qwen3.8-flash",
@@ -36347,10 +36385,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     },
     {
       "uid": "tokenharbor/qwen3.8-max",
@@ -36386,10 +36424,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-12T15:32:51Z"
     }
   ],
   "errors": [
@@ -36407,12 +36445,12 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-12T06:03:35Z",
+    "time": "2026-10-12T15:32:51Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 292,
+        "latency_ms": 206,
         "models_listed": 458,
         "chat_models": 456,
         "free_models": 19,
@@ -36425,7 +36463,7 @@
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 131,
+        "latency_ms": 196,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36447,7 +36485,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 131,
+        "latency_ms": 135,
         "models_listed": 62,
         "chat_models": 48,
         "free_models": 48,
@@ -36460,7 +36498,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 223,
+        "latency_ms": 310,
         "models_listed": 46,
         "chat_models": 27,
         "free_models": 27,
@@ -36473,7 +36511,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 28,
+        "latency_ms": 94,
         "models_listed": 80,
         "chat_models": 69,
         "free_models": 69,
@@ -36486,7 +36524,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 129,
+        "latency_ms": 142,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36502,29 +36540,42 @@
         "error": "API key not configured"
       },
       "tokenharbor": {
-        "status": "no_free_models",
+        "status": "empty",
         "http_status": 200,
-        "latency_ms": 128,
-        "models_listed": 68,
-        "chat_models": 68,
+        "latency_ms": 22459,
+        "models_listed": 0,
+        "chat_models": 0,
         "free_models": 0,
         "error": null,
         "added_count": 0,
-        "removed_count": 0,
+        "removed_count": 68,
         "added": [],
-        "removed": []
+        "removed": [
+          "tokenharbor/apex",
+          "tokenharbor/claude-fable-5",
+          "tokenharbor/claude-fable-5.1",
+          "tokenharbor/claude-haiku-5.5",
+          "tokenharbor/claude-haiku-5.5:free",
+          "tokenharbor/claude-opus-4.8",
+          "tokenharbor/claude-opus-5",
+          "tokenharbor/claude-opus-5-fast",
+          "tokenharbor/claude-opus-5.5",
+          "tokenharbor/claude-opus-5.5-fast"
+        ]
       },
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 110,
-        "models_listed": 211,
-        "chat_models": 190,
+        "latency_ms": 116,
+        "models_listed": 212,
+        "chat_models": 191,
         "free_models": 23,
         "error": null,
-        "added_count": 0,
+        "added_count": 1,
         "removed_count": 0,
-        "added": [],
+        "added": [
+          "fastrouter/x-ai/grok-imagine-image-2-0"
+        ],
         "removed": []
       }
     },
@@ -36533,7 +36584,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 876,
+    "total": 877,
     "free_active": 193,
     "by_gateway": {
       "cerebras": 3,
