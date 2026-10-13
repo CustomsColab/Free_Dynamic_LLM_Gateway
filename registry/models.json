@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-12T15:32:51Z",
+  "updated_at": "2026-10-13T00:44:46Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -17024,7 +17024,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3e-08,
+      "input_price": 4.8e-09,
       "output_price": 1.28e-06,
       "capabilities": {
         "chat": true,
@@ -17154,8 +17154,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.27518e-07,
-      "output_price": 8.55036e-07,
+      "input_price": 4.1238e-07,
+      "output_price": 8.2476e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -18947,8 +18947,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9e-08,
-      "output_price": 3e-07,
+      "input_price": 7.65e-08,
+      "output_price": 2.55e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19972,8 +19972,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.2e-07,
-      "output_price": 5e-07,
+      "input_price": 5.9e-07,
+      "output_price": 7.9e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -20335,6 +20335,48 @@
       "missing_since": null
     },
     {
+      "uid": "openrouter/meta/muse-wonder",
+      "gateway": "openrouter",
+      "model_id": "meta/muse-wonder",
+      "display_name": "Meta: Muse Wonder",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 4e-06,
+      "output_price": 2e-05,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-13T00:44:46Z",
+      "missing_since": null
+    },
+    {
       "uid": "openrouter/microsoft/phi-4",
       "gateway": "openrouter",
       "model_id": "microsoft/phi-4",
@@ -20670,8 +20712,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.1e-07,
-      "output_price": 8.4e-07,
+      "input_price": 3e-07,
+      "output_price": 1.2e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -26620,8 +26662,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.7e-08,
-      "output_price": 1.7e-07,
+      "input_price": 1.5e-07,
+      "output_price": 6e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -28128,47 +28170,6 @@
       "missing_since": null
     },
     {
-      "uid": "openrouter/qwen/qwen-plus-2025-07-28",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen-plus-2025-07-28",
-      "display_name": "Qwen: Qwen Plus 0728",
-      "kind": "chat",
-      "size_b": null,
-      "size_label": "unknown",
-      "size_class": "unknown",
-      "context_length": 1000000,
-      "context_class": "ultra",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 2.6e-07,
-      "output_price": 7.8e-07,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 35,
-      "intelligence_tier": 1,
-      "intelligence_label": "Basic",
-      "speed_hint": 29,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
-    },
-    {
       "uid": "openrouter/qwen/qwen2.5-vl-72b-instruct",
       "gateway": "openrouter",
       "model_id": "qwen/qwen2.5-vl-72b-instruct",
@@ -28250,48 +28251,6 @@
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
       "missing_since": null
-    },
-    {
-      "uid": "openrouter/qwen/qwen3-235b-a22b",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3-235b-a22b",
-      "display_name": "Qwen: Qwen3 235B A22B",
-      "kind": "chat",
-      "size_b": 235.0,
-      "size_label": "235B",
-      "size_class": "xlarge",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 4.55e-07,
-      "output_price": 1.82e-06,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "reasoning",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 100,
-      "intelligence_tier": 5,
-      "intelligence_label": "Top",
-      "speed_hint": 5,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-235b-a22b-2507",
@@ -28460,48 +28419,6 @@
       "missing_since": null
     },
     {
-      "uid": "openrouter/qwen/qwen3-30b-a3b-thinking-2507",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3-30b-a3b-thinking-2507",
-      "display_name": "Qwen: Qwen3 30B A3B Thinking 2507",
-      "kind": "chat",
-      "size_b": 30.0,
-      "size_label": "30B",
-      "size_class": "medium",
-      "context_length": 81920,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 2e-07,
-      "output_price": 2.4e-06,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "reasoning",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 79,
-      "intelligence_tier": 4,
-      "intelligence_label": "Strong",
-      "speed_hint": 25,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
-    },
-    {
       "uid": "openrouter/qwen/qwen3-32b",
       "gateway": "openrouter",
       "model_id": "qwen/qwen3-32b",
@@ -28542,49 +28459,6 @@
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
       "missing_since": null
-    },
-    {
-      "uid": "openrouter/qwen/qwen3-8b",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3-8b",
-      "display_name": "Qwen: Qwen3 8B",
-      "kind": "chat",
-      "size_b": 8.0,
-      "size_label": "8B",
-      "size_class": "small",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 1.17e-07,
-      "output_price": 4.55e-07,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "reasoning",
-        "extraction",
-        "agent",
-        "long_doc",
-        "fast"
-      ],
-      "quality_hint": 60,
-      "intelligence_tier": 3,
-      "intelligence_label": "Good",
-      "speed_hint": 40,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-coder",
@@ -28760,133 +28634,6 @@
       "missing_since": null
     },
     {
-      "uid": "openrouter/qwen/qwen3-coder-plus",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3-coder-plus",
-      "display_name": "Qwen: Qwen3 Coder Plus",
-      "kind": "chat",
-      "size_b": null,
-      "size_label": "unknown",
-      "size_class": "unknown",
-      "context_length": 1000000,
-      "context_class": "ultra",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 6.5e-07,
-      "output_price": 3.25e-06,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": true,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "coding",
-        "reasoning",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 90,
-      "intelligence_tier": 5,
-      "intelligence_label": "Top",
-      "speed_hint": 29,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
-    },
-    {
-      "uid": "openrouter/qwen/qwen3-max",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3-max",
-      "display_name": "Qwen: Qwen3 Max",
-      "kind": "chat",
-      "size_b": null,
-      "size_label": "unknown",
-      "size_class": "unknown",
-      "context_length": 262144,
-      "context_class": "ultra",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 7.8e-07,
-      "output_price": 3.9e-06,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "reasoning",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 40,
-      "intelligence_tier": 1,
-      "intelligence_label": "Basic",
-      "speed_hint": 29,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
-    },
-    {
-      "uid": "openrouter/qwen/qwen3-max-thinking",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3-max-thinking",
-      "display_name": "Qwen: Qwen3 Max Thinking",
-      "kind": "chat",
-      "size_b": null,
-      "size_label": "unknown",
-      "size_class": "unknown",
-      "context_length": 262144,
-      "context_class": "ultra",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 7.8e-07,
-      "output_price": 3.9e-06,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "reasoning",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 40,
-      "intelligence_tier": 1,
-      "intelligence_label": "Basic",
-      "speed_hint": 29,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
-    },
-    {
       "uid": "openrouter/qwen/qwen3-next-80b-a3b-instruct",
       "gateway": "openrouter",
       "model_id": "qwen/qwen3-next-80b-a3b-instruct",
@@ -29014,49 +28761,6 @@
       "missing_since": null
     },
     {
-      "uid": "openrouter/qwen/qwen3-vl-235b-a22b-thinking",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3-vl-235b-a22b-thinking",
-      "display_name": "Qwen: Qwen3 VL 235B A22B Thinking",
-      "kind": "chat",
-      "size_b": 235.0,
-      "size_label": "235B",
-      "size_class": "xlarge",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 4e-07,
-      "output_price": 4e-06,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": true,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "reasoning",
-        "vision",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 100,
-      "intelligence_tier": 5,
-      "intelligence_label": "Top",
-      "speed_hint": 5,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
-    },
-    {
       "uid": "openrouter/qwen/qwen3-vl-30b-a3b-instruct",
       "gateway": "openrouter",
       "model_id": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -29143,49 +28847,6 @@
       "missing_since": null
     },
     {
-      "uid": "openrouter/qwen/qwen3-vl-32b-instruct",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3-vl-32b-instruct",
-      "display_name": "Qwen: Qwen3 VL 32B Instruct",
-      "kind": "chat",
-      "size_b": 32.0,
-      "size_label": "32B",
-      "size_class": "medium",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 1.04e-07,
-      "output_price": 4.16e-07,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": true,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "reasoning",
-        "vision",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 80,
-      "intelligence_tier": 4,
-      "intelligence_label": "Strong",
-      "speed_hint": 24,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
-    },
-    {
       "uid": "openrouter/qwen/qwen3-vl-8b-instruct",
       "gateway": "openrouter",
       "model_id": "qwen/qwen3-vl-8b-instruct",
@@ -29228,50 +28889,6 @@
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
       "missing_since": null
-    },
-    {
-      "uid": "openrouter/qwen/qwen3-vl-8b-thinking",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3-vl-8b-thinking",
-      "display_name": "Qwen: Qwen3 VL 8B Thinking",
-      "kind": "chat",
-      "size_b": 8.0,
-      "size_label": "8B",
-      "size_class": "small",
-      "context_length": 131072,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 1.8e-07,
-      "output_price": 2.1e-06,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": true,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "reasoning",
-        "vision",
-        "extraction",
-        "agent",
-        "long_doc",
-        "fast"
-      ],
-      "quality_hint": 60,
-      "intelligence_tier": 3,
-      "intelligence_label": "Good",
-      "speed_hint": 40,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3.5-122b-a10b",
@@ -29748,48 +29365,6 @@
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
       "missing_since": null
-    },
-    {
-      "uid": "openrouter/qwen/qwen3.6-max-preview",
-      "gateway": "openrouter",
-      "model_id": "qwen/qwen3.6-max-preview",
-      "display_name": "Qwen: Qwen3.6 Max Preview",
-      "kind": "chat",
-      "size_b": null,
-      "size_label": "unknown",
-      "size_class": "unknown",
-      "context_length": 262144,
-      "context_class": "ultra",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 1.027e-06,
-      "output_price": 6.162e-06,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": true
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "reasoning",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 40,
-      "intelligence_tier": 1,
-      "intelligence_label": "Basic",
-      "speed_hint": 29,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-09T16:50:32Z"
     },
     {
       "uid": "openrouter/qwen/qwen3.6-plus",
@@ -32751,8 +32326,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.32e-08,
-      "output_price": 1.2e-06,
+      "input_price": 2.61e-08,
+      "output_price": 9e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33173,8 +32748,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.33e-08,
-      "output_price": 1.332e-07,
+      "input_price": 4.41e-08,
+      "output_price": 8.91e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33259,8 +32834,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.28e-08,
-      "output_price": 7.68e-07,
+      "input_price": 1.44e-08,
+      "output_price": 5.76e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33682,8 +33257,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.32e-08,
-      "output_price": 1.2e-06,
+      "input_price": 2.61e-08,
+      "output_price": 9e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33785,10 +33360,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T23:23:39Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-fable-5",
@@ -33824,10 +33399,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-fable-5.1",
@@ -33863,10 +33438,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-haiku-5.5",
@@ -33903,10 +33478,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-haiku-5.5:free",
@@ -33943,10 +33518,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-opus-4.8",
@@ -33981,10 +33556,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-opus-5",
@@ -34020,10 +33595,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-opus-5-fast",
@@ -34060,10 +33635,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-opus-5.5",
@@ -34099,10 +33674,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-opus-5.5-fast",
@@ -34139,10 +33714,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-sonnet-4.6",
@@ -34177,10 +33752,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-sonnet-5",
@@ -34216,10 +33791,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/claude-sonnet-5.5",
@@ -34255,10 +33830,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/deepseek-v3.2",
@@ -34294,10 +33869,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/deepseek-v4-flash",
@@ -34335,10 +33910,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/deepseek-v4-flash:free",
@@ -34376,10 +33951,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/deepseek-v4-pro",
@@ -34415,10 +33990,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/deepseek-v4.1-flash",
@@ -34456,10 +34031,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/deepseek-v4.1-flash:free",
@@ -34497,10 +34072,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gemini-3.6-flash",
@@ -34538,10 +34113,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gemini-3.7-flash",
@@ -34579,10 +34154,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gemini-3.8-flash",
@@ -34620,10 +34195,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/glm-5.1",
@@ -34658,10 +34233,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/glm-5.2",
@@ -34697,10 +34272,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/glm-5.3",
@@ -34736,10 +34311,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/glm-5.3-fast",
@@ -34776,10 +34351,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/glm-5.3-flash",
@@ -34816,10 +34391,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/glm-5.3-flashx",
@@ -34855,10 +34430,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-5.5",
@@ -34893,10 +34468,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-5.6-luna",
@@ -34931,10 +34506,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-5.6-luna-fast",
@@ -34971,10 +34546,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-5.6-sol",
@@ -35009,10 +34584,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-5.6-sol-fast",
@@ -35049,10 +34624,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-5.6-terra",
@@ -35087,10 +34662,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-5.6-terra-fast",
@@ -35127,10 +34702,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-6-astra",
@@ -35166,10 +34741,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-6-astra-fast",
@@ -35206,10 +34781,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-6-luna",
@@ -35244,10 +34819,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-6-luna-fast",
@@ -35284,10 +34859,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-6-sol",
@@ -35323,10 +34898,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-6-sol-fast",
@@ -35363,10 +34938,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-6.1-sol",
@@ -35402,10 +34977,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/gpt-6.1-sol-fast",
@@ -35442,10 +35017,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/grok-4.5",
@@ -35481,10 +35056,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/grok-4.6",
@@ -35520,10 +35095,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/grok-4.7",
@@ -35558,10 +35133,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/kimi-k2.6",
@@ -35597,10 +35172,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/kimi-k3",
@@ -35636,10 +35211,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/kimi-k3-fast",
@@ -35676,10 +35251,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/mimo-v2.5",
@@ -35715,10 +35290,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/mimo-v2.5-pro",
@@ -35754,10 +35329,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/mimo-v2.5:free",
@@ -35793,10 +35368,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/mimo-v2.6-flash",
@@ -35833,10 +35408,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/mimo-v2.6-flash:free",
@@ -35873,10 +35448,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/mimo-v2.6-pro",
@@ -35912,10 +35487,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/mistral-large-2512",
@@ -35951,10 +35526,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/mistral-large-4",
@@ -35990,10 +35565,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/muse-spark-1-3",
@@ -36029,10 +35604,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/muse-spark-1.1",
@@ -36068,10 +35643,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/muse-spark-1.2",
@@ -36107,10 +35682,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/qwen3.5-27b",
@@ -36146,10 +35721,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 26,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/qwen3.6-27b",
@@ -36185,10 +35760,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 26,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/qwen3.6-flash",
@@ -36225,10 +35800,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/qwen3.7-flash",
@@ -36265,10 +35840,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/qwen3.7-max",
@@ -36304,10 +35879,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/qwen3.8-27b",
@@ -36344,10 +35919,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 26,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/qwen3.8-flash",
@@ -36385,10 +35960,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     },
     {
       "uid": "tokenharbor/qwen3.8-max",
@@ -36424,10 +35999,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "missing",
-      "available": false,
+      "status": "active",
+      "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-12T15:32:51Z"
+      "missing_since": null
     }
   ],
   "errors": [
@@ -36445,25 +36020,27 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-12T15:32:51Z",
+    "time": "2026-10-13T00:44:46Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 206,
-        "models_listed": 458,
-        "chat_models": 456,
+        "latency_ms": 161,
+        "models_listed": 459,
+        "chat_models": 457,
         "free_models": 19,
         "error": null,
-        "added_count": 0,
+        "added_count": 1,
         "removed_count": 0,
-        "added": [],
+        "added": [
+          "openrouter/meta/muse-wonder"
+        ],
         "removed": []
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 196,
+        "latency_ms": 102,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36485,7 +36062,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 135,
+        "latency_ms": 117,
         "models_listed": 62,
         "chat_models": 48,
         "free_models": 48,
@@ -36498,7 +36075,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 310,
+        "latency_ms": 315,
         "models_listed": 46,
         "chat_models": 27,
         "free_models": 27,
@@ -36511,7 +36088,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 94,
+        "latency_ms": 24,
         "models_listed": 80,
         "chat_models": 69,
         "free_models": 69,
@@ -36524,7 +36101,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 142,
+        "latency_ms": 107,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36540,17 +36117,16 @@
         "error": "API key not configured"
       },
       "tokenharbor": {
-        "status": "empty",
+        "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 22459,
-        "models_listed": 0,
-        "chat_models": 0,
+        "latency_ms": 180,
+        "models_listed": 68,
+        "chat_models": 68,
         "free_models": 0,
         "error": null,
-        "added_count": 0,
-        "removed_count": 68,
-        "added": [],
-        "removed": [
+        "added_count": 68,
+        "removed_count": 0,
+        "added": [
           "tokenharbor/apex",
           "tokenharbor/claude-fable-5",
           "tokenharbor/claude-fable-5.1",
@@ -36561,21 +36137,20 @@
           "tokenharbor/claude-opus-5-fast",
           "tokenharbor/claude-opus-5.5",
           "tokenharbor/claude-opus-5.5-fast"
-        ]
+        ],
+        "removed": []
       },
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 116,
+        "latency_ms": 64,
         "models_listed": 212,
         "chat_models": 191,
         "free_models": 23,
         "error": null,
-        "added_count": 1,
+        "added_count": 0,
         "removed_count": 0,
-        "added": [
-          "fastrouter/x-ai/grok-imagine-image-2-0"
-        ],
+        "added": [],
         "removed": []
       }
     },
@@ -36584,7 +36159,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 877,
+    "total": 867,
     "free_active": 193,
     "by_gateway": {
       "cerebras": 3,
