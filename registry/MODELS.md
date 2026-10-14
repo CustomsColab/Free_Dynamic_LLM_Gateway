@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-10-14T04:58:05Z** | source: **live** | table format v2 | **192** free models on **7** gateways
+Updated **2026-10-14T11:57:52Z** | source: **live** | table format v2 | **192** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -278,7 +278,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 
 | Gateway | Status | HTTP | Free models | Added | Removed | Error |
 |---|---|---:|---:|---:|---:|---|
-| openrouter | ok | 200 | 17 | 2 | 1 |  |
+| openrouter | ok | 200 | 17 | 0 | 0 |  |
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 49 | 0 | 0 |  |
@@ -286,7 +286,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | nvidia | ok | 200 | 69 | 0 | 0 |  |
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
-| tokenharbor | no_free_models | 200 | 0 | 0 | 1 |  |
+| tokenharbor | no_free_models | 200 | 0 | 0 | 0 |  |
 | fastrouter | ok | 200 | 23 | 0 | 0 |  |
 
 Full history: [refresh_log.jsonl](refresh_log.jsonl).
