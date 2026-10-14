@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-14T11:57:52Z",
+  "updated_at": "2026-10-14T17:15:16Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -2363,6 +2363,47 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "fastrouter/google/gemini-4-argon",
+      "gateway": "fastrouter",
+      "model_id": "google/gemini-4-argon",
+      "display_name": "Google: Gemini 4 Argon",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 2e-06,
+      "output_price": 1e-05,
+      "capabilities": {
+        "chat": true,
+        "json": false,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 70,
+      "intelligence_tier": 3,
+      "intelligence_label": "Good",
+      "speed_hint": 39,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-14T17:15:16Z",
       "missing_since": null
     },
     {
@@ -11418,7 +11459,7 @@
       "uid": "mistral/voxtral-small-2507",
       "gateway": "mistral",
       "model_id": "voxtral-small-2507",
-      "display_name": "voxtral-small-2507",
+      "display_name": "Voxtral Small Transcribe",
       "kind": "chat",
       "size_b": null,
       "size_label": "unknown",
@@ -11459,7 +11500,7 @@
       "uid": "mistral/voxtral-small-latest",
       "gateway": "mistral",
       "model_id": "voxtral-small-latest",
-      "display_name": "voxtral-small-2507",
+      "display_name": "Voxtral Small Transcribe",
       "kind": "chat",
       "size_b": null,
       "size_label": "unknown",
@@ -17236,8 +17277,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9.5526e-07,
-      "output_price": 1.91052e-06,
+      "input_price": 4.0716e-07,
+      "output_price": 8.1432e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19738,7 +19779,7 @@
       "output_price": 2.25e-07,
       "capabilities": {
         "chat": true,
-        "json": false,
+        "json": true,
         "tools": true,
         "vision": false,
         "coding": false,
@@ -19747,6 +19788,7 @@
       "capability_source": "declared",
       "categories": [
         "general",
+        "extraction",
         "agent",
         "long_doc",
         "fast"
@@ -22341,7 +22383,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7e-07,
+      "input_price": 5e-07,
       "output_price": 1.5e-05,
       "capabilities": {
         "chat": true,
@@ -30835,8 +30877,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.32e-07,
-      "output_price": 5.28e-07,
+      "input_price": 8.25e-08,
+      "output_price": 3.3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -30916,8 +30958,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.34e-07,
-      "output_price": 2.501e-06,
+      "input_price": 7.506e-07,
+      "output_price": 2.2509e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32657,8 +32699,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.6e-08,
-      "output_price": 9e-07,
+      "input_price": 1.5e-07,
+      "output_price": 5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33123,7 +33165,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.25e-07,
+      "input_price": 1.307e-07,
       "output_price": 8e-06,
       "capabilities": {
         "chat": true,
@@ -33293,7 +33335,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.36e-07,
+      "input_price": 4e-07,
       "output_price": 1.4e-05,
       "capabilities": {
         "chat": true,
@@ -33673,7 +33715,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.76e-08,
+      "input_price": 6.3e-08,
       "output_price": 4.4e-06,
       "capabilities": {
         "chat": true,
@@ -36511,12 +36553,12 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-14T11:57:52Z",
+    "time": "2026-10-14T17:15:16Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 285,
+        "latency_ms": 478,
         "models_listed": 462,
         "chat_models": 460,
         "free_models": 17,
@@ -36529,7 +36571,7 @@
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 147,
+        "latency_ms": 153,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36551,7 +36593,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 167,
+        "latency_ms": 130,
         "models_listed": 63,
         "chat_models": 49,
         "free_models": 49,
@@ -36564,8 +36606,8 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 301,
-        "models_listed": 46,
+        "latency_ms": 471,
+        "models_listed": 45,
         "chat_models": 27,
         "free_models": 27,
         "error": null,
@@ -36577,7 +36619,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 169,
+        "latency_ms": 134,
         "models_listed": 80,
         "chat_models": 69,
         "free_models": 69,
@@ -36590,7 +36632,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 171,
+        "latency_ms": 139,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36608,7 +36650,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 267,
+        "latency_ms": 383,
         "models_listed": 70,
         "chat_models": 70,
         "free_models": 0,
@@ -36621,14 +36663,16 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 372,
-        "models_listed": 213,
-        "chat_models": 192,
+        "latency_ms": 224,
+        "models_listed": 214,
+        "chat_models": 193,
         "free_models": 23,
         "error": null,
-        "added_count": 0,
+        "added_count": 1,
         "removed_count": 0,
-        "added": [],
+        "added": [
+          "fastrouter/google/gemini-4-argon"
+        ],
         "removed": []
       }
     },
@@ -36637,7 +36681,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 879,
+    "total": 880,
     "free_active": 192,
     "by_gateway": {
       "cerebras": 3,
