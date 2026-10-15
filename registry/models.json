@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-15T11:34:46Z",
+  "updated_at": "2026-10-15T17:04:47Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -13565,6 +13565,48 @@
       "missing_since": null
     },
     {
+      "uid": "nvidia/nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "gateway": "nvidia",
+      "model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "display_name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "kind": "chat",
+      "size_b": 120.0,
+      "size_label": "120B",
+      "size_class": "xlarge",
+      "context_length": null,
+      "context_class": "unknown",
+      "long_context": false,
+      "context_source": "unknown",
+      "is_free": true,
+      "free_kind": "free_tier",
+      "input_price": null,
+      "output_price": null,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": true
+      },
+      "capability_source": "inferred",
+      "categories": [
+        "general",
+        "reasoning",
+        "vision",
+        "extraction",
+        "agent"
+      ],
+      "quality_hint": 99,
+      "intelligence_tier": 5,
+      "intelligence_label": "Top",
+      "speed_hint": 14,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-15T17:04:47Z",
+      "missing_since": null
+    },
+    {
       "uid": "nvidia/nvidia/nemotron-4-340b-instruct",
       "gateway": "nvidia",
       "model_id": "nvidia/nemotron-4-340b-instruct",
@@ -15825,10 +15867,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-15T17:04:47Z"
     },
     {
       "uid": "openrouter/anthropic/claude-sonnet-4.5",
@@ -17317,8 +17359,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9.5526e-07,
-      "output_price": 1.91052e-06,
+      "input_price": 4.1238e-07,
+      "output_price": 8.2476e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17401,7 +17443,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.376e-08,
+      "input_price": 2.16e-08,
       "output_price": 7.2e-07,
       "capabilities": {
         "chat": true,
@@ -22048,8 +22090,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.5e-08,
-      "output_price": 2e-07,
+      "input_price": 9.375e-08,
+      "output_price": 2.5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22424,7 +22466,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 4.5e-07,
-      "output_price": 1.5e-05,
+      "output_price": 1.65e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -23192,6 +23234,92 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "openrouter/nvidia/nemotron-3.5-super-vl",
+      "gateway": "openrouter",
+      "model_id": "nvidia/nemotron-3.5-super-vl",
+      "display_name": "NVIDIA: Nemotron 3.5 Super VL",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1.5e-07,
+      "output_price": 5e-07,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": true
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "reasoning",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 40,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-15T17:04:47Z",
+      "missing_since": null
+    },
+    {
+      "uid": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+      "gateway": "openrouter",
+      "model_id": "nvidia/nemotron-3.5-super-vl:free",
+      "display_name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1000000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": true,
+      "free_kind": "zero_price",
+      "input_price": 0.0,
+      "output_price": 0.0,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": true
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "reasoning",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 40,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-15T17:04:47Z",
       "missing_since": null
     },
     {
@@ -29542,8 +29670,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.2e-07,
-      "output_price": 3.2e-06,
+      "input_price": 2.5e-07,
+      "output_price": 2e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -30917,8 +31045,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.32e-07,
-      "output_price": 5.28e-07,
+      "input_price": 8.25e-08,
+      "output_price": 3.3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -30998,8 +31126,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.34e-07,
-      "output_price": 2.501e-06,
+      "input_price": 7.506e-07,
+      "output_price": 2.2509e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31434,10 +31562,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-15T17:04:47Z"
     },
     {
       "uid": "openrouter/unbiased/pareto-26.9",
@@ -32657,8 +32785,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-08,
-      "output_price": 7e-06,
+      "input_price": 1.5e-07,
+      "output_price": 8e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32698,7 +32826,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3e-08,
+      "input_price": 1e-07,
       "output_price": 4.8e-06,
       "capabilities": {
         "chat": true,
@@ -33161,7 +33289,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.376e-08,
+      "input_price": 2.16e-08,
       "output_price": 7.2e-07,
       "capabilities": {
         "chat": true,
@@ -33205,7 +33333,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.25e-07,
+      "input_price": 1.307e-07,
       "output_price": 8e-06,
       "capabilities": {
         "chat": true,
@@ -33375,8 +33503,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.9e-07,
-      "output_price": 2.4e-05,
+      "input_price": 4.4e-07,
+      "output_price": 1.4e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33755,7 +33883,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.4e-08,
+      "input_price": 6.08e-08,
       "output_price": 4.4e-06,
       "capabilities": {
         "chat": true,
@@ -33973,10 +34101,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": null
+      "missing_since": "2026-10-15T17:04:47Z"
     },
     {
       "uid": "tokenharbor/claude-opus-4.8",
@@ -36595,25 +36723,31 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-15T11:34:46Z",
+    "time": "2026-10-15T17:04:47Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 352,
+        "latency_ms": 497,
         "models_listed": 462,
         "chat_models": 460,
-        "free_models": 17,
+        "free_models": 18,
         "error": null,
-        "added_count": 0,
-        "removed_count": 0,
-        "added": [],
-        "removed": []
+        "added_count": 2,
+        "removed_count": 2,
+        "added": [
+          "openrouter/nvidia/nemotron-3.5-super-vl",
+          "openrouter/nvidia/nemotron-3.5-super-vl:free"
+        ],
+        "removed": [
+          "openrouter/anthropic/claude-sonnet-4",
+          "openrouter/unbiased/pareto-26.10-preview"
+        ]
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 84,
+        "latency_ms": 183,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36635,7 +36769,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 120,
+        "latency_ms": 159,
         "models_listed": 63,
         "chat_models": 49,
         "free_models": 49,
@@ -36648,7 +36782,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 314,
+        "latency_ms": 289,
         "models_listed": 45,
         "chat_models": 27,
         "free_models": 27,
@@ -36661,24 +36795,22 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 127,
-        "models_listed": 80,
-        "chat_models": 69,
-        "free_models": 69,
+        "latency_ms": 141,
+        "models_listed": 81,
+        "chat_models": 70,
+        "free_models": 70,
         "error": null,
         "added_count": 1,
-        "removed_count": 1,
+        "removed_count": 0,
         "added": [
-          "nvidia/stepfun-ai/step-5-preview"
+          "nvidia/nvidia/nemotron-3.5-super-vl-120b-a12b"
         ],
-        "removed": [
-          "nvidia/moonshotai/kimi-k3"
-        ]
+        "removed": []
       },
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 129,
+        "latency_ms": 138,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36696,38 +36828,30 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 243,
-        "models_listed": 70,
-        "chat_models": 70,
+        "latency_ms": 279,
+        "models_listed": 69,
+        "chat_models": 69,
         "free_models": 0,
         "error": null,
         "added_count": 0,
-        "removed_count": 0,
+        "removed_count": 1,
         "added": [],
-        "removed": []
+        "removed": [
+          "tokenharbor/claude-haiku-5.5:free"
+        ]
       },
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 169,
+        "latency_ms": 484,
         "models_listed": 205,
         "chat_models": 184,
         "free_models": 23,
         "error": null,
         "added_count": 0,
-        "removed_count": 9,
+        "removed_count": 0,
         "added": [],
-        "removed": [
-          "fastrouter/deepseek/deepseek-v3.1",
-          "fastrouter/google/gemini-2.5-flash",
-          "fastrouter/google/gemini-2.5-pro",
-          "fastrouter/meta-llama/llama-3.1-8b-instant",
-          "fastrouter/mistralai/Mistral-Small-24B-Instruct-2501",
-          "fastrouter/openai/gpt-oss-120b",
-          "fastrouter/openai/gpt-oss-20b",
-          "fastrouter/x-ai/grok-3-beta",
-          "fastrouter/x-ai/grok-3-mini-beta"
-        ]
+        "removed": []
       }
     },
     "ok": 6,
@@ -36735,16 +36859,16 @@
     "skipped": 2
   },
   "summary": {
-    "total": 881,
-    "free_active": 192,
+    "total": 884,
+    "free_active": 194,
     "by_gateway": {
       "cerebras": 3,
       "fastrouter": 23,
       "gemini": 49,
       "groq": 4,
       "mistral": 27,
-      "nvidia": 69,
-      "openrouter": 17,
+      "nvidia": 70,
+      "openrouter": 18,
       "tokenharbor": 0
     }
   }
