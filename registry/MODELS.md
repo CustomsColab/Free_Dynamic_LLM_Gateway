@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-10-16T11:29:13Z** | source: **live** | table format v2 | **194** free models on **7** gateways
+Updated **2026-10-16T16:42:45Z** | source: **live** | table format v2 | **194** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -280,7 +280,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 
 | Gateway | Status | HTTP | Free models | Added | Removed | Error |
 |---|---|---:|---:|---:|---:|---|
-| openrouter | ok | 200 | 18 | 0 | 0 |  |
+| openrouter | ok | 200 | 18 | 1 | 0 |  |
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 49 | 0 | 0 |  |
@@ -289,7 +289,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
 | tokenharbor | no_free_models | 200 | 0 | 0 | 0 |  |
-| fastrouter | ok | 200 | 23 | 0 | 0 |  |
+| fastrouter | ok | 200 | 23 | 9 | 0 |  |
 
 Full history: [refresh_log.jsonl](refresh_log.jsonl).
 
