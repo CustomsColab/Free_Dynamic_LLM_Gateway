@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-17T04:32:22Z",
+  "updated_at": "2026-10-17T10:49:13Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -17230,8 +17230,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7e-08,
-      "output_price": 1.4e-07,
+      "input_price": 7.5e-09,
+      "output_price": 2.829e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17401,8 +17401,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4e-08,
-      "output_price": 7e-07,
+      "input_price": 1.45e-08,
+      "output_price": 5.94e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17428,6 +17428,50 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "openrouter/deepseek/deepseek-v4.1-flash-1017",
+      "gateway": "openrouter",
+      "model_id": "deepseek/deepseek-v4.1-flash-1017",
+      "display_name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1.5e-07,
+      "output_price": 6e-07,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": true,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "coding",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc",
+        "fast"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-17T10:49:13Z",
       "missing_since": null
     },
     {
@@ -31608,48 +31652,6 @@
       "missing_since": null
     },
     {
-      "uid": "openrouter/unbiased/pareto",
-      "gateway": "openrouter",
-      "model_id": "unbiased/pareto",
-      "display_name": "Pareto",
-      "kind": "chat",
-      "size_b": null,
-      "size_label": "unknown",
-      "size_class": "unknown",
-      "context_length": 262144,
-      "context_class": "ultra",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 2.5e-06,
-      "output_price": 7.5e-06,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": true,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "vision",
-        "extraction",
-        "agent",
-        "long_doc"
-      ],
-      "quality_hint": 35,
-      "intelligence_tier": 1,
-      "intelligence_label": "Basic",
-      "speed_hint": 29,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-14T04:58:05Z"
-    },
-    {
       "uid": "openrouter/unbiased/pareto-26.10-preview",
       "gateway": "openrouter",
       "model_id": "unbiased/pareto-26.10-preview",
@@ -33031,8 +33033,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
-      "output_price": 5e-07,
+      "input_price": 2.26e-08,
+      "output_price": 3.966e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33453,8 +33455,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4e-08,
-      "output_price": 7e-07,
+      "input_price": 1.5e-07,
+      "output_price": 6e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33497,8 +33499,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.4948e-07,
-      "output_price": 7.4844e-07,
+      "input_price": 1.2332e-07,
+      "output_price": 3.831e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33539,8 +33541,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.1e-08,
-      "output_price": 5.28e-07,
+      "input_price": 7.5e-09,
+      "output_price": 2.829e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33667,8 +33669,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.94e-07,
-      "output_price": 2.4e-05,
+      "input_price": 2.7e-07,
+      "output_price": 1.4e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34004,8 +34006,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.5e-08,
-      "output_price": 6.5e-07,
+      "input_price": 2.26e-08,
+      "output_price": 3.966e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34047,8 +34049,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.9e-08,
-      "output_price": 4.8e-06,
+      "input_price": 6.9e-08,
+      "output_price": 1.98996e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -36046,45 +36048,6 @@
       "missing_since": null
     },
     {
-      "uid": "tokenharbor/lfm2.5-24b-a2b",
-      "gateway": "tokenharbor",
-      "model_id": "lfm2.5-24b-a2b",
-      "display_name": "lfm2.5-24b-a2b",
-      "kind": "chat",
-      "size_b": 24.0,
-      "size_label": "24B",
-      "size_class": "medium",
-      "context_length": 128000,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": null,
-      "output_price": null,
-      "capabilities": {
-        "chat": true,
-        "json": false,
-        "tools": false,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "inferred",
-      "categories": [
-        "general",
-        "long_doc"
-      ],
-      "quality_hint": 71,
-      "intelligence_tier": 3,
-      "intelligence_label": "Good",
-      "speed_hint": 27,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-13T22:48:34Z",
-      "missing_since": "2026-10-14T04:58:05Z"
-    },
-    {
       "uid": "tokenharbor/mimo-v2.5",
       "gateway": "tokenharbor",
       "model_id": "mimo-v2.5",
@@ -36887,28 +36850,27 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-17T04:32:22Z",
+    "time": "2026-10-17T10:49:13Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 975,
-        "models_listed": 469,
-        "chat_models": 467,
+        "latency_ms": 470,
+        "models_listed": 470,
+        "chat_models": 468,
         "free_models": 19,
         "error": null,
-        "added_count": 2,
+        "added_count": 1,
         "removed_count": 0,
         "added": [
-          "openrouter/elorian/glimpse",
-          "openrouter/qwen/qwen3.7-plus:batch"
+          "openrouter/deepseek/deepseek-v4.1-flash-1017"
         ],
         "removed": []
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 197,
+        "latency_ms": 64,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36930,7 +36892,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 189,
+        "latency_ms": 151,
         "models_listed": 63,
         "chat_models": 49,
         "free_models": 49,
@@ -36943,7 +36905,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 311,
+        "latency_ms": 284,
         "models_listed": 45,
         "chat_models": 27,
         "free_models": 27,
@@ -36956,7 +36918,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 209,
+        "latency_ms": 79,
         "models_listed": 81,
         "chat_models": 70,
         "free_models": 70,
@@ -36969,7 +36931,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 197,
+        "latency_ms": 81,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36987,7 +36949,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 503,
+        "latency_ms": 489,
         "models_listed": 68,
         "chat_models": 68,
         "free_models": 0,
@@ -37000,7 +36962,7 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 294,
+        "latency_ms": 226,
         "models_listed": 214,
         "chat_models": 193,
         "free_models": 23,
@@ -37016,7 +36978,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 888,
+    "total": 887,
     "free_active": 195,
     "by_gateway": {
       "cerebras": 3,
