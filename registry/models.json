@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-19T13:23:49Z",
+  "updated_at": "2026-10-19T22:23:41Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -17149,8 +17149,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
-      "output_price": 1.5e-07,
+      "input_price": 1.298e-07,
+      "output_price": 3.894e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17236,8 +17236,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.46136e-07,
-      "output_price": 8.92272e-07,
+      "input_price": 3.68358e-07,
+      "output_price": 7.36716e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17320,8 +17320,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.76e-08,
-      "output_price": 8e-08,
+      "input_price": 3.52e-08,
+      "output_price": 1.12e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19199,8 +19199,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9e-08,
-      "output_price": 3e-07,
+      "input_price": 7.65e-08,
+      "output_price": 2.55e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19636,6 +19636,47 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "openrouter/inception/mercury-3",
+      "gateway": "openrouter",
+      "model_id": "inception/mercury-3",
+      "display_name": "Inception: Mercury 3",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1000000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1e-07,
+      "output_price": 3.5e-07,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": false,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-19T22:23:41Z",
       "missing_since": null
     },
     {
@@ -30320,8 +30361,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1e-06,
-      "output_price": 3e-06,
+      "input_price": 3e-07,
+      "output_price": 1e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31175,8 +31216,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.32e-07,
-      "output_price": 5.28e-07,
+      "input_price": 8.25e-08,
+      "output_price": 3.3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31256,8 +31297,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.34e-07,
-      "output_price": 2.501e-06,
+      "input_price": 7.506e-07,
+      "output_price": 2.2509e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33418,8 +33459,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.7e-08,
-      "output_price": 6e-07,
+      "input_price": 5e-08,
+      "output_price": 2.4e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33462,8 +33503,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.6236e-07,
-      "output_price": 4.8708e-07,
+      "input_price": 1.307e-07,
+      "output_price": 8e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33504,8 +33545,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.2e-09,
-      "output_price": 1.2e-07,
+      "input_price": 1.51e-08,
+      "output_price": 4.5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33633,7 +33674,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 2.38e-07,
-      "output_price": 1.3e-05,
+      "output_price": 1.6e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34011,7 +34052,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5e-08,
+      "input_price": 5.1e-08,
       "output_price": 6e-06,
       "capabilities": {
         "chat": true,
@@ -35228,44 +35269,6 @@
       "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
       "missing_since": null
-    },
-    {
-      "uid": "tokenharbor/gpt-5.5",
-      "gateway": "tokenharbor",
-      "model_id": "gpt-5.5",
-      "display_name": "gpt-5.5",
-      "kind": "chat",
-      "size_b": null,
-      "size_label": "unknown",
-      "size_class": "unknown",
-      "context_length": null,
-      "context_class": "unknown",
-      "long_context": false,
-      "context_source": "unknown",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": null,
-      "output_price": null,
-      "capabilities": {
-        "chat": true,
-        "json": false,
-        "tools": false,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "inferred",
-      "categories": [
-        "general"
-      ],
-      "quality_hint": 35,
-      "intelligence_tier": 1,
-      "intelligence_label": "Basic",
-      "speed_hint": 29,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T18:12:57Z",
-      "missing_since": "2026-10-16T21:13:32Z"
     },
     {
       "uid": "tokenharbor/gpt-5.6-luna",
@@ -36896,31 +36899,27 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-19T13:23:49Z",
+    "time": "2026-10-19T22:23:41Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 354,
-        "models_listed": 469,
-        "chat_models": 467,
+        "latency_ms": 464,
+        "models_listed": 470,
+        "chat_models": 468,
         "free_models": 20,
         "error": null,
         "added_count": 1,
-        "removed_count": 3,
+        "removed_count": 0,
         "added": [
-          "openrouter/minimax/minimax-m3.1-flash:free"
+          "openrouter/inception/mercury-3"
         ],
-        "removed": [
-          "openrouter/deepseek/deepseek-r1",
-          "openrouter/microsoft/wizardlm-2-8x22b",
-          "openrouter/sao10k/l3.3-euryale-70b"
-        ]
+        "removed": []
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 132,
+        "latency_ms": 94,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36942,7 +36941,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 126,
+        "latency_ms": 109,
         "models_listed": 63,
         "chat_models": 49,
         "free_models": 49,
@@ -36955,7 +36954,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 224,
+        "latency_ms": 210,
         "models_listed": 45,
         "chat_models": 27,
         "free_models": 27,
@@ -36968,7 +36967,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 26,
+        "latency_ms": 20,
         "models_listed": 81,
         "chat_models": 70,
         "free_models": 70,
@@ -36981,7 +36980,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 109,
+        "latency_ms": 107,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36999,7 +36998,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 182,
+        "latency_ms": 508,
         "models_listed": 70,
         "chat_models": 70,
         "free_models": 0,
@@ -37012,7 +37011,7 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 91,
+        "latency_ms": 229,
         "models_listed": 214,
         "chat_models": 193,
         "free_models": 23,
