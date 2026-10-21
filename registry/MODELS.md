@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-10-21T11:55:17Z** | source: **live** | table format v2 | **196** free models on **7** gateways
+Updated **2026-10-21T17:15:55Z** | source: **live** | table format v2 | **196** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
