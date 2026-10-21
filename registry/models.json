@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-21T17:15:55Z",
+  "updated_at": "2026-10-21T21:45:54Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -17236,8 +17236,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.22472e-07,
-      "output_price": 8.44944e-07,
+      "input_price": 3.95328e-07,
+      "output_price": 7.90656e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17321,7 +17321,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 2.394e-08,
-      "output_price": 3.75e-07,
+      "output_price": 9.576e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19199,8 +19199,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9e-08,
-      "output_price": 3e-07,
+      "input_price": 7.65e-08,
+      "output_price": 2.55e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -23006,8 +23006,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8e-08,
-      "output_price": 4.5e-07,
+      "input_price": 3e-07,
+      "output_price": 2.4e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -30347,6 +30347,47 @@
       "missing_since": null
     },
     {
+      "uid": "openrouter/recursive/flint-v1.0:free",
+      "gateway": "openrouter",
+      "model_id": "recursive/flint-v1.0:free",
+      "display_name": "Recursive: Flint (free)",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 262144,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": true,
+      "free_kind": "zero_price",
+      "input_price": 0.0,
+      "output_price": 0.0,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": false,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-21T21:45:54Z",
+      "missing_since": null
+    },
+    {
       "uid": "openrouter/reflection/beam-1.0-501b-a23b",
       "gateway": "openrouter",
       "model_id": "reflection/beam-1.0-501b-a23b",
@@ -33037,8 +33078,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
-      "output_price": 5e-07,
+      "input_price": 4.41e-09,
+      "output_price": 1.015e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33460,7 +33501,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 4.9e-08,
-      "output_price": 3.75e-07,
+      "output_price": 1.05e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33674,7 +33715,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 2.38e-07,
-      "output_price": 2.4e-05,
+      "output_price": 1.6e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34009,8 +34050,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.1691e-08,
-      "output_price": 1.2e-07,
+      "input_price": 4.41e-09,
+      "output_price": 1.015e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -36860,25 +36901,27 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-21T17:15:55Z",
+    "time": "2026-10-21T21:45:54Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 617,
-        "models_listed": 468,
-        "chat_models": 466,
-        "free_models": 20,
+        "latency_ms": 369,
+        "models_listed": 469,
+        "chat_models": 467,
+        "free_models": 21,
         "error": null,
-        "added_count": 0,
+        "added_count": 1,
         "removed_count": 0,
-        "added": [],
+        "added": [
+          "openrouter/recursive/flint-v1.0:free"
+        ],
         "removed": []
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 133,
+        "latency_ms": 150,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36900,7 +36943,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 116,
+        "latency_ms": 147,
         "models_listed": 63,
         "chat_models": 49,
         "free_models": 49,
@@ -36913,7 +36956,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 310,
+        "latency_ms": 321,
         "models_listed": 53,
         "chat_models": 27,
         "free_models": 27,
@@ -36926,7 +36969,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 89,
+        "latency_ms": 128,
         "models_listed": 83,
         "chat_models": 70,
         "free_models": 70,
@@ -36939,7 +36982,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 133,
+        "latency_ms": 136,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36957,7 +37000,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 503,
+        "latency_ms": 393,
         "models_listed": 70,
         "chat_models": 70,
         "free_models": 0,
@@ -36970,7 +37013,7 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 249,
+        "latency_ms": 251,
         "models_listed": 214,
         "chat_models": 193,
         "free_models": 23,
@@ -36986,8 +37029,8 @@
     "skipped": 2
   },
   "summary": {
-    "total": 887,
-    "free_active": 196,
+    "total": 888,
+    "free_active": 197,
     "by_gateway": {
       "cerebras": 3,
       "fastrouter": 23,
@@ -36995,7 +37038,7 @@
       "groq": 4,
       "mistral": 27,
       "nvidia": 70,
-      "openrouter": 20,
+      "openrouter": 21,
       "tokenharbor": 0
     }
   }
