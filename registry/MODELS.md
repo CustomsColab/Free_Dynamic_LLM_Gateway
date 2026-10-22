@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-10-21T21:45:54Z** | source: **live** | table format v2 | **197** free models on **7** gateways
+Updated **2026-10-22T04:53:57Z** | source: **live** | table format v2 | **197** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -283,7 +283,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 
 | Gateway | Status | HTTP | Free models | Added | Removed | Error |
 |---|---|---:|---:|---:|---:|---|
-| openrouter | ok | 200 | 21 | 1 | 0 |  |
+| openrouter | ok | 200 | 21 | 0 | 1 |  |
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 49 | 0 | 0 |  |
