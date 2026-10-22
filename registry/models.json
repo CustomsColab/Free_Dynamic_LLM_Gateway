@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-22T17:14:12Z",
+  "updated_at": "2026-10-22T21:39:34Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -13443,6 +13443,47 @@
       "missing_since": null
     },
     {
+      "uid": "nvidia/nvidia/nemotron-3.5-bolt-e4b",
+      "gateway": "nvidia",
+      "model_id": "nvidia/nemotron-3.5-bolt-e4b",
+      "display_name": "nvidia/nemotron-3.5-bolt-e4b",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": null,
+      "context_class": "unknown",
+      "long_context": false,
+      "context_source": "unknown",
+      "is_free": true,
+      "free_kind": "free_tier",
+      "input_price": null,
+      "output_price": null,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": false,
+        "coding": false,
+        "reasoning": true
+      },
+      "capability_source": "inferred",
+      "categories": [
+        "general",
+        "reasoning",
+        "extraction",
+        "agent"
+      ],
+      "quality_hint": 40,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 34,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-22T21:39:34Z",
+      "missing_since": null
+    },
+    {
       "uid": "nvidia/nvidia/nemotron-3.5-content-safety",
       "gateway": "nvidia",
       "model_id": "nvidia/nemotron-3.5-content-safety",
@@ -19156,8 +19197,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9e-08,
-      "output_price": 3e-07,
+      "input_price": 7.65e-08,
+      "output_price": 2.55e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -29371,8 +29412,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4e-07,
-      "output_price": 3.2e-06,
+      "input_price": 2.6e-07,
+      "output_price": 2.08e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33635,7 +33676,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 2.38e-07,
-      "output_price": 1.6e-05,
+      "output_price": 2.4e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -36821,29 +36862,25 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-22T17:14:12Z",
+    "time": "2026-10-22T21:39:34Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 437,
+        "latency_ms": 633,
         "models_listed": 468,
         "chat_models": 466,
         "free_models": 20,
         "error": null,
-        "added_count": 1,
-        "removed_count": 1,
-        "added": [
-          "openrouter/minimax/minimax-m3.1-flash"
-        ],
-        "removed": [
-          "openrouter/minimax/minimax-m3.1-flash:free"
-        ]
+        "added_count": 0,
+        "removed_count": 0,
+        "added": [],
+        "removed": []
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 97,
+        "latency_ms": 159,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36865,7 +36902,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 194,
+        "latency_ms": 148,
         "models_listed": 60,
         "chat_models": 49,
         "free_models": 49,
@@ -36878,7 +36915,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 296,
+        "latency_ms": 542,
         "models_listed": 53,
         "chat_models": 27,
         "free_models": 27,
@@ -36891,20 +36928,22 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 81,
-        "models_listed": 83,
-        "chat_models": 70,
-        "free_models": 70,
+        "latency_ms": 161,
+        "models_listed": 84,
+        "chat_models": 71,
+        "free_models": 71,
         "error": null,
-        "added_count": 0,
+        "added_count": 1,
         "removed_count": 0,
-        "added": [],
+        "added": [
+          "nvidia/nvidia/nemotron-3.5-bolt-e4b"
+        ],
         "removed": []
       },
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 93,
+        "latency_ms": 193,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -36922,7 +36961,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 908,
+        "latency_ms": 1864,
         "models_listed": 70,
         "chat_models": 70,
         "free_models": 0,
@@ -36935,7 +36974,7 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 304,
+        "latency_ms": 412,
         "models_listed": 214,
         "chat_models": 192,
         "free_models": 23,
@@ -36951,15 +36990,15 @@
     "skipped": 2
   },
   "summary": {
-    "total": 886,
-    "free_active": 196,
+    "total": 887,
+    "free_active": 197,
     "by_gateway": {
       "cerebras": 3,
       "fastrouter": 23,
       "gemini": 49,
       "groq": 4,
       "mistral": 27,
-      "nvidia": 70,
+      "nvidia": 71,
       "openrouter": 20,
       "tokenharbor": 0
     }
