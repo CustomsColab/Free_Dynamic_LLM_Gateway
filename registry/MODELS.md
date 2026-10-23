@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-10-22T21:39:34Z** | source: **live** | table format v2 | **197** free models on **7** gateways
+Updated **2026-10-23T04:56:22Z** | source: **live** | table format v2 | **197** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -244,7 +244,6 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | nvidia | `nvidia/riva-translate-4b-instruct` | 4B | ? | – | ✅~ | – | – | – | ★★☆☆☆ Fair (45) | 53 | free tier | fast |
 | nvidia | `nvidia/riva-translate-4b-instruct-v2` | 4B | ? | – | ✅~ | – | – | – | ★★☆☆☆ Fair (45) | 53 | free tier | fast |
 | nvidia | `ibm/granite-3.0-3b-a800m-instruct` | 3B | ? | – | ✅~ | – | – | – | ★☆☆☆☆ Basic (41) | 56 | free tier | fast |
-| nvidia | `nvidia/nemotron-3.5-bolt-e4b` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-3.5-content-safety` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-parse` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-parse-2.0` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
@@ -270,6 +269,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | nvidia | `microsoft/kosmos-2` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
 | nvidia | `microsoft/phi-3-vision-128k-instruct` | unknown | ? | ✅~ | ✅~ | ✅~ | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | vision, extraction, agent |
 | nvidia | `microsoft/phi-3.5-moe-instruct` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
+| nvidia | `minimaxai/minimax-m3.1-flash` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent, fast |
 | nvidia | `moonshotai/kimi-k2.6` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
 | nvidia | `nvidia/ai-synthetic-video-detector` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
 | nvidia | `nvidia/nvclip` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
@@ -288,10 +288,10 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 49 | 0 | 0 |  |
 | mistral | ok | 200 | 27 | 0 | 0 |  |
-| nvidia | ok | 200 | 71 | 1 | 0 |  |
+| nvidia | ok | 200 | 71 | 1 | 1 |  |
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
-| tokenharbor | no_free_models | 200 | 0 | 0 | 0 |  |
+| tokenharbor | no_free_models | 200 | 0 | 1 | 0 |  |
 | fastrouter | ok | 200 | 23 | 0 | 0 |  |
 
 Full history: [refresh_log.jsonl](refresh_log.jsonl).
