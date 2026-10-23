@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-10-23T11:43:41Z** | source: **live** | table format v2 | **197** free models on **7** gateways
+Updated **2026-10-23T17:12:07Z** | source: **live** | table format v2 | **198** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -12,7 +12,7 @@ Updated **2026-10-23T11:43:41Z** | source: **live** | table format v2 | **197** 
 | **long** | 32K - 200K | ~25K-150K words | long reports, contracts, notices, big code files, many RAG chunks | Task `long_doc` picks from here. Send only what you need: quality drops near the limit | 17 |
 | **medium** | 8K - 32K | ~6K-25K words | RAG answers with a few chunks, one document, code review | Good default for most apps | 4 |
 | **short** | up to 8K | up to ~6K words | chat, classification, SQL/JSON generation, short Q&A | Fastest and cheapest on quota. Use task `fast` | 10 |
-| **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 85 |
+| **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 86 |
 
 Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app can leave this decision to the router: it estimates the prompt size and skips models whose context is too small (`auto_context`, on by default).
 
@@ -25,7 +25,7 @@ Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app ca
 | gemini | 36 | – | – | – | 13 | **49** |
 | groq | – | 3 | – | 1 | – | **4** |
 | mistral | 23 | 2 | 2 | – | – | **27** |
-| nvidia | – | – | – | – | 71 | **71** |
+| nvidia | – | – | – | – | 72 | **72** |
 | openrouter | 17 | 3 | – | – | – | **20** |
 
 Free models by **intelligence** and context class (pick the row you need, then the context you need):
@@ -36,7 +36,7 @@ Free models by **intelligence** and context class (pick the row you need, then t
 | ★★★★☆ Strong | 26 | 2 | 2 | – | 13 | **43** |
 | ★★★☆☆ Good | 22 | 3 | – | – | 12 | **37** |
 | ★★☆☆☆ Fair | 2 | 1 | – | 1 | 15 | **19** |
-| ★☆☆☆☆ Basic | 22 | 6 | 2 | 9 | 35 | **74** |
+| ★☆☆☆☆ Basic | 22 | 6 | 2 | 9 | 36 | **75** |
 
 ## 3. Best picks per task
 
@@ -189,7 +189,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | fastrouter | `wanx/wan-v2-7` | unknown | 4K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision |
 | fastrouter | `wanx/wan-v3-0` | unknown | 4K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision |
 
-### Unknown context (not reported), 85 models
+### Unknown context (not reported), 86 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -244,6 +244,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | nvidia | `nvidia/riva-translate-4b-instruct` | 4B | ? | – | ✅~ | – | – | – | ★★☆☆☆ Fair (45) | 53 | free tier | fast |
 | nvidia | `nvidia/riva-translate-4b-instruct-v2` | 4B | ? | – | ✅~ | – | – | – | ★★☆☆☆ Fair (45) | 53 | free tier | fast |
 | nvidia | `ibm/granite-3.0-3b-a800m-instruct` | 3B | ? | – | ✅~ | – | – | – | ★☆☆☆☆ Basic (41) | 56 | free tier | fast |
+| nvidia | `nvidia/nemotron-3.5-bolt-e4b` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-3.5-content-safety` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-parse` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-parse-2.0` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
@@ -288,11 +289,11 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 49 | 0 | 0 |  |
 | mistral | ok | 200 | 27 | 0 | 0 |  |
-| nvidia | ok | 200 | 71 | 0 | 0 |  |
+| nvidia | ok | 200 | 72 | 1 | 0 |  |
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
 | tokenharbor | no_free_models | 200 | 0 | 0 | 0 |  |
-| fastrouter | ok | 200 | 23 | 1 | 0 |  |
+| fastrouter | ok | 200 | 23 | 0 | 0 |  |
 
 Full history: [refresh_log.jsonl](refresh_log.jsonl).
 
