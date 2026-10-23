@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-23T04:56:22Z",
+  "updated_at": "2026-10-23T11:43:41Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -2068,6 +2068,48 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "fastrouter/google/gemini-3.1-flash-lite",
+      "gateway": "fastrouter",
+      "model_id": "google/gemini-3.1-flash-lite",
+      "display_name": "Google: Gemini 3.1 Flash-Lite",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 2.5e-07,
+      "output_price": 1.5e-06,
+      "capabilities": {
+        "chat": true,
+        "json": false,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "agent",
+        "long_doc",
+        "fast"
+      ],
+      "quality_hint": 60,
+      "intelligence_tier": 3,
+      "intelligence_label": "Good",
+      "speed_hint": 39,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-23T11:43:41Z",
       "missing_since": null
     },
     {
@@ -17359,8 +17401,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.65e-07,
-      "output_price": 6.6e-07,
+      "input_price": 3e-07,
+      "output_price": 1.2e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19238,8 +19280,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.65e-08,
-      "output_price": 2.55e-07,
+      "input_price": 9e-08,
+      "output_price": 3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -29625,8 +29667,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8e-08,
-      "output_price": 1.3e-07,
+      "input_price": 1.7e-07,
+      "output_price": 2.5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33546,7 +33588,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.247e-07,
+      "input_price": 2.565e-07,
       "output_price": 8e-06,
       "capabilities": {
         "chat": true,
@@ -33716,8 +33758,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.39e-07,
-      "output_price": 1.1936e-05,
+      "input_price": 2.38e-07,
+      "output_price": 1.6e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -36943,12 +36985,12 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-23T04:56:22Z",
+    "time": "2026-10-23T11:43:41Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 245,
+        "latency_ms": 492,
         "models_listed": 468,
         "chat_models": 466,
         "free_models": 20,
@@ -36961,7 +37003,7 @@
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 94,
+        "latency_ms": 119,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -36983,7 +37025,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 132,
+        "latency_ms": 116,
         "models_listed": 60,
         "chat_models": 49,
         "free_models": 49,
@@ -36996,7 +37038,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 266,
+        "latency_ms": 596,
         "models_listed": 53,
         "chat_models": 27,
         "free_models": 27,
@@ -37009,24 +37051,20 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 42,
+        "latency_ms": 139,
         "models_listed": 84,
         "chat_models": 71,
         "free_models": 71,
         "error": null,
-        "added_count": 1,
-        "removed_count": 1,
-        "added": [
-          "nvidia/minimaxai/minimax-m3.1-flash"
-        ],
-        "removed": [
-          "nvidia/nvidia/nemotron-3.5-bolt-e4b"
-        ]
+        "added_count": 0,
+        "removed_count": 0,
+        "added": [],
+        "removed": []
       },
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 98,
+        "latency_ms": 91,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -37044,29 +37082,29 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 153,
+        "latency_ms": 273,
         "models_listed": 71,
         "chat_models": 71,
         "free_models": 0,
         "error": null,
-        "added_count": 1,
+        "added_count": 0,
         "removed_count": 0,
-        "added": [
-          "tokenharbor/minimax-m3.1-flash"
-        ],
+        "added": [],
         "removed": []
       },
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 115,
-        "models_listed": 214,
-        "chat_models": 192,
+        "latency_ms": 118,
+        "models_listed": 215,
+        "chat_models": 193,
         "free_models": 23,
         "error": null,
-        "added_count": 0,
+        "added_count": 1,
         "removed_count": 0,
-        "added": [],
+        "added": [
+          "fastrouter/google/gemini-3.1-flash-lite"
+        ],
         "removed": []
       }
     },
@@ -37075,7 +37113,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 889,
+    "total": 890,
     "free_active": 197,
     "by_gateway": {
       "cerebras": 3,
