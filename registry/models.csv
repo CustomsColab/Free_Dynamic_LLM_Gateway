@@ -5,11 +5,10 @@ Rank,Model,Intelligence,Tier (1-5),Size,Gateway,Gateway model id,Context class,C
 3,nemotron-4-340b-instruct,🟣 Top,5,340B,nvidia,nvidia/nemotron-4-340b-instruct,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,5,Free tier,"reasoning, extraction, agent",1
 4,nemotron-4-340b-reward,🟣 Top,5,340B,nvidia,nvidia/nemotron-4-340b-reward,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,5,Free tier,"reasoning, extraction, agent",1
 5,nemotron-3-super,🟣 Top,5,120B,fastrouter,nvidia/nemotron-3-super:free,🔵 Ultra (>200K),262144,Text,Yes,Yes,Yes,No,19,Price 0,"reasoning, extraction, agent, long_doc",1
-6,nemotron-3-super-120b-a12b,🟣 Top,5,120B,openrouter,nvidia/nemotron-3-super-120b-a12b:free,🔵 Ultra (>200K),262144,Text,Yes,Yes,Yes,No,9,Price 0,"reasoning, extraction, agent, long_doc",2
-6,nemotron-3-super-120b-a12b,🟣 Top,5,120B,nvidia,nvidia/nemotron-3-super-120b-a12b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,14,Free tier,"reasoning, extraction, agent",2
-7,gpt-oss-120b,🟣 Top,5,120B,cerebras,gpt-oss-120b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,Yes~,No,59,Free tier,"reasoning, extraction, agent, long_doc",3
-7,gpt-oss-120b,🟣 Top,5,120B,groq,openai/gpt-oss-120b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,Yes~,No,54,Free tier,"reasoning, extraction, agent, long_doc",3
-7,gpt-oss-120b,🟣 Top,5,120B,fastrouter,openai/gpt-oss-120b:free,🟢 Long (32K-200K),131072,Text,Yes,Yes,Yes,No,19,Price 0,"reasoning, extraction, agent, long_doc",3
+6,gpt-oss-120b,🟣 Top,5,120B,cerebras,gpt-oss-120b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,Yes~,No,59,Free tier,"reasoning, extraction, agent, long_doc",3
+6,gpt-oss-120b,🟣 Top,5,120B,groq,openai/gpt-oss-120b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,Yes~,No,54,Free tier,"reasoning, extraction, agent, long_doc",3
+6,gpt-oss-120b,🟣 Top,5,120B,fastrouter,openai/gpt-oss-120b:free,🟢 Long (32K-200K),131072,Text,Yes,Yes,Yes,No,19,Price 0,"reasoning, extraction, agent, long_doc",3
+7,nemotron-3-super-120b-a12b,🟣 Top,5,120B,nvidia,nvidia/nemotron-3-super-120b-a12b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,14,Free tier,"reasoning, extraction, agent",1
 8,gemini-2.5-pro,🟣 Top,5,unknown,gemini,gemini-2.5-pro,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc",1
 9,mixtral-8x22b-v0.1,🟣 Top,5,176B,nvidia,mistralai/mixtral-8x22b-v0.1,⚪ Unknown,,Text,Yes~,Yes~,No,No,9,Free tier,"extraction, agent",1
 10,palmyra-creative-122b,🟣 Top,5,122B,nvidia,writer/palmyra-creative-122b,⚪ Unknown,,Text,Yes~,Yes~,No,No,14,Free tier,"extraction, agent",1

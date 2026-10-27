@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-27T05:10:28Z",
+  "updated_at": "2026-10-27T12:17:27Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -6288,6 +6288,87 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "fastrouter/perceptron/perceptron-mk1",
+      "gateway": "fastrouter",
+      "model_id": "perceptron/perceptron-mk1",
+      "display_name": "Perceptron: Perceptron Mk1",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 32768,
+      "context_class": "medium",
+      "long_context": false,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1.5e-07,
+      "output_price": 1.5e-06,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": false,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 39,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-27T12:17:27Z",
+      "missing_since": null
+    },
+    {
+      "uid": "fastrouter/perceptron/perceptron-mk1.5",
+      "gateway": "fastrouter",
+      "model_id": "perceptron/perceptron-mk1.5",
+      "display_name": "Perceptron: Perceptron Mk1.5",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 36864,
+      "context_class": "long",
+      "long_context": false,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1.5e-07,
+      "output_price": 1.5e-06,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 39,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-27T12:17:27Z",
       "missing_since": null
     },
     {
@@ -17235,8 +17316,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.4e-07,
-      "output_price": 2.8e-07,
+      "input_price": 5e-08,
+      "output_price": 4.5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19156,8 +19237,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4e-08,
-      "output_price": 5e-08,
+      "input_price": 5e-08,
+      "output_price": 1e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19197,8 +19278,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.65e-08,
-      "output_price": 2.55e-07,
+      "input_price": 9e-08,
+      "output_price": 3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22506,7 +22587,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.6e-07,
+      "input_price": 6.725e-07,
       "output_price": 3.1e-06,
       "capabilities": {
         "chat": true,
@@ -22549,7 +22630,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-07,
+      "input_price": 1.79e-07,
       "output_price": 2e-05,
       "capabilities": {
         "chat": true,
@@ -23110,10 +23191,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 9,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-27T12:17:27Z"
     },
     {
       "uid": "openrouter/nvidia/nemotron-3-ultra-550b-a55b",
@@ -33669,7 +33750,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 2e-08,
-      "output_price": 3.02864e-07,
+      "output_price": 1e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33712,7 +33793,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.211e-07,
+      "input_price": 2.173e-07,
       "output_price": 8e-06,
       "capabilities": {
         "chat": true,
@@ -33882,8 +33963,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.9e-07,
-      "output_price": 8.94e-06,
+      "input_price": 1.79e-07,
+      "output_price": 2e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34218,8 +34299,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.13e-08,
-      "output_price": 7.01e-08,
+      "input_price": 2.14e-08,
+      "output_price": 1.046e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -37268,30 +37349,27 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-27T05:10:28Z",
+    "time": "2026-10-27T12:17:27Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 284,
-        "models_listed": 464,
-        "chat_models": 462,
-        "free_models": 20,
+        "latency_ms": 299,
+        "models_listed": 463,
+        "chat_models": 461,
+        "free_models": 19,
         "error": null,
-        "added_count": 2,
+        "added_count": 0,
         "removed_count": 1,
-        "added": [
-          "openrouter/openai/gpt-6.1-terra-pro",
-          "openrouter/openai/gpt-6.1-terra-pro:batch"
-        ],
+        "added": [],
         "removed": [
-          "openrouter/ibm-granite/granite-4.0-h-micro"
+          "openrouter/nvidia/nemotron-3-super-120b-a12b:free"
         ]
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 127,
+        "latency_ms": 99,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -37313,7 +37391,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 132,
+        "latency_ms": 145,
         "models_listed": 60,
         "chat_models": 49,
         "free_models": 49,
@@ -37326,7 +37404,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 247,
+        "latency_ms": 271,
         "models_listed": 53,
         "chat_models": 27,
         "free_models": 27,
@@ -37339,7 +37417,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 56,
+        "latency_ms": 38,
         "models_listed": 85,
         "chat_models": 72,
         "free_models": 72,
@@ -37352,7 +37430,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 128,
+        "latency_ms": 106,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -37370,7 +37448,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 353,
+        "latency_ms": 417,
         "models_listed": 75,
         "chat_models": 75,
         "free_models": 0,
@@ -37383,14 +37461,17 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 161,
-        "models_listed": 217,
-        "chat_models": 195,
+        "latency_ms": 126,
+        "models_listed": 219,
+        "chat_models": 197,
         "free_models": 23,
         "error": null,
-        "added_count": 0,
+        "added_count": 2,
         "removed_count": 0,
-        "added": [],
+        "added": [
+          "fastrouter/perceptron/perceptron-mk1",
+          "fastrouter/perceptron/perceptron-mk1.5"
+        ],
         "removed": []
       }
     },
@@ -37399,8 +37480,8 @@
     "skipped": 2
   },
   "summary": {
-    "total": 897,
-    "free_active": 198,
+    "total": 899,
+    "free_active": 197,
     "by_gateway": {
       "cerebras": 3,
       "fastrouter": 23,
@@ -37408,7 +37489,7 @@
       "groq": 4,
       "mistral": 27,
       "nvidia": 72,
-      "openrouter": 20,
+      "openrouter": 19,
       "tokenharbor": 0
     }
   }
