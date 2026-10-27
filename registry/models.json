@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-26T22:42:32Z",
+  "updated_at": "2026-10-27T05:10:28Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -17235,8 +17235,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9.1e-08,
-      "output_price": 1.82e-07,
+      "input_price": 1.4e-07,
+      "output_price": 2.8e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17278,8 +17278,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.444e-08,
-      "output_price": 1.3332e-07,
+      "input_price": 1.19e-07,
+      "output_price": 2.38e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17365,8 +17365,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.13052e-07,
-      "output_price": 1.426104e-06,
+      "input_price": 9.5526e-07,
+      "output_price": 1.91052e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17449,8 +17449,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.77e-08,
-      "output_price": 1.908e-07,
+      "input_price": 1.4e-07,
+      "output_price": 4.2e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19507,10 +19507,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-27T05:10:28Z"
     },
     {
       "uid": "openrouter/ibm-granite/granite-4.2-8b",
@@ -27109,6 +27109,90 @@
       "missing_since": null
     },
     {
+      "uid": "openrouter/openai/gpt-6.1-terra-pro",
+      "gateway": "openrouter",
+      "model_id": "openai/gpt-6.1-terra-pro",
+      "display_name": "OpenAI: GPT-6.1 Terra Pro",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1050000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1e-06,
+      "output_price": 5e-06,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-27T05:10:28Z",
+      "missing_since": null
+    },
+    {
+      "uid": "openrouter/openai/gpt-6.1-terra-pro:batch",
+      "gateway": "openrouter",
+      "model_id": "openai/gpt-6.1-terra-pro:batch",
+      "display_name": "OpenAI: GPT-6.1 Terra Pro (batch)",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1050000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 5e-07,
+      "output_price": 2.5e-06,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-27T05:10:28Z",
+      "missing_since": null
+    },
+    {
       "uid": "openrouter/openai/gpt-6.1-terra:batch",
       "gateway": "openrouter",
       "model_id": "openai/gpt-6.1-terra:batch",
@@ -29578,8 +29662,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.7e-07,
-      "output_price": 2.16e-06,
+      "input_price": 2.6e-07,
+      "output_price": 2.6e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -29925,7 +30009,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 1e-07,
-      "output_price": 9e-07,
+      "output_price": 9.5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31341,8 +31425,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.25e-08,
-      "output_price": 3.3e-07,
+      "input_price": 1.32e-07,
+      "output_price": 5.28e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31422,8 +31506,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.506e-07,
-      "output_price": 2.2509e-06,
+      "input_price": 8.34e-07,
+      "output_price": 2.501e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32416,8 +32500,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.19e-07,
-      "output_price": 2.38e-07,
+      "input_price": 4e-07,
+      "output_price": 2e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32458,8 +32542,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.045e-07,
-      "output_price": 6.09e-07,
+      "input_price": 4.8e-07,
+      "output_price": 1.8e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33039,8 +33123,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.4e-06,
-      "output_price": 4.4e-06,
+      "input_price": 9.66e-07,
+      "output_price": 3.036e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33584,8 +33668,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4e-08,
-      "output_price": 5e-07,
+      "input_price": 2e-08,
+      "output_price": 3.02864e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33628,7 +33712,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.188e-07,
+      "input_price": 2.211e-07,
       "output_price": 8e-06,
       "capabilities": {
         "chat": true,
@@ -33670,8 +33754,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.22e-08,
-      "output_price": 1.694e-07,
+      "input_price": 4.75e-08,
+      "output_price": 1.568e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33799,7 +33883,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 1.9e-07,
-      "output_price": 8.099e-06,
+      "output_price": 8.94e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34134,8 +34218,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.13e-08,
-      "output_price": 7.58e-08,
+      "input_price": 5.13e-08,
+      "output_price": 7.01e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -37184,34 +37268,30 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-26T22:42:32Z",
+    "time": "2026-10-27T05:10:28Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 454,
-        "models_listed": 463,
-        "chat_models": 461,
+        "latency_ms": 284,
+        "models_listed": 464,
+        "chat_models": 462,
         "free_models": 20,
         "error": null,
         "added_count": 2,
-        "removed_count": 5,
+        "removed_count": 1,
         "added": [
-          "openrouter/openai/gpt-6.1-terra",
-          "openrouter/openai/gpt-6.1-terra:batch"
+          "openrouter/openai/gpt-6.1-terra-pro",
+          "openrouter/openai/gpt-6.1-terra-pro:batch"
         ],
         "removed": [
-          "openrouter/mistralai/codestral-2508:batch",
-          "openrouter/mistralai/ministral-8b-2512:batch",
-          "openrouter/mistralai/mistral-large-2512:batch",
-          "openrouter/mistralai/mistral-medium-3.1:batch",
-          "openrouter/mistralai/mistral-small-2603:batch"
+          "openrouter/ibm-granite/granite-4.0-h-micro"
         ]
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 112,
+        "latency_ms": 127,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -37233,7 +37313,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 127,
+        "latency_ms": 132,
         "models_listed": 60,
         "chat_models": 49,
         "free_models": 49,
@@ -37246,7 +37326,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 559,
+        "latency_ms": 247,
         "models_listed": 53,
         "chat_models": 27,
         "free_models": 27,
@@ -37259,7 +37339,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 41,
+        "latency_ms": 56,
         "models_listed": 85,
         "chat_models": 72,
         "free_models": 72,
@@ -37272,7 +37352,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 113,
+        "latency_ms": 128,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -37290,23 +37370,20 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 273,
+        "latency_ms": 353,
         "models_listed": 75,
         "chat_models": 75,
         "free_models": 0,
         "error": null,
-        "added_count": 2,
+        "added_count": 0,
         "removed_count": 0,
-        "added": [
-          "tokenharbor/gpt-6.1-terra",
-          "tokenharbor/gpt-6.1-terra-fast"
-        ],
+        "added": [],
         "removed": []
       },
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 74,
+        "latency_ms": 161,
         "models_listed": 217,
         "chat_models": 195,
         "free_models": 23,
@@ -37322,7 +37399,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 895,
+    "total": 897,
     "free_active": 198,
     "by_gateway": {
       "cerebras": 3,
