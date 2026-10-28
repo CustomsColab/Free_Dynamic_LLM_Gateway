@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-28T12:59:56Z",
+  "updated_at": "2026-10-28T22:38:31Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -15451,10 +15451,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/anthropic/claude-haiku-4.5",
@@ -15537,10 +15537,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/anthropic/claude-haiku-5.5",
@@ -15706,10 +15706,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/anthropic/claude-opus-4.5",
@@ -15790,10 +15790,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/anthropic/claude-opus-4.6",
@@ -15874,10 +15874,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/anthropic/claude-opus-4.7",
@@ -15958,10 +15958,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/anthropic/claude-opus-4.8",
@@ -16042,10 +16042,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/anthropic/claude-opus-5",
@@ -16294,10 +16294,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/anthropic/claude-sonnet-4.6",
@@ -16378,10 +16378,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/anthropic/claude-sonnet-5",
@@ -16546,10 +16546,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/arcee-ai/trinity-large-thinking",
@@ -17617,8 +17617,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.94012e-07,
-      "output_price": 1.788024e-06,
+      "input_price": 8.88966e-07,
+      "output_price": 1.777932e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17659,8 +17659,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 6.6e-07,
-      "output_price": 1.98e-06,
+      "input_price": 1.035e-07,
+      "output_price": 8e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17701,8 +17701,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.4e-07,
-      "output_price": 4.2e-07,
+      "input_price": 4.5e-08,
+      "output_price": 5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17745,8 +17745,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
-      "output_price": 6e-07,
+      "input_price": 1.38e-08,
+      "output_price": 1.8e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19071,8 +19071,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.25e-07,
-      "output_price": 4.125e-06,
+      "input_price": 7.5e-07,
+      "output_price": 3.75e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19449,8 +19449,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9e-08,
-      "output_price": 3e-07,
+      "input_price": 7.65e-08,
+      "output_price": 2.55e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19780,7 +19780,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 6e-08,
-      "output_price": 2.5e-07,
+      "output_price": 1.5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -20173,10 +20173,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 53,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-25T04:47:01Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/liquid/lfm-2.5-2.6b:free",
@@ -20394,8 +20394,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-08,
-      "output_price": 4e-08,
+      "input_price": 5e-08,
+      "output_price": 8e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -20592,7 +20592,7 @@
       "size_b": null,
       "size_label": "unknown",
       "size_class": "unknown",
-      "context_length": 1310720,
+      "context_length": 327680,
       "context_class": "ultra",
       "long_context": true,
       "context_source": "api",
@@ -20788,10 +20788,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/meta/muse-spark-1.3",
@@ -20872,10 +20872,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/meta/muse-spark-open",
@@ -21099,7 +21099,7 @@
       "output_price": 1.02e-06,
       "capabilities": {
         "chat": true,
-        "json": true,
+        "json": false,
         "tools": true,
         "vision": false,
         "coding": false,
@@ -21108,7 +21108,6 @@
       "capability_source": "declared",
       "categories": [
         "general",
-        "extraction",
         "agent",
         "long_doc"
       ],
@@ -22758,7 +22757,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 6.725e-07,
+      "input_price": 5.6e-07,
       "output_price": 3.1e-06,
       "capabilities": {
         "chat": true,
@@ -22801,7 +22800,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-07,
+      "input_price": 1.92e-07,
       "output_price": 2e-05,
       "capabilities": {
         "chat": true,
@@ -23292,7 +23291,7 @@
       "size_b": 120.0,
       "size_label": "120B",
       "size_class": "xlarge",
-      "context_length": 262144,
+      "context_length": 1048576,
       "context_class": "ultra",
       "long_context": true,
       "context_source": "api",
@@ -23900,10 +23899,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-4-turbo:batch",
@@ -23943,10 +23942,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-4.1",
@@ -24071,10 +24070,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-4.1-nano",
@@ -24157,10 +24156,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-4.1:batch",
@@ -24199,10 +24198,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-4o",
@@ -24496,10 +24495,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-4o:batch",
@@ -24538,10 +24537,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5",
@@ -24749,10 +24748,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5-nano",
@@ -24919,10 +24918,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.1",
@@ -25130,10 +25129,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.2",
@@ -25214,10 +25213,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.2-codex",
@@ -25340,10 +25339,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.2:batch",
@@ -25382,10 +25381,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.3-codex",
@@ -25593,10 +25592,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.4-nano",
@@ -25679,10 +25678,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.4-pro",
@@ -25763,10 +25762,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.4:batch",
@@ -25805,10 +25804,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.5",
@@ -25931,10 +25930,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.5:batch",
@@ -25973,10 +25972,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-5.6-luna",
@@ -26519,10 +26518,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/gpt-6-astra",
@@ -27694,10 +27693,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/o1-pro",
@@ -27735,10 +27734,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/o3",
@@ -27819,10 +27818,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/o3-mini-high",
@@ -27861,10 +27860,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/o3-mini:batch",
@@ -27903,10 +27902,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/o3-pro",
@@ -27987,10 +27986,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/o4-mini",
@@ -28030,10 +28029,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/o4-mini-high",
@@ -28073,10 +28072,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openai/o4-mini:batch",
@@ -28116,10 +28115,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/openrouter/auto",
@@ -28365,6 +28364,48 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "openrouter/particle-ai/particle-1",
+      "gateway": "openrouter",
+      "model_id": "particle-ai/particle-1",
+      "display_name": "Particle AI: Particle-1",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 2.5e-07,
+      "output_price": 1e-06,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-28T22:38:31Z",
       "missing_since": null
     },
     {
@@ -29599,10 +29640,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 13,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/qwen/qwen3-vl-235b-a22b-instruct",
@@ -30525,8 +30566,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.9e-08,
-      "output_price": 1.25e-06,
+      "input_price": 2e-07,
+      "output_price": 2.5e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31134,10 +31175,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T22:38:31Z"
     },
     {
       "uid": "openrouter/sao10k/l3-lunaris-8b",
@@ -31598,8 +31639,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.32e-07,
-      "output_price": 5.28e-07,
+      "input_price": 8.25e-08,
+      "output_price": 3.3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31679,8 +31720,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.34e-07,
-      "output_price": 2.501e-06,
+      "input_price": 7.506e-07,
+      "output_price": 2.2509e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33337,8 +33378,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.4e-08,
-      "output_price": 7e-06,
+      "input_price": 6e-09,
+      "output_price": 5.4e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33419,8 +33460,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
-      "output_price": 5e-07,
+      "input_price": 3.13e-08,
+      "output_price": 9.23e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33841,7 +33882,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.15e-08,
+      "input_price": 1.38e-08,
       "output_price": 1.8e-06,
       "capabilities": {
         "chat": true,
@@ -33885,7 +33926,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.542e-07,
+      "input_price": 1.035e-07,
       "output_price": 8e-06,
       "capabilities": {
         "chat": true,
@@ -33927,8 +33968,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.75e-08,
-      "output_price": 1.568e-07,
+      "input_price": 4.22e-08,
+      "output_price": 1.694e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34055,8 +34096,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.605e-07,
-      "output_price": 8.94e-06,
+      "input_price": 1.824e-07,
+      "output_price": 9.3388e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34391,8 +34432,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.37e-08,
-      "output_price": 1.324e-07,
+      "input_price": 3.13e-08,
+      "output_price": 9.23e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -37441,25 +37482,38 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-28T12:59:56Z",
+    "time": "2026-10-28T22:38:31Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 3229,
-        "models_listed": 464,
-        "chat_models": 462,
+        "latency_ms": 945,
+        "models_listed": 421,
+        "chat_models": 419,
         "free_models": 19,
         "error": null,
-        "added_count": 0,
-        "removed_count": 0,
-        "added": [],
-        "removed": []
+        "added_count": 1,
+        "removed_count": 44,
+        "added": [
+          "openrouter/particle-ai/particle-1"
+        ],
+        "removed": [
+          "openrouter/anthropic/claude-fable-5:batch",
+          "openrouter/anthropic/claude-haiku-4.5:batch",
+          "openrouter/anthropic/claude-opus-4.1:batch",
+          "openrouter/anthropic/claude-opus-4.5:batch",
+          "openrouter/anthropic/claude-opus-4.6:batch",
+          "openrouter/anthropic/claude-opus-4.7:batch",
+          "openrouter/anthropic/claude-opus-4.8:batch",
+          "openrouter/anthropic/claude-sonnet-4.5:batch",
+          "openrouter/anthropic/claude-sonnet-4.6:batch",
+          "openrouter/anthropic/claude-sonnet-5:batch"
+        ]
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 95,
+        "latency_ms": 210,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -37481,7 +37535,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 151,
+        "latency_ms": 214,
         "models_listed": 60,
         "chat_models": 49,
         "free_models": 49,
@@ -37494,7 +37548,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 286,
+        "latency_ms": 438,
         "models_listed": 53,
         "chat_models": 27,
         "free_models": 27,
@@ -37507,22 +37561,20 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 87,
+        "latency_ms": 109,
         "models_listed": 84,
         "chat_models": 71,
         "free_models": 71,
         "error": null,
         "added_count": 0,
-        "removed_count": 1,
+        "removed_count": 0,
         "added": [],
-        "removed": [
-          "nvidia/z-ai/glm-5.3"
-        ]
+        "removed": []
       },
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 76,
+        "latency_ms": 140,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -37540,7 +37592,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 271,
+        "latency_ms": 1766,
         "models_listed": 75,
         "chat_models": 75,
         "free_models": 0,
@@ -37553,19 +37605,14 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 254,
+        "latency_ms": 277,
         "models_listed": 223,
         "chat_models": 201,
         "free_models": 23,
         "error": null,
-        "added_count": 4,
+        "added_count": 0,
         "removed_count": 0,
-        "added": [
-          "fastrouter/deepseek/deepseek-v4.1-flash-abliterated",
-          "fastrouter/deepseek/deepseek-v4.1-flash-ultrafast",
-          "fastrouter/z-ai/glm-5.3-abliterated",
-          "fastrouter/z-ai/glm-5.3-flash-abliterated"
-        ],
+        "added": [],
         "removed": []
       }
     },
@@ -37574,7 +37621,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 901,
+    "total": 902,
     "free_active": 196,
     "by_gateway": {
       "cerebras": 3,
