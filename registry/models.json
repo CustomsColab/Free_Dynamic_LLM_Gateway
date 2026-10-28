@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-28T05:46:35Z",
+  "updated_at": "2026-10-28T12:59:56Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -1816,6 +1816,93 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-25T11:36:42Z",
+      "missing_since": null
+    },
+    {
+      "uid": "fastrouter/deepseek/deepseek-v4.1-flash-abliterated",
+      "gateway": "fastrouter",
+      "model_id": "deepseek/deepseek-v4.1-flash-abliterated",
+      "display_name": "DeepSeek: DeepSeek V4.1 Flash Abliterated",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1e-06,
+      "output_price": 2e-06,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": true,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "coding",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc",
+        "fast"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 39,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-28T12:59:56Z",
+      "missing_since": null
+    },
+    {
+      "uid": "fastrouter/deepseek/deepseek-v4.1-flash-ultrafast",
+      "gateway": "fastrouter",
+      "model_id": "deepseek/deepseek-v4.1-flash-ultrafast",
+      "display_name": "DeepSeek: DeepSeek V4.1 Flash Ultrafast",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 3.24e-07,
+      "output_price": 1.3e-06,
+      "capabilities": {
+        "chat": true,
+        "json": false,
+        "tools": true,
+        "vision": true,
+        "coding": true,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "coding",
+        "vision",
+        "agent",
+        "long_doc",
+        "fast"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 39,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-28T12:59:56Z",
       "missing_since": null
     },
     {
@@ -8135,6 +8222,47 @@
       "missing_since": null
     },
     {
+      "uid": "fastrouter/z-ai/glm-5.3-abliterated",
+      "gateway": "fastrouter",
+      "model_id": "z-ai/glm-5.3-abliterated",
+      "display_name": "Z.ai: GLM-5.3 Abliterated ",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1000000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 3e-06,
+      "output_price": 5e-06,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": false,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 39,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-28T12:59:56Z",
+      "missing_since": null
+    },
+    {
       "uid": "fastrouter/z-ai/glm-5.3-flash",
       "gateway": "fastrouter",
       "model_id": "z-ai/glm-5.3-flash",
@@ -8175,6 +8303,49 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "fastrouter/z-ai/glm-5.3-flash-abliterated",
+      "gateway": "fastrouter",
+      "model_id": "z-ai/glm-5.3-flash-abliterated",
+      "display_name": "Z.ai: GLM-5.3 Flash Abliterated",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1.5e-07,
+      "output_price": 5e-07,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc",
+        "fast"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 39,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-10-28T12:59:56Z",
       "missing_since": null
     },
     {
@@ -14539,10 +14710,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-10-28T12:59:56Z"
     },
     {
       "uid": "nvidia/z-ai/glm-5.3-flash",
@@ -17316,8 +17487,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.4e-07,
-      "output_price": 2.8e-07,
+      "input_price": 9.1e-08,
+      "output_price": 1.82e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17446,8 +17617,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9.5526e-07,
-      "output_price": 1.91052e-06,
+      "input_price": 8.94012e-07,
+      "output_price": 1.788024e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19278,8 +19449,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.65e-08,
-      "output_price": 2.55e-07,
+      "input_price": 9e-08,
+      "output_price": 3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22587,7 +22758,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.6e-07,
+      "input_price": 6.725e-07,
       "output_price": 3.1e-06,
       "capabilities": {
         "chat": true,
@@ -22630,7 +22801,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
+      "input_price": 2e-07,
       "output_price": 2e-05,
       "capabilities": {
         "chat": true,
@@ -23127,8 +23298,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8e-08,
-      "output_price": 4.5e-07,
+      "input_price": 3e-07,
+      "output_price": 2.4e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33166,7 +33337,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.41e-08,
+      "input_price": 1.4e-08,
       "output_price": 7e-06,
       "capabilities": {
         "chat": true,
@@ -33248,8 +33419,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.51e-08,
-      "output_price": 7.37e-08,
+      "input_price": 1.5e-07,
+      "output_price": 5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33670,7 +33841,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.51e-08,
+      "input_price": 1.15e-08,
       "output_price": 1.8e-06,
       "capabilities": {
         "chat": true,
@@ -33884,8 +34055,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
-      "output_price": 2e-05,
+      "input_price": 1.605e-07,
+      "output_price": 8.94e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34220,8 +34391,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.51e-08,
-      "output_price": 7.37e-08,
+      "input_price": 2.37e-08,
+      "output_price": 1.324e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -37270,12 +37441,12 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-28T05:46:35Z",
+    "time": "2026-10-28T12:59:56Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 546,
+        "latency_ms": 3229,
         "models_listed": 464,
         "chat_models": 462,
         "free_models": 19,
@@ -37288,7 +37459,7 @@
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 107,
+        "latency_ms": 95,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -37310,7 +37481,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 120,
+        "latency_ms": 151,
         "models_listed": 60,
         "chat_models": 49,
         "free_models": 49,
@@ -37323,7 +37494,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 474,
+        "latency_ms": 286,
         "models_listed": 53,
         "chat_models": 27,
         "free_models": 27,
@@ -37336,20 +37507,22 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 74,
-        "models_listed": 85,
-        "chat_models": 72,
-        "free_models": 72,
+        "latency_ms": 87,
+        "models_listed": 84,
+        "chat_models": 71,
+        "free_models": 71,
         "error": null,
         "added_count": 0,
-        "removed_count": 0,
+        "removed_count": 1,
         "added": [],
-        "removed": []
+        "removed": [
+          "nvidia/z-ai/glm-5.3"
+        ]
       },
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 114,
+        "latency_ms": 76,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -37367,7 +37540,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 236,
+        "latency_ms": 271,
         "models_listed": 75,
         "chat_models": 75,
         "free_models": 0,
@@ -37380,14 +37553,19 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 253,
-        "models_listed": 219,
-        "chat_models": 197,
+        "latency_ms": 254,
+        "models_listed": 223,
+        "chat_models": 201,
         "free_models": 23,
         "error": null,
-        "added_count": 0,
+        "added_count": 4,
         "removed_count": 0,
-        "added": [],
+        "added": [
+          "fastrouter/deepseek/deepseek-v4.1-flash-abliterated",
+          "fastrouter/deepseek/deepseek-v4.1-flash-ultrafast",
+          "fastrouter/z-ai/glm-5.3-abliterated",
+          "fastrouter/z-ai/glm-5.3-flash-abliterated"
+        ],
         "removed": []
       }
     },
@@ -37396,15 +37574,15 @@
     "skipped": 2
   },
   "summary": {
-    "total": 897,
-    "free_active": 197,
+    "total": 901,
+    "free_active": 196,
     "by_gateway": {
       "cerebras": 3,
       "fastrouter": 23,
       "gemini": 49,
       "groq": 4,
       "mistral": 27,
-      "nvidia": 72,
+      "nvidia": 71,
       "openrouter": 19,
       "tokenharbor": 0
     }
