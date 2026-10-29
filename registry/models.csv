@@ -24,159 +24,162 @@ Rank,Model,Intelligence,Tier (1-5),Size,Gateway,Gateway model id,Context class,C
 20,palmyra-fin-70b-32k,🟢 Strong,4,70B,nvidia,writer/palmyra-fin-70b-32k,⚪ Unknown,,Text,Yes~,Yes~,No,No,20,Free tier,"extraction, agent",1
 21,palmyra-med-70b,🟢 Strong,4,70B,nvidia,writer/palmyra-med-70b,⚪ Unknown,,Text,Yes~,Yes~,No,No,20,Free tier,"extraction, agent",1
 22,palmyra-med-70b-32k,🟢 Strong,4,70B,nvidia,writer/palmyra-med-70b-32k,⚪ Unknown,,Text,Yes~,Yes~,No,No,20,Free tier,"extraction, agent",1
-23,mistral-medium,🟢 Strong,4,unknown,mistral,mistral-medium,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",2
-23,mistral-medium,🟢 Strong,4,unknown,mistral,mistral-medium-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",2
-24,mistral-medium-2604,🟢 Strong,4,unknown,mistral,mistral-medium-2604,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
-25,mistral-medium-3,🟢 Strong,4,unknown,mistral,mistral-medium-3,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
-26,mistral-medium-3-5,🟢 Strong,4,unknown,mistral,mistral-medium-3-5,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",2
-26,mistral-medium-3-5,🟢 Strong,4,unknown,mistral,mistral-medium-3.5,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",2
-27,mistral-large,🟢 Strong,4,unknown,nvidia,mistralai/mistral-large,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-28,mistral-large-2-instruct,🟢 Strong,4,unknown,nvidia,mistralai/mistral-large-2-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-29,gemini-2.5-flash,🟢 Strong,4,unknown,gemini,gemini-2.5-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
-30,gemini-2.5-flash-native-audio-latest,🟢 Strong,4,unknown,gemini,gemini-2.5-flash-native-audio-latest,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
-31,gemini-2.5-flash-native-audio-preview-09-2025,🟢 Strong,4,unknown,gemini,gemini-2.5-flash-native-audio-preview-09-2025,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
-32,gemini-2.5-flash-native-audio-preview-12-2025,🟢 Strong,4,unknown,gemini,gemini-2.5-flash-native-audio-preview-12-2025,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
-33,qwen-3-32b,🟢 Strong,4,32B,cerebras,qwen-3-32b,🟡 Medium (8K-32K),32768,Text,Yes~,Yes~,Yes~,No,74,Free tier,"reasoning, extraction, agent",1
-34,nemotron-3-nano-30b,🟢 Strong,4,30B,fastrouter,nvidia/nemotron-3-nano-30b:free,🔵 Ultra (>200K),1048576,Text,Yes,Yes,Yes,No,35,Price 0,"reasoning, extraction, agent, long_doc, fast",1
-35,nemotron-3-nano-omni-30b-a3b-reasoning,🟢 Strong,4,30B,openrouter,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,🔵 Ultra (>200K),256000,Text + Vision,Yes,No,Yes,No,25,Price 0,"reasoning, vision, agent, long_doc, fast",2
-35,nemotron-3-nano-omni-30b-a3b-reasoning,🟢 Strong,4,30B,nvidia,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,30,Free tier,"reasoning, extraction, agent, fast",2
-36,nemotron-3.5-lightning-30b-a3b,🟢 Strong,4,30B,nvidia,nvidia/nemotron-3.5-lightning-30b-a3b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,30,Free tier,"reasoning, extraction, agent",1
-37,nemotron-nano-3-30b-a3b,🟢 Strong,4,30B,nvidia,nvidia/nemotron-nano-3-30b-a3b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,30,Free tier,"reasoning, extraction, agent, fast",1
-38,qwen3.8-27b,🟢 Strong,4,27B,groq,qwen/qwen3.8-27b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,Yes~,No,71,Free tier,"reasoning, extraction, agent, long_doc",1
-39,granite-34b-code-instruct,🟢 Strong,4,34B,nvidia,ibm/granite-34b-code-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,Yes~,28,Free tier,"coding, extraction, agent",1
-40,gemini-2.5-computer-use-preview-10-2025,🟢 Strong,4,unknown,gemini,gemini-2.5-computer-use-preview-10-2025,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc",1
-41,gemini-3-flash-preview,🟢 Strong,4,unknown,gemini,gemini-3-flash-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-42,gemini-3.1-flash-live-preview,🟢 Strong,4,unknown,gemini,gemini-3.1-flash-live-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-43,gemini-3.5-flash,🟢 Strong,4,unknown,gemini,gemini-3.5-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-44,gemini-3.6-flash,🟢 Strong,4,unknown,gemini,gemini-3.6-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-45,gemini-3.7-flash,🟢 Strong,4,unknown,gemini,gemini-3.7-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-46,gemini-3.8-flash,🟢 Strong,4,unknown,gemini,gemini-3.8-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-47,gemini-3.8-live-extended-thinking,🟢 Strong,4,unknown,gemini,gemini-3.8-live-extended-thinking,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc",1
-48,gemini-flash-latest,🟢 Strong,4,unknown,gemini,gemini-flash-latest,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-49,gemini-omni-1.1-flash,🟢 Strong,4,unknown,gemini,gemini-omni-1.1-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-50,gemini-omni-flash-preview,🟢 Strong,4,unknown,gemini,gemini-omni-flash-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-51,gemma-4-31b-it,🔵 Good,3,31B,openrouter,google/gemma-4-31b-it:free,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,24,Price 0,"vision, extraction, agent, long_doc",3
-51,gemma-4-31b-it,🔵 Good,3,31B,gemini,gemma-4-31b-it,⚪ Unknown,,Text,Yes~,Yes~,No,No,44,Free tier,"extraction, agent",3
-51,gemma-4-31b-it,🔵 Good,3,31B,nvidia,google/gemma-4-31b-it,⚪ Unknown,,Text,Yes~,Yes~,No,No,29,Free tier,"extraction, agent",3
-52,ising-calibration-1.5-31b,🔵 Good,3,31B,nvidia,nvidia/ising-calibration-1.5-31b,⚪ Unknown,,Text,Yes~,Yes~,No,No,29,Free tier,"extraction, agent",1
-53,xing4.0-29b-a4b,🔵 Good,3,29B,openrouter,xingchen-agi/xing4.0-29b-a4b:free,🔵 Ultra (>200K),262144,Text,Yes,Yes,No,No,25,Price 0,"extraction, agent, long_doc",1
-54,muse-glimmer-30b,🔵 Good,3,30B,nvidia,meta/muse-glimmer-30b,⚪ Unknown,,Text,Yes~,Yes~,No,No,30,Free tier,"extraction, agent",1
-55,gpt-oss-20b,🔵 Good,3,20B,groq,openai/gpt-oss-20b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,Yes~,No,74,Free tier,"reasoning, extraction, agent, long_doc",3
-55,gpt-oss-20b,🔵 Good,3,20B,fastrouter,openai/gpt-oss-20b:free,🟢 Long (32K-200K),131072,Text,Yes,Yes,Yes,No,39,Price 0,"reasoning, extraction, agent, long_doc",3
-55,gpt-oss-20b,🔵 Good,3,20B,nvidia,openai/gpt-oss-20b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",3
-56,gemma-4-26b-a4b-it,🔵 Good,3,26B,openrouter,google/gemma-4-26b-a4b-it:free,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,26,Price 0,"vision, extraction, agent, long_doc",3
-56,gemma-4-26b-a4b-it,🔵 Good,3,26B,fastrouter,google/gemma-4-26b-a4b-it,🟢 Long (32K-200K),131072,Text + Vision,Yes,No,No,No,36,Price 0,"vision, agent, long_doc",3
-56,gemma-4-26b-a4b-it,🔵 Good,3,26B,gemini,gemma-4-26b-a4b-it,⚪ Unknown,,Text,Yes~,Yes~,No,No,46,Free tier,"extraction, agent",3
-57,gemma4-26b,🔵 Good,3,26B,fastrouter,google/gemma4-26b:free,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,36,Price 0,"vision, extraction, agent, long_doc",1
-58,codestral-2508,🔵 Good,3,unknown,mistral,codestral-2508,🔵 Ultra (>200K),256000,Text,Yes,Yes,No,Yes,44,Free tier,"coding, extraction, agent, long_doc",1
-59,codestral-latest,🔵 Good,3,unknown,mistral,codestral-latest,🔵 Ultra (>200K),256000,Text,Yes,Yes,No,Yes,44,Free tier,"coding, extraction, agent, long_doc",1
-60,diffusiongemma-26b-a4b-it,🔵 Good,3,26B,nvidia,google/diffusiongemma-26b-a4b-it,⚪ Unknown,,Text,Yes~,Yes~,No,No,31,Free tier,"extraction, agent",1
-61,gemini-3.5-live-translate-preview,🔵 Good,3,unknown,gemini,gemini-3.5-live-translate-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc",1
-62,gemini-3.8-live,🔵 Good,3,unknown,gemini,gemini-3.8-live,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc",1
-63,gemini-4-argon,🔵 Good,3,unknown,gemini,gemini-4-argon,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc",1
-64,gemini-nano-banana-2.1,🔵 Good,3,unknown,gemini,gemini-nano-banana-2.1,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-65,gemini-robotics-er-2-preview,🔵 Good,3,unknown,gemini,gemini-robotics-er-2-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc",1
-66,gemini-robotics-er-2-streaming-preview,🔵 Good,3,unknown,gemini,gemini-robotics-er-2-streaming-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc",1
-67,codestral-22b-instruct-v0.1,🔵 Good,3,22B,nvidia,mistralai/codestral-22b-instruct-v0.1,⚪ Unknown,,Text,Yes~,Yes~,No,Yes~,33,Free tier,"coding, extraction, agent",1
-68,gemini-2.5-flash-lite,🔵 Good,3,unknown,gemini,gemini-2.5-flash-lite,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
-69,starcoder2-15b,🔵 Good,3,15B,nvidia,bigcode/starcoder2-15b,⚪ Unknown,,Text,Yes~,Yes~,No,No,38,Free tier,"extraction, agent",1
-70,ministral-14b-2512,🔵 Good,3,14B,mistral,ministral-14b-2512,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-71,ministral-14b-latest,🔵 Good,3,14B,mistral,ministral-14b-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-72,mistral-small-2603,🔵 Good,3,unknown,mistral,mistral-small-2603,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc, fast",1
-73,mistral-small-latest,🔵 Good,3,unknown,mistral,mistral-small-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc, fast",1
-74,gemma-3-12b-it,🔵 Good,3,12B,nvidia,google/gemma-3-12b-it,⚪ Unknown,,Text + Vision,Yes~,Yes~,No,No,40,Free tier,"vision, extraction, agent, fast",1
-75,mistral-nemo-12b-instruct,🔵 Good,3,12B,nvidia,nv-mistralai/mistral-nemo-12b-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,40,Free tier,"extraction, agent, fast",1
-76,gemini-3.1-flash-lite,🔵 Good,3,unknown,gemini,gemini-3.1-flash-lite,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-77,gemini-3.1-flash-lite-preview,🔵 Good,3,unknown,gemini,gemini-3.1-flash-lite-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-78,gemini-3.5-flash-lite,🔵 Good,3,unknown,gemini,gemini-3.5-flash-lite,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-79,gemini-flash-lite-latest,🔵 Good,3,unknown,gemini,gemini-flash-lite-latest,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
-80,ministral-8b-2512,🟡 Fair,2,8B,mistral,ministral-8b-2512,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,55,Free tier,"vision, extraction, agent, long_doc, fast",1
-81,ministral-8b-latest,🟡 Fair,2,8B,mistral,ministral-8b-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,55,Free tier,"vision, extraction, agent, long_doc, fast",1
-82,llama3.1-8b,🟡 Fair,2,8B,cerebras,llama3.1-8b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,No,No,90,Free tier,"extraction, agent, long_doc, fast",1
-83,cosmos-reason2-8b,🟡 Fair,2,8B,nvidia,nvidia/cosmos-reason2-8b,⚪ Unknown,,Text,Yes~,Yes~,No,No,45,Free tier,"extraction, agent, fast",1
-84,granite-3.0-8b-instruct,🟡 Fair,2,8B,nvidia,ibm/granite-3.0-8b-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,45,Free tier,"extraction, agent, fast",1
-85,granite-8b-code-instruct,🟡 Fair,2,8B,nvidia,ibm/granite-8b-code-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,Yes~,45,Free tier,"coding, extraction, agent, fast",1
-86,mistral-nemo-minitron-8b-8k-instruct,🟡 Fair,2,8B,nvidia,nvidia/mistral-nemo-minitron-8b-8k-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,45,Free tier,"extraction, agent, fast",1
-87,allam-2-7b,🟡 Fair,2,7B,groq,allam-2-7b,🟠 Short (<=8K),4096,Text,Yes~,Yes~,No,No,87,Free tier,"extraction, agent, fast",1
-88,codegemma-1.1-7b,🟡 Fair,2,7B,nvidia,google/codegemma-1.1-7b,⚪ Unknown,,Text,Yes~,Yes~,No,No,47,Free tier,"extraction, agent, fast",1
-89,codegemma-7b,🟡 Fair,2,7B,nvidia,google/codegemma-7b,⚪ Unknown,,Text,Yes~,Yes~,No,No,47,Free tier,"extraction, agent, fast",1
-90,mistral-7b-instruct-v0.3,🟡 Fair,2,7B,nvidia,mistralai/mistral-7b-instruct-v0.3,⚪ Unknown,,Text,Yes~,Yes~,No,No,47,Free tier,"extraction, agent, fast",1
-91,sea-lion-7b-instruct,🟡 Fair,2,7B,nvidia,aisingapore/sea-lion-7b-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,47,Free tier,"extraction, agent, fast",1
-92,zamba2-7b-instruct,🟡 Fair,2,7B,nvidia,zyphra/zamba2-7b-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,47,Free tier,"extraction, agent, fast",1
-93,deepseek-coder-6.7b-instruct,🟡 Fair,2,6.7B,nvidia,deepseek-ai/deepseek-coder-6.7b-instruct,⚪ Unknown,,Text,No,Yes~,No,Yes~,47,Free tier,"coding, fast",1
-94,gemma-3-4b-it,🟡 Fair,2,4B,nvidia,google/gemma-3-4b-it,⚪ Unknown,,Text + Vision,No,Yes~,No,No,53,Free tier,"vision, fast",1
-95,riva-translate-4b-instruct,🟡 Fair,2,4B,nvidia,nvidia/riva-translate-4b-instruct,⚪ Unknown,,Text,No,Yes~,No,No,53,Free tier,fast,1
-96,riva-translate-4b-instruct-v2,🟡 Fair,2,4B,nvidia,nvidia/riva-translate-4b-instruct-v2,⚪ Unknown,,Text,No,Yes~,No,No,53,Free tier,fast,1
-97,ministral-3b-2512,🔴 Basic,1,3B,mistral,ministral-3b-2512,🟢 Long (32K-200K),131072,Text + Vision,Yes,Yes,No,No,66,Free tier,"vision, long_doc, fast",1
-98,ministral-3b-latest,🔴 Basic,1,3B,mistral,ministral-3b-latest,🟢 Long (32K-200K),131072,Text + Vision,Yes,Yes,No,No,66,Free tier,"vision, long_doc, fast",1
-99,granite-3.0-3b-a800m-instruct,🔴 Basic,1,3B,nvidia,ibm/granite-3.0-3b-a800m-instruct,⚪ Unknown,,Text,No,Yes~,No,No,56,Free tier,fast,1
-100,inkling,🔴 Basic,1,unknown,openrouter,thinkingmachines/inkling:free,🔵 Ultra (>200K),1048576,Text + Vision,Yes,No,Yes,No,29,Price 0,"reasoning, vision, agent, long_doc",1
-101,inkling-small,🔴 Basic,1,unknown,openrouter,thinkingmachines/inkling-small:free,🔵 Ultra (>200K),1048576,Text + Vision,Yes,No,Yes,No,29,Price 0,"reasoning, vision, agent, long_doc, fast",1
-102,nemotron-3.5-lightning,🔴 Basic,1,unknown,openrouter,nvidia/nemotron-3.5-lightning:free,🔵 Ultra (>200K),1000000,Text,Yes,No,Yes,No,29,Price 0,"reasoning, agent, long_doc",1
-103,magistral-medium-latest,🔴 Basic,1,unknown,mistral,magistral-medium-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,Yes,No,44,Free tier,"reasoning, vision, extraction, agent, long_doc",1
-104,magistral-small-latest,🔴 Basic,1,unknown,mistral,magistral-small-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,Yes,No,44,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
-105,nemotron-3.5-content-safety,🔴 Basic,1,unknown,openrouter,nvidia/nemotron-3.5-content-safety:free,🟢 Long (32K-200K),128000,Text + Vision,No,No,Yes,No,29,Price 0,"reasoning, vision, long_doc",2
-105,nemotron-3.5-content-safety,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-3.5-content-safety,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",2
-106,nemotron-3.5-bolt-e4b,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-3.5-bolt-e4b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
-107,nemotron-parse,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-parse,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
-108,nemotron-parse-2.0,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-parse-2.0,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
-109,lfm-2.5-2.6b,🔴 Basic,1,2.6B,openrouter,liquid/lfm-2.5-2.6b:free,🟢 Long (32K-200K),65536,Text,Yes,Yes,No,No,53,Price 0,"long_doc, fast",1
-110,lyria-3-clip-preview,🔴 Basic,1,unknown,openrouter,google/lyria-3-clip-preview,🔵 Ultra (>200K),1048576,Text + Vision,No,Yes,No,No,29,Price 0,"vision, extraction, long_doc",2
-110,lyria-3-clip-preview,🔴 Basic,1,unknown,gemini,lyria-3-clip-preview,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",2
-111,lyria-3-pro-preview,🔴 Basic,1,unknown,openrouter,google/lyria-3-pro-preview,🔵 Ultra (>200K),1048576,Text + Vision,No,Yes,No,No,29,Price 0,"vision, extraction, long_doc",2
-111,lyria-3-pro-preview,🔴 Basic,1,unknown,gemini,lyria-3-pro-preview,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",2
-112,auto,🔴 Basic,1,unknown,fastrouter,fastrouter/auto,🔵 Ultra (>200K),1000000,Text + Vision,No,No,No,No,39,Price 0,"vision, long_doc",1
-113,dots-3-note-preview,🔴 Basic,1,unknown,openrouter,dots-studio/dots-3-note-preview:free,🔵 Ultra (>200K),512000,Text + Vision,Yes,Yes,No,No,29,Price 0,"vision, extraction, agent, long_doc",1
-114,wan-v2-6,🔴 Basic,1,unknown,fastrouter,wanx/wan-v2-6,🔵 Ultra (>200K),400000,Text + Vision,No,No,No,No,39,Price 0,"vision, long_doc",1
-115,flint-v1.0,🔴 Basic,1,unknown,openrouter,recursive/flint-v1.0:free,🔵 Ultra (>200K),262144,Text,Yes,Yes,No,No,29,Price 0,"extraction, agent, long_doc",1
-116,labs-leanstral-1-5,🔴 Basic,1,unknown,mistral,labs-leanstral-1-5,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
-117,labs-leanstral-1-5-1,🔴 Basic,1,unknown,mistral,labs-leanstral-1-5-1,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
-118,laguna-s-2.1,🔴 Basic,1,unknown,openrouter,poolside/laguna-s-2.1:free,🔵 Ultra (>200K),262144,Text,Yes,No,No,No,29,Price 0,"agent, long_doc",1
-119,laguna-xs-2.1,🔴 Basic,1,unknown,openrouter,poolside/laguna-xs-2.1:free,🔵 Ultra (>200K),262144,Text,Yes,No,No,No,29,Price 0,"agent, long_doc",2
-119,laguna-xs-2.1,🔴 Basic,1,unknown,nvidia,poolside/laguna-xs-2.1,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",2
-120,mistral-vibe-cli-fast,🔴 Basic,1,unknown,mistral,mistral-vibe-cli-fast,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc, fast",1
-121,mistral-vibe-cli-latest,🔴 Basic,1,unknown,mistral,mistral-vibe-cli-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
-122,mistral-vibe-cli-with-tools,🔴 Basic,1,unknown,mistral,mistral-vibe-cli-with-tools,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
-123,mistral-code-fim-latest,🔴 Basic,1,unknown,mistral,mistral-code-fim-latest,🔵 Ultra (>200K),256000,Text,Yes,Yes,No,Yes,44,Free tier,"coding, extraction, agent, long_doc",1
-124,mistral-code-latest,🔴 Basic,1,unknown,mistral,mistral-code-latest,🔵 Ultra (>200K),256000,Text,Yes,Yes,No,Yes,44,Free tier,"coding, extraction, agent, long_doc",1
-125,north-mini-code,🔴 Basic,1,unknown,openrouter,cohere/north-mini-code:free,🔵 Ultra (>200K),256000,Text,Yes,No,No,Yes,29,Price 0,"coding, agent, long_doc, fast",1
-126,free,🔴 Basic,1,unknown,openrouter,openrouter/free,🟢 Long (32K-200K),200000,Text + Vision,Yes,Yes,No,No,29,Price 0,"vision, extraction, agent, long_doc",1
-127,gpt-live-1,🔴 Basic,1,unknown,fastrouter,openai/gpt-live-1,🟢 Long (32K-200K),128000,Text,No,No,No,No,39,Price 0,long_doc,1
-128,voxtral-small-2507,🔴 Basic,1,unknown,mistral,voxtral-small-2507,🟡 Medium (8K-32K),32768,Text,Yes,Yes,No,No,44,Free tier,"extraction, agent, fast",1
-129,voxtral-small-latest,🔴 Basic,1,unknown,mistral,voxtral-small-latest,🟡 Medium (8K-32K),32768,Text,Yes,Yes,No,No,44,Free tier,"extraction, agent, fast",1
-130,happyhorse-1.1,🔴 Basic,1,unknown,fastrouter,alibaba/happyhorse-1.1,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
-131,lucid-origin,🔴 Basic,1,unknown,fastrouter,leonardo-ai/lucid-origin,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
-132,lucid-realism,🔴 Basic,1,unknown,fastrouter,leonardo-ai/lucid-realism,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
-133,nova-3,🔴 Basic,1,unknown,fastrouter,deepgram/nova-3,🟠 Short (<=8K),4096,Text,No,Yes,No,No,39,Price 0,extraction,1
-134,phoenix,🔴 Basic,1,unknown,fastrouter,leonardo-ai/phoenix,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
-135,seedream-4.0,🔴 Basic,1,unknown,fastrouter,bytedance/seedream-4.0,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
-136,seedream-4.5,🔴 Basic,1,unknown,fastrouter,bytedance/seedream-4.5,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
-137,wan-v2-7,🔴 Basic,1,unknown,fastrouter,wanx/wan-v2-7,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
-138,wan-v3-0,🔴 Basic,1,unknown,fastrouter,wanx/wan-v3-0,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
-139,ai-synthetic-video-detector,🔴 Basic,1,unknown,nvidia,nvidia/ai-synthetic-video-detector,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-140,antigravity-preview-05-2026,🔴 Basic,1,unknown,gemini,antigravity-preview-05-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-141,antigravity-preview-09-2026,🔴 Basic,1,unknown,gemini,antigravity-preview-09-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-142,antigravity-preview-latest,🔴 Basic,1,unknown,gemini,antigravity-preview-latest,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-143,dbrx-instruct,🔴 Basic,1,unknown,nvidia,databricks/dbrx-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-144,deep-research-max-preview-04-2026,🔴 Basic,1,unknown,gemini,deep-research-max-preview-04-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-145,deep-research-preview-04-2026,🔴 Basic,1,unknown,gemini,deep-research-preview-04-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-146,deep-research-pro-preview-12-2025,🔴 Basic,1,unknown,gemini,deep-research-pro-preview-12-2025,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-147,deepseek-v4.1-flash,🔴 Basic,1,unknown,nvidia,deepseek-ai/deepseek-v4.1-flash,⚪ Unknown,,Text,Yes~,Yes~,No,Yes~,34,Free tier,"coding, extraction, agent, fast",1
-148,deplot,🔴 Basic,1,unknown,nvidia,google/deplot,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-149,gemma-2b,🔴 Basic,1,2B,nvidia,google/gemma-2b,⚪ Unknown,,Text,No,Yes~,No,No,61,Free tier,fast,1
-150,glm-5.3-flash,🔴 Basic,1,unknown,nvidia,z-ai/glm-5.3-flash,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent, fast",1
-151,jamba-1.5-large-instruct,🔴 Basic,1,unknown,nvidia,ai21labs/jamba-1.5-large-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-152,kimi-k2.6,🔴 Basic,1,unknown,nvidia,moonshotai/kimi-k2.6,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-153,lyria-3.5,🔴 Basic,1,unknown,gemini,lyria-3.5,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-154,lyria-realtime-exp,🔴 Basic,1,unknown,gemini,lyria-realtime-exp,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-155,minimax-m3.1-flash,🔴 Basic,1,unknown,nvidia,minimaxai/minimax-m3.1-flash,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent, fast",1
-156,nano-banana-pro-preview,🔴 Basic,1,unknown,gemini,nano-banana-pro-preview,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent, fast",1
-157,nvclip,🔴 Basic,1,unknown,nvidia,nvidia/nvclip,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-158,phi-3.5-moe-instruct,🔴 Basic,1,unknown,nvidia,microsoft/phi-3.5-moe-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-159,prompt-to-audio,🔴 Basic,1,unknown,fastrouter,ace-step/prompt-to-audio,⚪ Unknown,,Text,No,No,No,No,39,Price 0,general,1
-160,recurrentgemma-2b,🔴 Basic,1,2B,nvidia,google/recurrentgemma-2b,⚪ Unknown,,Text,No,Yes~,No,No,61,Free tier,fast,1
-161,step-5-preview,🔴 Basic,1,unknown,nvidia,stepfun-ai/step-5-preview,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-162,yi-large,🔴 Basic,1,unknown,nvidia,01-ai/yi-large,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+23,mistral-large-4,🟢 Strong,4,unknown,mistral,mistral-large-4,🔵 Ultra (>200K),1048576,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
+24,mistral-large-4-0,🟢 Strong,4,unknown,mistral,mistral-large-4-0,🔵 Ultra (>200K),1048576,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
+25,mistral-medium,🟢 Strong,4,unknown,mistral,mistral-medium,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",2
+25,mistral-medium,🟢 Strong,4,unknown,mistral,mistral-medium-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",2
+26,mistral-medium-2604,🟢 Strong,4,unknown,mistral,mistral-medium-2604,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
+27,mistral-medium-3,🟢 Strong,4,unknown,mistral,mistral-medium-3,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
+28,mistral-medium-3-5,🟢 Strong,4,unknown,mistral,mistral-medium-3-5,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",2
+28,mistral-medium-3-5,🟢 Strong,4,unknown,mistral,mistral-medium-3.5,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",2
+29,mistral-large,🟢 Strong,4,unknown,nvidia,mistralai/mistral-large,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+30,mistral-large-2-instruct,🟢 Strong,4,unknown,nvidia,mistralai/mistral-large-2-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+31,mistral-large-4-1t-a52b,🟢 Strong,4,unknown,nvidia,mistralai/mistral-large-4-1t-a52b,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+32,gemini-2.5-flash,🟢 Strong,4,unknown,gemini,gemini-2.5-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
+33,gemini-2.5-flash-native-audio-latest,🟢 Strong,4,unknown,gemini,gemini-2.5-flash-native-audio-latest,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
+34,gemini-2.5-flash-native-audio-preview-09-2025,🟢 Strong,4,unknown,gemini,gemini-2.5-flash-native-audio-preview-09-2025,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
+35,gemini-2.5-flash-native-audio-preview-12-2025,🟢 Strong,4,unknown,gemini,gemini-2.5-flash-native-audio-preview-12-2025,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
+36,qwen-3-32b,🟢 Strong,4,32B,cerebras,qwen-3-32b,🟡 Medium (8K-32K),32768,Text,Yes~,Yes~,Yes~,No,74,Free tier,"reasoning, extraction, agent",1
+37,nemotron-3-nano-30b,🟢 Strong,4,30B,fastrouter,nvidia/nemotron-3-nano-30b:free,🔵 Ultra (>200K),1048576,Text,Yes,Yes,Yes,No,35,Price 0,"reasoning, extraction, agent, long_doc, fast",1
+38,nemotron-3-nano-omni-30b-a3b-reasoning,🟢 Strong,4,30B,openrouter,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,🔵 Ultra (>200K),256000,Text + Vision,Yes,No,Yes,No,25,Price 0,"reasoning, vision, agent, long_doc, fast",2
+38,nemotron-3-nano-omni-30b-a3b-reasoning,🟢 Strong,4,30B,nvidia,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,30,Free tier,"reasoning, extraction, agent, fast",2
+39,nemotron-3.5-lightning-30b-a3b,🟢 Strong,4,30B,nvidia,nvidia/nemotron-3.5-lightning-30b-a3b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,30,Free tier,"reasoning, extraction, agent",1
+40,nemotron-nano-3-30b-a3b,🟢 Strong,4,30B,nvidia,nvidia/nemotron-nano-3-30b-a3b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,30,Free tier,"reasoning, extraction, agent, fast",1
+41,qwen3.8-27b,🟢 Strong,4,27B,groq,qwen/qwen3.8-27b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,Yes~,No,71,Free tier,"reasoning, extraction, agent, long_doc",1
+42,granite-34b-code-instruct,🟢 Strong,4,34B,nvidia,ibm/granite-34b-code-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,Yes~,28,Free tier,"coding, extraction, agent",1
+43,gemini-2.5-computer-use-preview-10-2025,🟢 Strong,4,unknown,gemini,gemini-2.5-computer-use-preview-10-2025,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc",1
+44,gemini-3-flash-preview,🟢 Strong,4,unknown,gemini,gemini-3-flash-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+45,gemini-3.1-flash-live-preview,🟢 Strong,4,unknown,gemini,gemini-3.1-flash-live-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+46,gemini-3.5-flash,🟢 Strong,4,unknown,gemini,gemini-3.5-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+47,gemini-3.6-flash,🟢 Strong,4,unknown,gemini,gemini-3.6-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+48,gemini-3.7-flash,🟢 Strong,4,unknown,gemini,gemini-3.7-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+49,gemini-3.8-flash,🟢 Strong,4,unknown,gemini,gemini-3.8-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+50,gemini-3.8-live-extended-thinking,🟢 Strong,4,unknown,gemini,gemini-3.8-live-extended-thinking,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc",1
+51,gemini-flash-latest,🟢 Strong,4,unknown,gemini,gemini-flash-latest,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+52,gemini-omni-1.1-flash,🟢 Strong,4,unknown,gemini,gemini-omni-1.1-flash,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+53,gemini-omni-flash-preview,🟢 Strong,4,unknown,gemini,gemini-omni-flash-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+54,gemma-4-31b-it,🔵 Good,3,31B,openrouter,google/gemma-4-31b-it:free,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,24,Price 0,"vision, extraction, agent, long_doc",3
+54,gemma-4-31b-it,🔵 Good,3,31B,gemini,gemma-4-31b-it,⚪ Unknown,,Text,Yes~,Yes~,No,No,44,Free tier,"extraction, agent",3
+54,gemma-4-31b-it,🔵 Good,3,31B,nvidia,google/gemma-4-31b-it,⚪ Unknown,,Text,Yes~,Yes~,No,No,29,Free tier,"extraction, agent",3
+55,ising-calibration-1.5-31b,🔵 Good,3,31B,nvidia,nvidia/ising-calibration-1.5-31b,⚪ Unknown,,Text,Yes~,Yes~,No,No,29,Free tier,"extraction, agent",1
+56,xing4.0-29b-a4b,🔵 Good,3,29B,openrouter,xingchen-agi/xing4.0-29b-a4b:free,🔵 Ultra (>200K),262144,Text,Yes,Yes,No,No,25,Price 0,"extraction, agent, long_doc",1
+57,muse-glimmer-30b,🔵 Good,3,30B,nvidia,meta/muse-glimmer-30b,⚪ Unknown,,Text,Yes~,Yes~,No,No,30,Free tier,"extraction, agent",1
+58,gpt-oss-20b,🔵 Good,3,20B,groq,openai/gpt-oss-20b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,Yes~,No,74,Free tier,"reasoning, extraction, agent, long_doc",3
+58,gpt-oss-20b,🔵 Good,3,20B,fastrouter,openai/gpt-oss-20b:free,🟢 Long (32K-200K),131072,Text,Yes,Yes,Yes,No,39,Price 0,"reasoning, extraction, agent, long_doc",3
+58,gpt-oss-20b,🔵 Good,3,20B,nvidia,openai/gpt-oss-20b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",3
+59,gemma-4-26b-a4b-it,🔵 Good,3,26B,openrouter,google/gemma-4-26b-a4b-it:free,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,26,Price 0,"vision, extraction, agent, long_doc",3
+59,gemma-4-26b-a4b-it,🔵 Good,3,26B,fastrouter,google/gemma-4-26b-a4b-it,🟢 Long (32K-200K),131072,Text + Vision,Yes,No,No,No,36,Price 0,"vision, agent, long_doc",3
+59,gemma-4-26b-a4b-it,🔵 Good,3,26B,gemini,gemma-4-26b-a4b-it,⚪ Unknown,,Text,Yes~,Yes~,No,No,46,Free tier,"extraction, agent",3
+60,gemma4-26b,🔵 Good,3,26B,fastrouter,google/gemma4-26b:free,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,36,Price 0,"vision, extraction, agent, long_doc",1
+61,codestral-2508,🔵 Good,3,unknown,mistral,codestral-2508,🔵 Ultra (>200K),256000,Text,Yes,Yes,No,Yes,44,Free tier,"coding, extraction, agent, long_doc",1
+62,codestral-latest,🔵 Good,3,unknown,mistral,codestral-latest,🔵 Ultra (>200K),256000,Text,Yes,Yes,No,Yes,44,Free tier,"coding, extraction, agent, long_doc",1
+63,diffusiongemma-26b-a4b-it,🔵 Good,3,26B,nvidia,google/diffusiongemma-26b-a4b-it,⚪ Unknown,,Text,Yes~,Yes~,No,No,31,Free tier,"extraction, agent",1
+64,gemini-3.5-live-translate-preview,🔵 Good,3,unknown,gemini,gemini-3.5-live-translate-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc",1
+65,gemini-3.8-live,🔵 Good,3,unknown,gemini,gemini-3.8-live,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc",1
+66,gemini-4-argon,🔵 Good,3,unknown,gemini,gemini-4-argon,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc",1
+67,gemini-nano-banana-2.1,🔵 Good,3,unknown,gemini,gemini-nano-banana-2.1,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+68,gemini-robotics-er-2-preview,🔵 Good,3,unknown,gemini,gemini-robotics-er-2-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc",1
+69,gemini-robotics-er-2-streaming-preview,🔵 Good,3,unknown,gemini,gemini-robotics-er-2-streaming-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc",1
+70,codestral-22b-instruct-v0.1,🔵 Good,3,22B,nvidia,mistralai/codestral-22b-instruct-v0.1,⚪ Unknown,,Text,Yes~,Yes~,No,Yes~,33,Free tier,"coding, extraction, agent",1
+71,gemini-2.5-flash-lite,🔵 Good,3,unknown,gemini,gemini-2.5-flash-lite,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,Yes~,No,49,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
+72,starcoder2-15b,🔵 Good,3,15B,nvidia,bigcode/starcoder2-15b,⚪ Unknown,,Text,Yes~,Yes~,No,No,38,Free tier,"extraction, agent",1
+73,ministral-14b-2512,🔵 Good,3,14B,mistral,ministral-14b-2512,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+74,ministral-14b-latest,🔵 Good,3,14B,mistral,ministral-14b-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+75,mistral-small-2603,🔵 Good,3,unknown,mistral,mistral-small-2603,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc, fast",1
+76,mistral-small-latest,🔵 Good,3,unknown,mistral,mistral-small-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc, fast",1
+77,gemma-3-12b-it,🔵 Good,3,12B,nvidia,google/gemma-3-12b-it,⚪ Unknown,,Text + Vision,Yes~,Yes~,No,No,40,Free tier,"vision, extraction, agent, fast",1
+78,mistral-nemo-12b-instruct,🔵 Good,3,12B,nvidia,nv-mistralai/mistral-nemo-12b-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,40,Free tier,"extraction, agent, fast",1
+79,gemini-3.1-flash-lite,🔵 Good,3,unknown,gemini,gemini-3.1-flash-lite,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+80,gemini-3.1-flash-lite-preview,🔵 Good,3,unknown,gemini,gemini-3.1-flash-lite-preview,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+81,gemini-3.5-flash-lite,🔵 Good,3,unknown,gemini,gemini-3.5-flash-lite,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+82,gemini-flash-lite-latest,🔵 Good,3,unknown,gemini,gemini-flash-lite-latest,🔵 Ultra (>200K),1048576,Text + Vision,Yes~,Yes~,No,No,49,Free tier,"vision, extraction, agent, long_doc, fast",1
+83,ministral-8b-2512,🟡 Fair,2,8B,mistral,ministral-8b-2512,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,55,Free tier,"vision, extraction, agent, long_doc, fast",1
+84,ministral-8b-latest,🟡 Fair,2,8B,mistral,ministral-8b-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,55,Free tier,"vision, extraction, agent, long_doc, fast",1
+85,llama3.1-8b,🟡 Fair,2,8B,cerebras,llama3.1-8b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,No,No,90,Free tier,"extraction, agent, long_doc, fast",1
+86,cosmos-reason2-8b,🟡 Fair,2,8B,nvidia,nvidia/cosmos-reason2-8b,⚪ Unknown,,Text,Yes~,Yes~,No,No,45,Free tier,"extraction, agent, fast",1
+87,granite-3.0-8b-instruct,🟡 Fair,2,8B,nvidia,ibm/granite-3.0-8b-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,45,Free tier,"extraction, agent, fast",1
+88,granite-8b-code-instruct,🟡 Fair,2,8B,nvidia,ibm/granite-8b-code-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,Yes~,45,Free tier,"coding, extraction, agent, fast",1
+89,mistral-nemo-minitron-8b-8k-instruct,🟡 Fair,2,8B,nvidia,nvidia/mistral-nemo-minitron-8b-8k-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,45,Free tier,"extraction, agent, fast",1
+90,allam-2-7b,🟡 Fair,2,7B,groq,allam-2-7b,🟠 Short (<=8K),4096,Text,Yes~,Yes~,No,No,87,Free tier,"extraction, agent, fast",1
+91,codegemma-1.1-7b,🟡 Fair,2,7B,nvidia,google/codegemma-1.1-7b,⚪ Unknown,,Text,Yes~,Yes~,No,No,47,Free tier,"extraction, agent, fast",1
+92,codegemma-7b,🟡 Fair,2,7B,nvidia,google/codegemma-7b,⚪ Unknown,,Text,Yes~,Yes~,No,No,47,Free tier,"extraction, agent, fast",1
+93,mistral-7b-instruct-v0.3,🟡 Fair,2,7B,nvidia,mistralai/mistral-7b-instruct-v0.3,⚪ Unknown,,Text,Yes~,Yes~,No,No,47,Free tier,"extraction, agent, fast",1
+94,sea-lion-7b-instruct,🟡 Fair,2,7B,nvidia,aisingapore/sea-lion-7b-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,47,Free tier,"extraction, agent, fast",1
+95,zamba2-7b-instruct,🟡 Fair,2,7B,nvidia,zyphra/zamba2-7b-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,47,Free tier,"extraction, agent, fast",1
+96,deepseek-coder-6.7b-instruct,🟡 Fair,2,6.7B,nvidia,deepseek-ai/deepseek-coder-6.7b-instruct,⚪ Unknown,,Text,No,Yes~,No,Yes~,47,Free tier,"coding, fast",1
+97,gemma-3-4b-it,🟡 Fair,2,4B,nvidia,google/gemma-3-4b-it,⚪ Unknown,,Text + Vision,No,Yes~,No,No,53,Free tier,"vision, fast",1
+98,riva-translate-4b-instruct,🟡 Fair,2,4B,nvidia,nvidia/riva-translate-4b-instruct,⚪ Unknown,,Text,No,Yes~,No,No,53,Free tier,fast,1
+99,riva-translate-4b-instruct-v2,🟡 Fair,2,4B,nvidia,nvidia/riva-translate-4b-instruct-v2,⚪ Unknown,,Text,No,Yes~,No,No,53,Free tier,fast,1
+100,ministral-3b-2512,🔴 Basic,1,3B,mistral,ministral-3b-2512,🟢 Long (32K-200K),131072,Text + Vision,Yes,Yes,No,No,66,Free tier,"vision, long_doc, fast",1
+101,ministral-3b-latest,🔴 Basic,1,3B,mistral,ministral-3b-latest,🟢 Long (32K-200K),131072,Text + Vision,Yes,Yes,No,No,66,Free tier,"vision, long_doc, fast",1
+102,granite-3.0-3b-a800m-instruct,🔴 Basic,1,3B,nvidia,ibm/granite-3.0-3b-a800m-instruct,⚪ Unknown,,Text,No,Yes~,No,No,56,Free tier,fast,1
+103,inkling,🔴 Basic,1,unknown,openrouter,thinkingmachines/inkling:free,🔵 Ultra (>200K),1048576,Text + Vision,Yes,No,Yes,No,29,Price 0,"reasoning, vision, agent, long_doc",1
+104,inkling-small,🔴 Basic,1,unknown,openrouter,thinkingmachines/inkling-small:free,🔵 Ultra (>200K),1048576,Text + Vision,Yes,No,Yes,No,29,Price 0,"reasoning, vision, agent, long_doc, fast",1
+105,nemotron-3.5-lightning,🔴 Basic,1,unknown,openrouter,nvidia/nemotron-3.5-lightning:free,🔵 Ultra (>200K),1000000,Text,Yes,No,Yes,No,29,Price 0,"reasoning, agent, long_doc",1
+106,magistral-medium-latest,🔴 Basic,1,unknown,mistral,magistral-medium-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,Yes,No,44,Free tier,"reasoning, vision, extraction, agent, long_doc",1
+107,magistral-small-latest,🔴 Basic,1,unknown,mistral,magistral-small-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,Yes,No,44,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
+108,nemotron-3.5-content-safety,🔴 Basic,1,unknown,openrouter,nvidia/nemotron-3.5-content-safety:free,🟢 Long (32K-200K),128000,Text + Vision,No,No,Yes,No,29,Price 0,"reasoning, vision, long_doc",2
+108,nemotron-3.5-content-safety,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-3.5-content-safety,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",2
+109,nemotron-3.5-bolt-e4b,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-3.5-bolt-e4b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
+110,nemotron-parse,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-parse,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
+111,nemotron-parse-2.0,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-parse-2.0,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
+112,lfm-2.5-2.6b,🔴 Basic,1,2.6B,openrouter,liquid/lfm-2.5-2.6b:free,🟢 Long (32K-200K),65536,Text,Yes,Yes,No,No,53,Price 0,"long_doc, fast",1
+113,lyria-3-clip-preview,🔴 Basic,1,unknown,openrouter,google/lyria-3-clip-preview,🔵 Ultra (>200K),1048576,Text + Vision,No,Yes,No,No,29,Price 0,"vision, extraction, long_doc",2
+113,lyria-3-clip-preview,🔴 Basic,1,unknown,gemini,lyria-3-clip-preview,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",2
+114,lyria-3-pro-preview,🔴 Basic,1,unknown,openrouter,google/lyria-3-pro-preview,🔵 Ultra (>200K),1048576,Text + Vision,No,Yes,No,No,29,Price 0,"vision, extraction, long_doc",2
+114,lyria-3-pro-preview,🔴 Basic,1,unknown,gemini,lyria-3-pro-preview,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",2
+115,auto,🔴 Basic,1,unknown,fastrouter,fastrouter/auto,🔵 Ultra (>200K),1000000,Text + Vision,No,No,No,No,39,Price 0,"vision, long_doc",1
+116,dots-3-note-preview,🔴 Basic,1,unknown,openrouter,dots-studio/dots-3-note-preview:free,🔵 Ultra (>200K),512000,Text + Vision,Yes,Yes,No,No,29,Price 0,"vision, extraction, agent, long_doc",1
+117,wan-v2-6,🔴 Basic,1,unknown,fastrouter,wanx/wan-v2-6,🔵 Ultra (>200K),400000,Text + Vision,No,No,No,No,39,Price 0,"vision, long_doc",1
+118,flint-v1.0,🔴 Basic,1,unknown,openrouter,recursive/flint-v1.0:free,🔵 Ultra (>200K),262144,Text,Yes,Yes,No,No,29,Price 0,"extraction, agent, long_doc",1
+119,labs-leanstral-1-5,🔴 Basic,1,unknown,mistral,labs-leanstral-1-5,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
+120,labs-leanstral-1-5-1,🔴 Basic,1,unknown,mistral,labs-leanstral-1-5-1,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
+121,laguna-s-2.1,🔴 Basic,1,unknown,openrouter,poolside/laguna-s-2.1:free,🔵 Ultra (>200K),262144,Text,Yes,No,No,No,29,Price 0,"agent, long_doc",1
+122,laguna-xs-2.1,🔴 Basic,1,unknown,openrouter,poolside/laguna-xs-2.1:free,🔵 Ultra (>200K),262144,Text,Yes,No,No,No,29,Price 0,"agent, long_doc",2
+122,laguna-xs-2.1,🔴 Basic,1,unknown,nvidia,poolside/laguna-xs-2.1,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",2
+123,mistral-vibe-cli-fast,🔴 Basic,1,unknown,mistral,mistral-vibe-cli-fast,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc, fast",1
+124,mistral-vibe-cli-latest,🔴 Basic,1,unknown,mistral,mistral-vibe-cli-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
+125,mistral-vibe-cli-with-tools,🔴 Basic,1,unknown,mistral,mistral-vibe-cli-with-tools,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
+126,mistral-code-fim-latest,🔴 Basic,1,unknown,mistral,mistral-code-fim-latest,🔵 Ultra (>200K),256000,Text,Yes,Yes,No,Yes,44,Free tier,"coding, extraction, agent, long_doc",1
+127,mistral-code-latest,🔴 Basic,1,unknown,mistral,mistral-code-latest,🔵 Ultra (>200K),256000,Text,Yes,Yes,No,Yes,44,Free tier,"coding, extraction, agent, long_doc",1
+128,north-mini-code,🔴 Basic,1,unknown,openrouter,cohere/north-mini-code:free,🔵 Ultra (>200K),256000,Text,Yes,No,No,Yes,29,Price 0,"coding, agent, long_doc, fast",1
+129,free,🔴 Basic,1,unknown,openrouter,openrouter/free,🟢 Long (32K-200K),200000,Text + Vision,Yes,Yes,No,No,29,Price 0,"vision, extraction, agent, long_doc",1
+130,gpt-live-1,🔴 Basic,1,unknown,fastrouter,openai/gpt-live-1,🟢 Long (32K-200K),128000,Text,No,No,No,No,39,Price 0,long_doc,1
+131,voxtral-small-2507,🔴 Basic,1,unknown,mistral,voxtral-small-2507,🟡 Medium (8K-32K),32768,Text,Yes,Yes,No,No,44,Free tier,"extraction, agent, fast",1
+132,voxtral-small-latest,🔴 Basic,1,unknown,mistral,voxtral-small-latest,🟡 Medium (8K-32K),32768,Text,Yes,Yes,No,No,44,Free tier,"extraction, agent, fast",1
+133,happyhorse-1.1,🔴 Basic,1,unknown,fastrouter,alibaba/happyhorse-1.1,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
+134,lucid-origin,🔴 Basic,1,unknown,fastrouter,leonardo-ai/lucid-origin,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
+135,lucid-realism,🔴 Basic,1,unknown,fastrouter,leonardo-ai/lucid-realism,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
+136,nova-3,🔴 Basic,1,unknown,fastrouter,deepgram/nova-3,🟠 Short (<=8K),4096,Text,No,Yes,No,No,39,Price 0,extraction,1
+137,phoenix,🔴 Basic,1,unknown,fastrouter,leonardo-ai/phoenix,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
+138,seedream-4.0,🔴 Basic,1,unknown,fastrouter,bytedance/seedream-4.0,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
+139,seedream-4.5,🔴 Basic,1,unknown,fastrouter,bytedance/seedream-4.5,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
+140,wan-v2-7,🔴 Basic,1,unknown,fastrouter,wanx/wan-v2-7,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
+141,wan-v3-0,🔴 Basic,1,unknown,fastrouter,wanx/wan-v3-0,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
+142,ai-synthetic-video-detector,🔴 Basic,1,unknown,nvidia,nvidia/ai-synthetic-video-detector,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+143,antigravity-preview-05-2026,🔴 Basic,1,unknown,gemini,antigravity-preview-05-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+144,antigravity-preview-09-2026,🔴 Basic,1,unknown,gemini,antigravity-preview-09-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+145,antigravity-preview-latest,🔴 Basic,1,unknown,gemini,antigravity-preview-latest,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+146,dbrx-instruct,🔴 Basic,1,unknown,nvidia,databricks/dbrx-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+147,deep-research-max-preview-04-2026,🔴 Basic,1,unknown,gemini,deep-research-max-preview-04-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+148,deep-research-preview-04-2026,🔴 Basic,1,unknown,gemini,deep-research-preview-04-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+149,deep-research-pro-preview-12-2025,🔴 Basic,1,unknown,gemini,deep-research-pro-preview-12-2025,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+150,deepseek-v4.1-flash,🔴 Basic,1,unknown,nvidia,deepseek-ai/deepseek-v4.1-flash,⚪ Unknown,,Text,Yes~,Yes~,No,Yes~,34,Free tier,"coding, extraction, agent, fast",1
+151,deplot,🔴 Basic,1,unknown,nvidia,google/deplot,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+152,gemma-2b,🔴 Basic,1,2B,nvidia,google/gemma-2b,⚪ Unknown,,Text,No,Yes~,No,No,61,Free tier,fast,1
+153,glm-5.3-flash,🔴 Basic,1,unknown,nvidia,z-ai/glm-5.3-flash,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent, fast",1
+154,jamba-1.5-large-instruct,🔴 Basic,1,unknown,nvidia,ai21labs/jamba-1.5-large-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+155,kimi-k2.6,🔴 Basic,1,unknown,nvidia,moonshotai/kimi-k2.6,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+156,lyria-3.5,🔴 Basic,1,unknown,gemini,lyria-3.5,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+157,lyria-realtime-exp,🔴 Basic,1,unknown,gemini,lyria-realtime-exp,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+158,minimax-m3.1-flash,🔴 Basic,1,unknown,nvidia,minimaxai/minimax-m3.1-flash,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent, fast",1
+159,nano-banana-pro-preview,🔴 Basic,1,unknown,gemini,nano-banana-pro-preview,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent, fast",1
+160,nvclip,🔴 Basic,1,unknown,nvidia,nvidia/nvclip,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+161,phi-3.5-moe-instruct,🔴 Basic,1,unknown,nvidia,microsoft/phi-3.5-moe-instruct,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+162,prompt-to-audio,🔴 Basic,1,unknown,fastrouter,ace-step/prompt-to-audio,⚪ Unknown,,Text,No,No,No,No,39,Price 0,general,1
+163,recurrentgemma-2b,🔴 Basic,1,2B,nvidia,google/recurrentgemma-2b,⚪ Unknown,,Text,No,Yes~,No,No,61,Free tier,fast,1
+164,step-5-preview,🔴 Basic,1,unknown,nvidia,stepfun-ai/step-5-preview,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+165,yi-large,🔴 Basic,1,unknown,nvidia,01-ai/yi-large,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
 ,,,,,,,,,,,,,,,,,
 "VISION-SPECIALIST MODELS (image models, listed separately; skip these if you only need text)",,,,,,,,,,,,,,,,,
 Rank,Model,Intelligence,Tier (1-5),Size,Gateway,Gateway model id,Context class,Context (tokens),Modality,Tools,JSON,Reasoning,Coding,Speed (0-100),Free type,Best for,Gateways in group

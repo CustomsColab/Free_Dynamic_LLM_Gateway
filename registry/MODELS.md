@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-10-29T13:07:53Z** | source: **live** | table format v2 | **196** free models on **7** gateways
+Updated **2026-10-29T22:47:59Z** | source: **live** | table format v2 | **199** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -8,11 +8,11 @@ Updated **2026-10-29T13:07:53Z** | source: **live** | table format v2 | **196** 
 
 | Class | Tokens | About | Use it for | Notes | Models |
 |---|---|---|---|---|---|
-| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 80 |
+| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 82 |
 | **long** | 32K - 200K | ~25K-150K words | long reports, contracts, notices, big code files, many RAG chunks | Task `long_doc` picks from here. Send only what you need: quality drops near the limit | 17 |
 | **medium** | 8K - 32K | ~6K-25K words | RAG answers with a few chunks, one document, code review | Good default for most apps | 4 |
 | **short** | up to 8K | up to ~6K words | chat, classification, SQL/JSON generation, short Q&A | Fastest and cheapest on quota. Use task `fast` | 10 |
-| **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 85 |
+| **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 86 |
 
 Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app can leave this decision to the router: it estimates the prompt size and skips models whose context is too small (`auto_context`, on by default).
 
@@ -24,8 +24,8 @@ Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app ca
 | fastrouter | 5 | 7 | 1 | 9 | 1 | **23** |
 | gemini | 36 | – | – | – | 13 | **49** |
 | groq | – | 3 | – | 1 | – | **4** |
-| mistral | 23 | 2 | 2 | – | – | **27** |
-| nvidia | – | – | – | – | 71 | **71** |
+| mistral | 25 | 2 | 2 | – | – | **29** |
+| nvidia | – | – | – | – | 72 | **72** |
 | openrouter | 16 | 3 | – | – | – | **19** |
 
 Free models by **intelligence** and context class (pick the row you need, then the context you need):
@@ -33,7 +33,7 @@ Free models by **intelligence** and context class (pick the row you need, then t
 | Intelligence | ultra | long | medium | short | unknown | Total |
 |---|---:|---:|---:|---:|---:|---:|
 | ★★★★★ Top | 8 | 5 | – | – | 10 | **23** |
-| ★★★★☆ Strong | 26 | 2 | 2 | – | 13 | **43** |
+| ★★★★☆ Strong | 28 | 2 | 2 | – | 14 | **46** |
 | ★★★☆☆ Good | 22 | 3 | – | – | 12 | **37** |
 | ★★☆☆☆ Fair | 2 | 1 | – | 1 | 15 | **19** |
 | ★☆☆☆☆ Basic | 22 | 6 | 2 | 9 | 35 | **74** |
@@ -57,7 +57,7 @@ Static ranking (quality, speed, capabilities). Live quota and rate-limit state i
 
 Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared) | – not supported / unknown | ≈ context length is a built-in estimate because the gateway does not report it. **Intelligence** is a 1-5 rating derived from model size (parameters), with family estimates for models that publish no size (Gemini, Mistral Large...) and a small bonus for reasoning models; the number in brackets is the 0-100 score. Tiers: Basic (~1-3B), Fair (~4-12B), Good (~13-30B), Strong (~32-100B), Top (100B+ / frontier). Size is only a rough proxy: newer small models can beat older big ones, and for mixture-of-experts models the size shown is the total, not what runs per token. Speed is a 0-100 heuristic. Neither is a benchmark.
 
-### Ultra context (over 200K), 80 models
+### Ultra context (over 200K), 82 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -69,6 +69,8 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | gemini | `gemini-3.1-pro-preview` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★★★ Top (90) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-3.1-pro-preview-customtools` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★★★ Top (90) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-pro-latest` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★★★ Top (90) | 49 | free tier | vision, extraction, agent, long_doc |
+| mistral | `mistral-large-4` | unknown | 1M | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
+| mistral | `mistral-large-4-0` | unknown | 1M | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
 | mistral | `mistral-medium` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
 | mistral | `mistral-medium-2604` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
 | mistral | `mistral-medium-3` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
@@ -188,7 +190,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | fastrouter | `wanx/wan-v2-7` | unknown | 4K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision |
 | fastrouter | `wanx/wan-v3-0` | unknown | 4K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision |
 
-### Unknown context (not reported), 85 models
+### Unknown context (not reported), 86 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -211,6 +213,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | nvidia | `writer/palmyra-med-70b-32k` | 70B | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (86) | 20 | free tier | extraction, agent |
 | nvidia | `mistralai/mistral-large` | unknown | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (82) | 34 | free tier | extraction, agent |
 | nvidia | `mistralai/mistral-large-2-instruct` | unknown | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (82) | 34 | free tier | extraction, agent |
+| nvidia | `mistralai/mistral-large-4-1t-a52b` | unknown | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (82) | 34 | free tier | extraction, agent |
 | nvidia | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning` | 30B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★☆ Strong (79) | 30 | free tier | reasoning, extraction, agent, fast |
 | nvidia | `nvidia/nemotron-3.5-lightning-30b-a3b` | 30B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★☆ Strong (79) | 30 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-nano-3-30b-a3b` | 30B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★☆ Strong (79) | 30 | free tier | reasoning, extraction, agent, fast |
@@ -282,16 +285,16 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 
 | Gateway | Status | HTTP | Free models | Added | Removed | Error |
 |---|---|---:|---:|---:|---:|---|
-| openrouter | ok | 200 | 19 | 0 | 0 |  |
+| openrouter | ok | 200 | 19 | 0 | 1 |  |
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 49 | 0 | 0 |  |
-| mistral | ok | 200 | 27 | 0 | 0 |  |
-| nvidia | ok | 200 | 71 | 0 | 0 |  |
+| mistral | ok | 200 | 29 | 2 | 0 |  |
+| nvidia | ok | 200 | 72 | 1 | 0 |  |
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
 | tokenharbor | no_free_models | 200 | 0 | 0 | 0 |  |
-| fastrouter | ok | 200 | 23 | 1 | 0 |  |
+| fastrouter | ok | 200 | 23 | 0 | 0 |  |
 
 Full history: [refresh_log.jsonl](refresh_log.jsonl).
 
