@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-10-29T22:47:59Z",
+  "updated_at": "2026-10-30T05:53:51Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -17742,8 +17742,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.6e-06,
-      "output_price": 3.2e-06,
+      "input_price": 8.16234e-07,
+      "output_price": 1.632468e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17784,8 +17784,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.26e-07,
-      "output_price": 8e-06,
+      "input_price": 1.035e-07,
+      "output_price": 4e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -17870,8 +17870,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.09e-08,
-      "output_price": 1.25e-06,
+      "input_price": 3.39e-08,
+      "output_price": 1.14e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19848,46 +19848,6 @@
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
       "missing_since": null
-    },
-    {
-      "uid": "openrouter/ibm-granite/granite-4.0-h-micro",
-      "gateway": "openrouter",
-      "model_id": "ibm-granite/granite-4.0-h-micro",
-      "display_name": "IBM: Granite 4.0 Micro",
-      "kind": "chat",
-      "size_b": null,
-      "size_label": "unknown",
-      "size_class": "unknown",
-      "context_length": 131000,
-      "context_class": "long",
-      "long_context": true,
-      "context_source": "api",
-      "is_free": false,
-      "free_kind": "paid",
-      "input_price": 1.7e-08,
-      "output_price": 1.12e-07,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": false,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "declared",
-      "categories": [
-        "general",
-        "extraction",
-        "long_doc"
-      ],
-      "quality_hint": 35,
-      "intelligence_tier": 1,
-      "intelligence_label": "Basic",
-      "speed_hint": 29,
-      "status": "missing",
-      "available": false,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-10-27T05:10:28Z"
     },
     {
       "uid": "openrouter/ibm-granite/granite-4.2-8b",
@@ -22713,8 +22673,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.39e-07,
-      "output_price": 1.08e-05,
+      "input_price": 1.92e-07,
+      "output_price": 1.5e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -30092,8 +30052,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.5e-07,
-      "output_price": 2.7e-06,
+      "input_price": 3.2e-07,
+      "output_price": 3.2e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -30479,8 +30439,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-07,
-      "output_price": 2.5e-06,
+      "input_price": 1.5e-07,
+      "output_price": 1.875e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31552,8 +31512,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.25e-08,
-      "output_price": 3.3e-07,
+      "input_price": 1.32e-07,
+      "output_price": 5.28e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31633,8 +31593,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.506e-07,
-      "output_price": 2.2509e-06,
+      "input_price": 8.34e-07,
+      "output_price": 2.501e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33332,8 +33292,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 6.99e-08,
-      "output_price": 1.4e-06,
+      "input_price": 8e-08,
+      "output_price": 3.6e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33373,8 +33333,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
-      "output_price": 5e-07,
+      "input_price": 4.97e-08,
+      "output_price": 7.01e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33795,8 +33755,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.09e-08,
-      "output_price": 1.25e-06,
+      "input_price": 3.39e-08,
+      "output_price": 1.14e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33839,8 +33799,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.26e-07,
-      "output_price": 8e-06,
+      "input_price": 1.035e-07,
+      "output_price": 4e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33881,8 +33841,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.03e-08,
-      "output_price": 1.811e-07,
+      "input_price": 5.6e-08,
+      "output_price": 3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34010,7 +33970,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 1.624e-07,
-      "output_price": 9.3388e-06,
+      "output_price": 9.7471e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34345,7 +34305,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.03e-08,
+      "input_price": 4.97e-08,
       "output_price": 7.01e-08,
       "capabilities": {
         "chat": true,
@@ -35617,10 +35577,10 @@
       "size_b": null,
       "size_label": "unknown",
       "size_class": "unknown",
-      "context_length": null,
-      "context_class": "unknown",
-      "long_context": false,
-      "context_source": "unknown",
+      "context_length": 1050000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
       "input_price": null,
@@ -35635,7 +35595,8 @@
       },
       "capability_source": "inferred",
       "categories": [
-        "general"
+        "general",
+        "long_doc"
       ],
       "quality_hint": 35,
       "intelligence_tier": 1,
@@ -35695,10 +35656,10 @@
       "size_b": null,
       "size_label": "unknown",
       "size_class": "unknown",
-      "context_length": null,
-      "context_class": "unknown",
-      "long_context": false,
-      "context_source": "unknown",
+      "context_length": 1050000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
       "input_price": null,
@@ -35713,7 +35674,8 @@
       },
       "capability_source": "inferred",
       "categories": [
-        "general"
+        "general",
+        "long_doc"
       ],
       "quality_hint": 35,
       "intelligence_tier": 1,
@@ -35773,10 +35735,10 @@
       "size_b": null,
       "size_label": "unknown",
       "size_class": "unknown",
-      "context_length": null,
-      "context_class": "unknown",
-      "long_context": false,
-      "context_source": "unknown",
+      "context_length": 1050000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
       "input_price": null,
@@ -35791,7 +35753,8 @@
       },
       "capability_source": "inferred",
       "categories": [
-        "general"
+        "general",
+        "long_doc"
       ],
       "quality_hint": 35,
       "intelligence_tier": 1,
@@ -37395,27 +37358,25 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-10-29T22:47:59Z",
+    "time": "2026-10-30T05:53:51Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 492,
+        "latency_ms": 651,
         "models_listed": 420,
         "chat_models": 418,
         "free_models": 19,
         "error": null,
         "added_count": 0,
-        "removed_count": 1,
+        "removed_count": 0,
         "added": [],
-        "removed": [
-          "openrouter/upstage/solar-pro-3"
-        ]
+        "removed": []
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 127,
+        "latency_ms": 133,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -37437,7 +37398,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 154,
+        "latency_ms": 172,
         "models_listed": 60,
         "chat_models": 49,
         "free_models": 49,
@@ -37450,38 +37411,33 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 511,
+        "latency_ms": 401,
         "models_listed": 55,
         "chat_models": 29,
         "free_models": 29,
         "error": null,
-        "added_count": 2,
+        "added_count": 0,
         "removed_count": 0,
-        "added": [
-          "mistral/mistral-large-4",
-          "mistral/mistral-large-4-0"
-        ],
+        "added": [],
         "removed": []
       },
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 102,
+        "latency_ms": 79,
         "models_listed": 85,
         "chat_models": 72,
         "free_models": 72,
         "error": null,
-        "added_count": 1,
+        "added_count": 0,
         "removed_count": 0,
-        "added": [
-          "nvidia/mistralai/mistral-large-4-1t-a52b"
-        ],
+        "added": [],
         "removed": []
       },
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 121,
+        "latency_ms": 61,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -37499,7 +37455,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 375,
+        "latency_ms": 587,
         "models_listed": 75,
         "chat_models": 75,
         "free_models": 0,
@@ -37512,7 +37468,7 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 135,
+        "latency_ms": 277,
         "models_listed": 224,
         "chat_models": 202,
         "free_models": 23,
@@ -37528,7 +37484,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 900,
+    "total": 899,
     "free_active": 199,
     "by_gateway": {
       "cerebras": 3,
