@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-11-01T13:31:26Z** | source: **live** | table format v2 | **197** free models on **7** gateways
+Updated **2026-11-01T22:05:50Z** | source: **live** | table format v2 | **186** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -8,7 +8,7 @@ Updated **2026-11-01T13:31:26Z** | source: **live** | table format v2 | **197** 
 
 | Class | Tokens | About | Use it for | Notes | Models |
 |---|---|---|---|---|---|
-| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 80 |
+| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 69 |
 | **long** | 32K - 200K | ~25K-150K words | long reports, contracts, notices, big code files, many RAG chunks | Task `long_doc` picks from here. Send only what you need: quality drops near the limit | 17 |
 | **medium** | 8K - 32K | ~6K-25K words | RAG answers with a few chunks, one document, code review | Good default for most apps | 4 |
 | **short** | up to 8K | up to ~6K words | chat, classification, SQL/JSON generation, short Q&A | Fastest and cheapest on quota. Use task `fast` | 10 |
@@ -24,7 +24,7 @@ Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app ca
 | fastrouter | 5 | 7 | 1 | 9 | 1 | **23** |
 | gemini | 36 | – | – | – | 13 | **49** |
 | groq | – | 3 | – | 1 | – | **4** |
-| mistral | 25 | 2 | 2 | – | – | **29** |
+| mistral | 14 | 2 | 2 | – | – | **18** |
 | nvidia | – | – | – | – | 72 | **72** |
 | openrouter | 14 | 3 | – | – | – | **17** |
 
@@ -33,10 +33,10 @@ Free models by **intelligence** and context class (pick the row you need, then t
 | Intelligence | ultra | long | medium | short | unknown | Total |
 |---|---:|---:|---:|---:|---:|---:|
 | ★★★★★ Top | 8 | 5 | – | – | 10 | **23** |
-| ★★★★☆ Strong | 28 | 2 | 2 | – | 14 | **46** |
+| ★★★★☆ Strong | 20 | 2 | 2 | – | 14 | **38** |
 | ★★★☆☆ Good | 22 | 3 | – | – | 12 | **37** |
 | ★★☆☆☆ Fair | 2 | 1 | – | 1 | 15 | **19** |
-| ★☆☆☆☆ Basic | 20 | 6 | 2 | 9 | 35 | **72** |
+| ★☆☆☆☆ Basic | 17 | 6 | 2 | 9 | 35 | **69** |
 
 ## 3. Best picks per task
 
@@ -57,7 +57,7 @@ Static ranking (quality, speed, capabilities). Live quota and rate-limit state i
 
 Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared) | – not supported / unknown | ≈ context length is a built-in estimate because the gateway does not report it. **Intelligence** is a 1-5 rating derived from model size (parameters), with family estimates for models that publish no size (Gemini, Mistral Large...) and a small bonus for reasoning models; the number in brackets is the 0-100 score. Tiers: Basic (~1-3B), Fair (~4-12B), Good (~13-30B), Strong (~32-100B), Top (100B+ / frontier). Size is only a rough proxy: newer small models can beat older big ones, and for mixture-of-experts models the size shown is the total, not what runs per token. Speed is a 0-100 heuristic. Neither is a benchmark.
 
-### Ultra context (over 200K), 80 models
+### Ultra context (over 200K), 69 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -69,14 +69,6 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | gemini | `gemini-3.1-pro-preview` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★★★ Top (90) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-3.1-pro-preview-customtools` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★★★ Top (90) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-pro-latest` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★★★ Top (90) | 49 | free tier | vision, extraction, agent, long_doc |
-| mistral | `mistral-large-4` | unknown | 1M | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
-| mistral | `mistral-large-4-0` | unknown | 1M | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
-| mistral | `mistral-medium` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
-| mistral | `mistral-medium-2604` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
-| mistral | `mistral-medium-3` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
-| mistral | `mistral-medium-3-5` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
-| mistral | `mistral-medium-3.5` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
-| mistral | `mistral-medium-latest` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-2.5-flash` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | ✅~ | ★★★★☆ Strong (80) | 49 | free tier | reasoning, vision, extraction, agent, long_doc, fast |
 | gemini | `gemini-2.5-flash-image` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | ✅~ | ★★★★☆ Strong (80) | 49 | free tier | reasoning, vision, extraction, agent, long_doc, fast |
 | gemini | `gemini-2.5-flash-native-audio-latest` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | ✅~ | ★★★★☆ Strong (80) | 49 | free tier | reasoning, vision, extraction, agent, long_doc, fast |
@@ -121,7 +113,6 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | gemini | `gemini-flash-lite-latest` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (60) | 49 | free tier | vision, extraction, agent, long_doc, fast |
 | mistral | `ministral-8b-2512` | 8B | 256K | ✅ | ✅ | ✅ | – | – | ★★☆☆☆ Fair (55) | 55 | free tier | vision, extraction, agent, long_doc, fast |
 | mistral | `ministral-8b-latest` | 8B | 256K | ✅ | ✅ | ✅ | – | – | ★★☆☆☆ Fair (55) | 55 | free tier | vision, extraction, agent, long_doc, fast |
-| mistral | `magistral-medium-latest` | unknown | 256K | ✅ | ✅ | ✅ | – | ✅ | ★☆☆☆☆ Basic (40) | 44 | free tier | reasoning, vision, extraction, agent, long_doc |
 | mistral | `magistral-small-latest` | unknown | 256K | ✅ | ✅ | ✅ | – | ✅ | ★☆☆☆☆ Basic (40) | 44 | free tier | reasoning, vision, extraction, agent, long_doc, fast |
 | openrouter | `nvidia/nemotron-3.5-lightning:free` | unknown | 1.0M | ✅ | – | – | – | ✅ | ★☆☆☆☆ Basic (40) | 29 | price 0 | reasoning, agent, long_doc |
 | openrouter | `nvidia/nemotron-3.5-super-vl:free` | unknown | 1.0M | ✅ | ✅ | ✅ | – | ✅ | ★☆☆☆☆ Basic (40) | 29 | price 0 | reasoning, vision, extraction, agent, long_doc |
@@ -134,8 +125,6 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | mistral | `mistral-code-fim-latest` | unknown | 250K | ✅ | ✅ | – | ✅ | – | ★☆☆☆☆ Basic (35) | 44 | free tier | coding, extraction, agent, long_doc |
 | mistral | `mistral-code-latest` | unknown | 250K | ✅ | ✅ | – | ✅ | – | ★☆☆☆☆ Basic (35) | 44 | free tier | coding, extraction, agent, long_doc |
 | mistral | `mistral-vibe-cli-fast` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc, fast |
-| mistral | `mistral-vibe-cli-latest` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc |
-| mistral | `mistral-vibe-cli-with-tools` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc |
 | openrouter | `cohere/north-mini-code:free` | unknown | 250K | ✅ | – | – | ✅ | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | coding, agent, long_doc, fast |
 | openrouter | `dots-studio/dots-3-note-preview:free` | unknown | 500K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, agent, long_doc |
 | openrouter | `google/lyria-3-clip-preview` | unknown | 1M | – | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, long_doc |
@@ -287,7 +276,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 49 | 0 | 0 |  |
-| mistral | ok | 200 | 29 | 0 | 0 |  |
+| mistral | ok | 200 | 18 | 0 | 11 |  |
 | nvidia | ok | 200 | 72 | 0 | 0 |  |
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
