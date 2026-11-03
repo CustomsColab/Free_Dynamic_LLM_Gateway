@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-11-03T01:01:36Z",
+  "updated_at": "2026-11-03T14:21:59Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -3067,6 +3067,46 @@
       "missing_since": null
     },
     {
+      "uid": "fastrouter/kling-ai/kling-v4",
+      "gateway": "fastrouter",
+      "model_id": "kling-ai/kling-v4",
+      "display_name": "Kling AI: Kling V4",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 400000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": null,
+      "output_price": null,
+      "capabilities": {
+        "chat": true,
+        "json": false,
+        "tools": false,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 39,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-11-03T14:21:59Z",
+      "missing_since": null
+    },
+    {
       "uid": "fastrouter/kling-ai/kling-video-o1",
       "gateway": "fastrouter",
       "model_id": "kling-ai/kling-video-o1",
@@ -3749,10 +3789,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 39,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-03T14:21:59Z"
     },
     {
       "uid": "fastrouter/moonshotai/kimi-k2.6",
@@ -17452,7 +17492,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 3.5e-08,
-      "output_price": 5e-07,
+      "output_price": 3.15e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19155,8 +19195,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 6.8e-08,
-      "output_price": 2.05e-07,
+      "input_price": 1e-07,
+      "output_price": 3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19979,12 +20019,12 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4e-07,
-      "output_price": 4e-07,
+      "input_price": 7.2e-07,
+      "output_price": 7.2e-07,
       "capabilities": {
         "chat": true,
-        "json": true,
-        "tools": true,
+        "json": false,
+        "tools": false,
         "vision": false,
         "coding": false,
         "reasoning": false
@@ -19992,8 +20032,6 @@
       "capability_source": "declared",
       "categories": [
         "general",
-        "extraction",
-        "agent",
         "long_doc"
       ],
       "quality_hint": 86,
@@ -20881,8 +20919,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.5e-08,
-      "output_price": 3e-07,
+      "input_price": 1.5e-07,
+      "output_price": 6e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -25943,8 +25981,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
-      "output_price": 6e-07,
+      "input_price": 2.1e-08,
+      "output_price": 7.6e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31395,8 +31433,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.85e-08,
-      "output_price": 9.23e-08,
+      "input_price": 3.13e-08,
+      "output_price": 8.46e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31860,7 +31898,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 3.5e-08,
-      "output_price": 5e-07,
+      "output_price": 3.15e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32073,8 +32111,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.495e-07,
-      "output_price": 7.15e-06,
+      "input_price": 1.824e-07,
+      "output_price": 1.01427e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32409,8 +32447,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.85e-08,
-      "output_price": 9.23e-08,
+      "input_price": 3.13e-08,
+      "output_price": 8.46e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -35501,12 +35539,12 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-11-03T01:01:36Z",
+    "time": "2026-11-03T14:21:59Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 269,
+        "latency_ms": 254,
         "models_listed": 415,
         "chat_models": 413,
         "free_models": 17,
@@ -35519,7 +35557,7 @@
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 134,
+        "latency_ms": 107,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -35541,7 +35579,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 117,
+        "latency_ms": 110,
         "models_listed": 60,
         "chat_models": 49,
         "free_models": 49,
@@ -35554,7 +35592,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 228,
+        "latency_ms": 267,
         "models_listed": 55,
         "chat_models": 29,
         "free_models": 29,
@@ -35567,7 +35605,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 35,
+        "latency_ms": 14,
         "models_listed": 85,
         "chat_models": 72,
         "free_models": 72,
@@ -35580,7 +35618,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 121,
+        "latency_ms": 113,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -35598,30 +35636,32 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 405,
+        "latency_ms": 492,
         "models_listed": 76,
         "chat_models": 76,
         "free_models": 0,
-        "error": null,
-        "added_count": 1,
-        "removed_count": 0,
-        "added": [
-          "tokenharbor/glm-5.3-flashx-legal"
-        ],
-        "removed": []
-      },
-      "fastrouter": {
-        "status": "ok",
-        "http_status": 200,
-        "latency_ms": 134,
-        "models_listed": 225,
-        "chat_models": 203,
-        "free_models": 23,
         "error": null,
         "added_count": 0,
         "removed_count": 0,
         "added": [],
         "removed": []
+      },
+      "fastrouter": {
+        "status": "ok",
+        "http_status": 200,
+        "latency_ms": 81,
+        "models_listed": 225,
+        "chat_models": 203,
+        "free_models": 23,
+        "error": null,
+        "added_count": 1,
+        "removed_count": 1,
+        "added": [
+          "fastrouter/kling-ai/kling-v4"
+        ],
+        "removed": [
+          "fastrouter/moonshotai/kimi-k2.5"
+        ]
       }
     },
     "ok": 6,
@@ -35629,7 +35669,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 855,
+    "total": 856,
     "free_active": 197,
     "by_gateway": {
       "cerebras": 3,
