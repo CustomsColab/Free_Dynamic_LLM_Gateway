@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-11-04T19:48:26Z",
+  "updated_at": "2026-11-05T06:52:47Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -19340,7 +19340,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.87e-08,
+      "input_price": 5.9e-08,
       "output_price": 3e-07,
       "capabilities": {
         "chat": true,
@@ -19469,8 +19469,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.15e-07,
-      "output_price": 4.6e-06,
+      "input_price": 1.07e-07,
+      "output_price": 4.278e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19555,8 +19555,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.2e-08,
-      "output_price": 4e-07,
+      "input_price": 6e-09,
+      "output_price": 5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -19599,8 +19599,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5e-08,
-      "output_price": 1.5e-07,
+      "input_price": 1.12e-07,
+      "output_price": 3.36e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -21259,8 +21259,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.1e-08,
-      "output_price": 1.23e-07,
+      "input_price": 2.5e-08,
+      "output_price": 7.5e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -21785,6 +21785,47 @@
       "missing_since": null
     },
     {
+      "uid": "openrouter/inclusionai/ling-3.0-tiny",
+      "gateway": "openrouter",
+      "model_id": "inclusionai/ling-3.0-tiny",
+      "display_name": "inclusionAI: Ling 3.0 Tiny",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 262144,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1.5e-08,
+      "output_price": 4.5e-08,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": false,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-11-05T06:52:47Z",
+      "missing_since": null
+    },
+    {
       "uid": "openrouter/inclusionai/ling-3.1-flash",
       "gateway": "openrouter",
       "model_id": "inclusionai/ling-3.1-flash",
@@ -22243,8 +22284,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1e-07,
-      "output_price": 3.2e-07,
+      "input_price": 2e-07,
+      "output_price": 5.2e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22284,8 +22325,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.875e-07,
-      "output_price": 6.525e-07,
+      "input_price": 3.5e-07,
+      "output_price": 1e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22983,8 +23024,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.5e-08,
-      "output_price": 3e-07,
+      "input_price": 1.5e-07,
+      "output_price": 6e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -28045,8 +28086,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.9e-08,
-      "output_price": 1.08e-07,
+      "input_price": 1.2e-08,
+      "output_price": 4.3e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -28129,8 +28170,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.8e-08,
-      "output_price": 9e-08,
+      "input_price": 3e-08,
+      "output_price": 1.3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -29197,8 +29238,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9e-08,
-      "output_price": 5.5e-07,
+      "input_price": 1.4e-07,
+      "output_price": 8e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -30981,9 +31022,9 @@
       "size_b": 65.0,
       "size_label": "65B",
       "size_class": "large",
-      "context_length": 16384,
-      "context_class": "medium",
-      "long_context": false,
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
@@ -31001,7 +31042,8 @@
       "categories": [
         "general",
         "extraction",
-        "agent"
+        "agent",
+        "long_doc"
       ],
       "quality_hint": 85,
       "intelligence_tier": 4,
@@ -31639,8 +31681,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.25e-08,
-      "output_price": 3.3e-07,
+      "input_price": 1.32e-07,
+      "output_price": 5.28e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31762,8 +31804,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.506e-07,
-      "output_price": 2.2509e-06,
+      "input_price": 8.34e-07,
+      "output_price": 2.501e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34009,8 +34051,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.2e-08,
-      "output_price": 4e-07,
+      "input_price": 6e-09,
+      "output_price": 5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34053,7 +34095,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.035e-07,
+      "input_price": 9.63e-08,
       "output_price": 8e-06,
       "capabilities": {
         "chat": true,
@@ -34095,7 +34137,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.87e-08,
+      "input_price": 5.9e-08,
       "output_price": 3e-07,
       "capabilities": {
         "chat": true,
@@ -34223,8 +34265,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.719e-07,
-      "output_price": 9.3388e-06,
+      "input_price": 1.824e-07,
+      "output_price": 1.05572e-05,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34559,8 +34601,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.82e-08,
-      "output_price": 9.37e-08,
+      "input_price": 2.85e-08,
+      "output_price": 9.23e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -37691,30 +37733,27 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-11-04T19:48:26Z",
+    "time": "2026-11-05T06:52:47Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 306,
-        "models_listed": 418,
-        "chat_models": 416,
+        "latency_ms": 817,
+        "models_listed": 419,
+        "chat_models": 417,
         "free_models": 16,
         "error": null,
         "added_count": 1,
-        "removed_count": 2,
+        "removed_count": 0,
         "added": [
-          "openrouter/ricursiveai/ripple-65b-preview"
+          "openrouter/inclusionai/ling-3.0-tiny"
         ],
-        "removed": [
-          "openrouter/thinkingmachines/inkling-small:free",
-          "openrouter/thinkingmachines/inkling:free"
-        ]
+        "removed": []
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 64,
+        "latency_ms": 171,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -37736,7 +37775,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 149,
+        "latency_ms": 164,
         "models_listed": 60,
         "chat_models": 49,
         "free_models": 49,
@@ -37749,7 +37788,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 639,
+        "latency_ms": 575,
         "models_listed": 55,
         "chat_models": 29,
         "free_models": 29,
@@ -37762,7 +37801,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 82,
+        "latency_ms": 149,
         "models_listed": 85,
         "chat_models": 72,
         "free_models": 72,
@@ -37775,7 +37814,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 55,
+        "latency_ms": 197,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -37793,7 +37832,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 775,
+        "latency_ms": 405,
         "models_listed": 77,
         "chat_models": 77,
         "free_models": 0,
@@ -37806,18 +37845,14 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 327,
+        "latency_ms": 343,
         "models_listed": 275,
         "chat_models": 252,
         "free_models": 23,
         "error": null,
-        "added_count": 3,
+        "added_count": 0,
         "removed_count": 0,
-        "added": [
-          "fastrouter/minimax/minimax-h3",
-          "fastrouter/minimax/minimax-h3-highspeed",
-          "fastrouter/minimax/minimax-h3-lite"
-        ],
+        "added": [],
         "removed": []
       }
     },
@@ -37826,7 +37861,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 907,
+    "total": 908,
     "free_active": 196,
     "by_gateway": {
       "cerebras": 3,
