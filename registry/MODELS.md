@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-11-06T06:52:40Z** | source: **live** | table format v2 | **196** free models on **7** gateways
+Updated **2026-11-06T19:27:06Z** | source: **live** | table format v2 | **195** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -9,7 +9,7 @@ Updated **2026-11-06T06:52:40Z** | source: **live** | table format v2 | **196** 
 | Class | Tokens | About | Use it for | Notes | Models |
 |---|---|---|---|---|---|
 | **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 80 |
-| **long** | 32K - 200K | ~25K-150K words | long reports, contracts, notices, big code files, many RAG chunks | Task `long_doc` picks from here. Send only what you need: quality drops near the limit | 17 |
+| **long** | 32K - 200K | ~25K-150K words | long reports, contracts, notices, big code files, many RAG chunks | Task `long_doc` picks from here. Send only what you need: quality drops near the limit | 16 |
 | **medium** | 8K - 32K | ~6K-25K words | RAG answers with a few chunks, one document, code review | Good default for most apps | 4 |
 | **short** | up to 8K | up to ~6K words | chat, classification, SQL/JSON generation, short Q&A | Fastest and cheapest on quota. Use task `fast` | 10 |
 | **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 85 |
@@ -26,7 +26,7 @@ Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app ca
 | groq | – | 3 | – | 1 | – | **4** |
 | mistral | 25 | 2 | 2 | – | – | **29** |
 | nvidia | – | – | – | – | 71 | **71** |
-| openrouter | 13 | 3 | – | – | – | **16** |
+| openrouter | 13 | 2 | – | – | – | **15** |
 
 Free models by **intelligence** and context class (pick the row you need, then the context you need):
 
@@ -36,7 +36,7 @@ Free models by **intelligence** and context class (pick the row you need, then t
 | ★★★★☆ Strong | 29 | 2 | 2 | – | 14 | **47** |
 | ★★★☆☆ Good | 22 | 3 | – | – | 12 | **37** |
 | ★★☆☆☆ Fair | 2 | 1 | – | 1 | 14 | **18** |
-| ★☆☆☆☆ Basic | 19 | 6 | 2 | 9 | 35 | **71** |
+| ★☆☆☆☆ Basic | 19 | 5 | 2 | 9 | 35 | **70** |
 
 ## 3. Best picks per task
 
@@ -142,7 +142,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | openrouter | `recursive/flint-v1.0:free` | unknown | 256K | ✅ | ✅ | – | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | extraction, agent, long_doc |
 | openrouter | `stealth/crouton-alpha` | unknown | 1M | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, agent, long_doc |
 
-### Long context (32K - 200K), 17 models
+### Long context (32K - 200K), 16 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -159,7 +159,6 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | cerebras | `llama3.1-8b` | 8B | 128K≈ | ✅~ | ✅~ | – | – | – | ★★☆☆☆ Fair (55) | 90 | free tier | extraction, agent, long_doc, fast |
 | mistral | `ministral-3b-2512` | 3B | 128K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (41) | 66 | free tier | vision, long_doc, fast |
 | mistral | `ministral-3b-latest` | 3B | 128K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (41) | 66 | free tier | vision, long_doc, fast |
-| openrouter | `nvidia/nemotron-3.5-content-safety:free` | unknown | 125K | – | – | ✅ | – | ✅ | ★☆☆☆☆ Basic (40) | 29 | price 0 | reasoning, vision, long_doc |
 | openrouter | `liquid/lfm-2.5-2.6b:free` | 2.6B | 64K | ✅ | ✅ | – | – | – | ★☆☆☆☆ Basic (39) | 53 | price 0 | long_doc, fast |
 | fastrouter | `openai/gpt-live-1` | unknown | 125K | – | – | – | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | long_doc |
 | openrouter | `openrouter/free` | unknown | 200K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, agent, long_doc |
@@ -282,7 +281,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 
 | Gateway | Status | HTTP | Free models | Added | Removed | Error |
 |---|---|---:|---:|---:|---:|---|
-| openrouter | ok | 200 | 16 | 0 | 0 |  |
+| openrouter | ok | 200 | 15 | 5 | 1 |  |
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 50 | 0 | 0 |  |
