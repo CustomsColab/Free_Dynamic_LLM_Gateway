@@ -177,6 +177,7 @@ Rank,Model,Intelligence,Tier (1-5),Size,Gateway,Gateway model id,Context class,C
 162,recurrentgemma-2b,🔴 Basic,1,2B,nvidia,google/recurrentgemma-2b,⚪ Unknown,,Text,No,Yes~,No,No,61,Free tier,fast,1
 163,step-5-preview,🔴 Basic,1,unknown,nvidia,stepfun-ai/step-5-preview,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
 164,yi-large,🔴 Basic,1,unknown,nvidia,01-ai/yi-large,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+165,lfm-3-1.7b,🔴 Basic,1,1.7B,openrouter,liquid/lfm-3-1.7b:free,🔵 Ultra (>200K),262144,Text,Yes,Yes,No,No,58,Price 0,"long_doc, fast",1
 ,,,,,,,,,,,,,,,,,
 "VISION-SPECIALIST MODELS (image models, listed separately; skip these if you only need text)",,,,,,,,,,,,,,,,,
 Rank,Model,Intelligence,Tier (1-5),Size,Gateway,Gateway model id,Context class,Context (tokens),Modality,Tools,JSON,Reasoning,Coding,Speed (0-100),Free type,Best for,Gateways in group
