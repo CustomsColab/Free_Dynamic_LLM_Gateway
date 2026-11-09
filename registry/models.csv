@@ -114,15 +114,15 @@ Rank,Model,Intelligence,Tier (1-5),Size,Gateway,Gateway model id,Context class,C
 101,ministral-3b-2512,🔴 Basic,1,3B,mistral,ministral-3b-2512,🟢 Long (32K-200K),131072,Text + Vision,Yes,Yes,No,No,66,Free tier,"vision, long_doc, fast",1
 102,ministral-3b-latest,🔴 Basic,1,3B,mistral,ministral-3b-latest,🟢 Long (32K-200K),131072,Text + Vision,Yes,Yes,No,No,66,Free tier,"vision, long_doc, fast",1
 103,granite-3.0-3b-a800m-instruct,🔴 Basic,1,3B,nvidia,ibm/granite-3.0-3b-a800m-instruct,⚪ Unknown,,Text,No,Yes~,No,No,56,Free tier,fast,1
-104,nemotron-3.5-lightning,🔴 Basic,1,unknown,openrouter,nvidia/nemotron-3.5-lightning:free,🔵 Ultra (>200K),1000000,Text,Yes,No,Yes,No,29,Price 0,"reasoning, agent, long_doc",1
-105,magistral-medium-latest,🔴 Basic,1,unknown,mistral,magistral-medium-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,Yes,No,44,Free tier,"reasoning, vision, extraction, agent, long_doc",1
-106,magistral-small-latest,🔴 Basic,1,unknown,mistral,magistral-small-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,Yes,No,44,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
-107,nemotron-3.5-bolt-e4b,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-3.5-bolt-e4b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
-108,nemotron-3.5-content-safety,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-3.5-content-safety,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
-109,nemotron-parse,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-parse,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
-110,nemotron-parse-2.0,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-parse-2.0,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
-111,lfm-2.5-2.6b,🔴 Basic,1,2.6B,openrouter,liquid/lfm-2.5-2.6b:free,🟢 Long (32K-200K),65536,Text,Yes,Yes,No,No,53,Price 0,"long_doc, fast",1
-112,crouton-alpha,🔴 Basic,1,unknown,openrouter,stealth/crouton-alpha,🔵 Ultra (>200K),1048576,Text + Vision,Yes,Yes,No,No,29,Price 0,"vision, extraction, agent, long_doc",1
+104,inkling-2-small,🔴 Basic,1,unknown,openrouter,thinkingmachines/inkling-2-small:free,🔵 Ultra (>200K),1048576,Text + Vision,Yes,No,Yes,No,29,Price 0,"reasoning, vision, agent, long_doc, fast",1
+105,nemotron-3.5-lightning,🔴 Basic,1,unknown,openrouter,nvidia/nemotron-3.5-lightning:free,🔵 Ultra (>200K),1000000,Text,Yes,No,Yes,No,29,Price 0,"reasoning, agent, long_doc",1
+106,magistral-medium-latest,🔴 Basic,1,unknown,mistral,magistral-medium-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,Yes,No,44,Free tier,"reasoning, vision, extraction, agent, long_doc",1
+107,magistral-small-latest,🔴 Basic,1,unknown,mistral,magistral-small-latest,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,Yes,No,44,Free tier,"reasoning, vision, extraction, agent, long_doc, fast",1
+108,nemotron-3.5-bolt-e4b,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-3.5-bolt-e4b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
+109,nemotron-3.5-content-safety,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-3.5-content-safety,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
+110,nemotron-parse,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-parse,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
+111,nemotron-parse-2.0,🔴 Basic,1,unknown,nvidia,nvidia/nemotron-parse-2.0,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",1
+112,lfm-2.5-2.6b,🔴 Basic,1,2.6B,openrouter,liquid/lfm-2.5-2.6b:free,🟢 Long (32K-200K),65536,Text,Yes,Yes,No,No,53,Price 0,"long_doc, fast",1
 113,lyria-3-clip-preview,🔴 Basic,1,unknown,openrouter,google/lyria-3-clip-preview,🔵 Ultra (>200K),1048576,Text + Vision,No,Yes,No,No,29,Price 0,"vision, extraction, long_doc",2
 113,lyria-3-clip-preview,🔴 Basic,1,unknown,gemini,lyria-3-clip-preview,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",2
 114,lyria-3-pro-preview,🔴 Basic,1,unknown,openrouter,google/lyria-3-pro-preview,🔵 Ultra (>200K),1048576,Text + Vision,No,Yes,No,No,29,Price 0,"vision, extraction, long_doc",2

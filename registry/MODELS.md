@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-11-09T06:40:50Z** | source: **live** | table format v2 | **196** free models on **7** gateways
+Updated **2026-11-09T22:25:44Z** | source: **live** | table format v2 | **196** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -126,6 +126,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | mistral | `magistral-small-latest` | unknown | 256K | ✅ | ✅ | ✅ | – | ✅ | ★☆☆☆☆ Basic (40) | 44 | free tier | reasoning, vision, extraction, agent, long_doc, fast |
 | openrouter | `nvidia/nemotron-3.5-lightning:free` | unknown | 1.0M | ✅ | – | – | – | ✅ | ★☆☆☆☆ Basic (40) | 29 | price 0 | reasoning, agent, long_doc |
 | openrouter | `nvidia/nemotron-3.5-super-vl:free` | unknown | 1.0M | ✅ | ✅ | ✅ | – | ✅ | ★☆☆☆☆ Basic (40) | 29 | price 0 | reasoning, vision, extraction, agent, long_doc |
+| openrouter | `thinkingmachines/inkling-2-small:free` | unknown | 1M | ✅ | – | ✅ | – | ✅ | ★☆☆☆☆ Basic (40) | 29 | price 0 | reasoning, vision, agent, long_doc, fast |
 | fastrouter | `fastrouter/auto` | unknown | 1.0M | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision, long_doc |
 | fastrouter | `wanx/wan-v2-6` | unknown | 400K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision, long_doc |
 | mistral | `labs-leanstral-1-5` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc |
@@ -140,7 +141,6 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | openrouter | `google/lyria-3-clip-preview` | unknown | 1M | – | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, long_doc |
 | openrouter | `google/lyria-3-pro-preview` | unknown | 1M | – | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, long_doc |
 | openrouter | `recursive/flint-v1.0:free` | unknown | 256K | ✅ | ✅ | – | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | extraction, agent, long_doc |
-| openrouter | `stealth/crouton-alpha` | unknown | 1M | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, agent, long_doc |
 | openrouter | `liquid/lfm-3-1.7b:free` | 1.7B | 256K | ✅ | ✅ | – | – | – | ★☆☆☆☆ Basic (33) | 58 | price 0 | long_doc, fast |
 
 ### Long context (32K - 200K), 16 models
@@ -282,7 +282,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 
 | Gateway | Status | HTTP | Free models | Added | Removed | Error |
 |---|---|---:|---:|---:|---:|---|
-| openrouter | ok | 200 | 16 | 0 | 0 |  |
+| openrouter | ok | 200 | 16 | 5 | 2 |  |
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 50 | 0 | 0 |  |
@@ -290,7 +290,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | nvidia | ok | 200 | 71 | 0 | 0 |  |
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
-| tokenharbor | no_free_models | 200 | 0 | 0 | 0 |  |
+| tokenharbor | no_free_models | 200 | 0 | 1 | 0 |  |
 | fastrouter | ok | 200 | 23 | 0 | 0 |  |
 
 Full history: [refresh_log.jsonl](refresh_log.jsonl).
