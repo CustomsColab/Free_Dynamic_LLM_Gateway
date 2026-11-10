@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-11-09T22:25:44Z",
+  "updated_at": "2026-11-10T07:24:05Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -19515,8 +19515,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.8044e-07,
-      "output_price": 1.76088e-06,
+      "input_price": 9.5526e-07,
+      "output_price": 1.91052e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -21473,8 +21473,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.65e-08,
-      "output_price": 2.55e-07,
+      "input_price": 8e-08,
+      "output_price": 1e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22577,8 +22577,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.9e-07,
-      "output_price": 7.9e-07,
+      "input_price": 7.1e-07,
+      "output_price": 7.1e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -23241,8 +23241,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.5e-08,
-      "output_price": 3e-07,
+      "input_price": 1.5e-07,
+      "output_price": 6e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -24886,6 +24886,48 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "openrouter/nex-agi/nex-n2.6",
+      "gateway": "openrouter",
+      "model_id": "nex-agi/nex-n2.6",
+      "display_name": "Nex AGI: Nex-N2.6",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 262144,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1.2e-07,
+      "output_price": 4e-07,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-11-10T07:24:05Z",
       "missing_since": null
     },
     {
@@ -29457,8 +29499,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.2e-07,
-      "output_price": 2.4e-07,
+      "input_price": 1e-07,
+      "output_price": 2.2e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -30822,7 +30864,7 @@
       "size_b": 27.0,
       "size_label": "27B",
       "size_class": "medium",
-      "context_length": 1024000,
+      "context_length": 1048575,
       "context_class": "ultra",
       "long_context": true,
       "context_source": "api",
@@ -32028,8 +32070,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.25e-08,
-      "output_price": 3.3e-07,
+      "input_price": 1.32e-07,
+      "output_price": 5.28e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32151,8 +32193,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.506e-07,
-      "output_price": 2.2509e-06,
+      "input_price": 8.34e-07,
+      "output_price": 2.501e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33894,8 +33936,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 6.23e-07,
-      "output_price": 1.271e-06,
+      "input_price": 5.27e-07,
+      "output_price": 1.075e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34655,7 +34697,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 1.824e-07,
-      "output_price": 9.7471e-06,
+      "output_price": 9.3388e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -35135,6 +35177,85 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T18:12:57Z",
+      "missing_since": null
+    },
+    {
+      "uid": "tokenharbor/claude-fable-5.2",
+      "gateway": "tokenharbor",
+      "model_id": "claude-fable-5.2",
+      "display_name": "claude-fable-5.2",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1000000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": null,
+      "output_price": null,
+      "capabilities": {
+        "chat": true,
+        "json": false,
+        "tools": false,
+        "vision": false,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "inferred",
+      "categories": [
+        "general",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-11-10T07:24:05Z",
+      "missing_since": null
+    },
+    {
+      "uid": "tokenharbor/claude-fable-5.2-fast",
+      "gateway": "tokenharbor",
+      "model_id": "claude-fable-5.2-fast",
+      "display_name": "claude-fable-5.2-fast",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1000000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": null,
+      "output_price": null,
+      "capabilities": {
+        "chat": true,
+        "json": false,
+        "tools": false,
+        "vision": false,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "inferred",
+      "categories": [
+        "general",
+        "long_doc",
+        "fast"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-11-10T07:24:05Z",
       "missing_since": null
     },
     {
@@ -38202,34 +38323,27 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-11-09T22:25:44Z",
+    "time": "2026-11-10T07:24:05Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 504,
-        "models_listed": 428,
-        "chat_models": 426,
+        "latency_ms": 441,
+        "models_listed": 429,
+        "chat_models": 427,
         "free_models": 16,
         "error": null,
-        "added_count": 5,
-        "removed_count": 2,
+        "added_count": 1,
+        "removed_count": 0,
         "added": [
-          "openrouter/anthropic/claude-fable-5.2",
-          "openrouter/anthropic/claude-fable-5.2:batch",
-          "openrouter/meta/muse-ember",
-          "openrouter/qwen/qwen3.8-max-0902:batch",
-          "openrouter/thinkingmachines/inkling-2-small:free"
+          "openrouter/nex-agi/nex-n2.6"
         ],
-        "removed": [
-          "openrouter/minimax/minimax-m1",
-          "openrouter/stealth/crouton-alpha"
-        ]
+        "removed": []
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 98,
+        "latency_ms": 151,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -38251,7 +38365,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 124,
+        "latency_ms": 99,
         "models_listed": 61,
         "chat_models": 50,
         "free_models": 50,
@@ -38264,7 +38378,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 454,
+        "latency_ms": 640,
         "models_listed": 55,
         "chat_models": 29,
         "free_models": 29,
@@ -38277,7 +38391,7 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 72,
+        "latency_ms": 113,
         "models_listed": 84,
         "chat_models": 71,
         "free_models": 71,
@@ -38290,7 +38404,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 127,
+        "latency_ms": 105,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -38308,22 +38422,23 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 660,
-        "models_listed": 79,
-        "chat_models": 79,
+        "latency_ms": 352,
+        "models_listed": 81,
+        "chat_models": 81,
         "free_models": 0,
         "error": null,
-        "added_count": 1,
+        "added_count": 2,
         "removed_count": 0,
         "added": [
-          "tokenharbor/muse-ember"
+          "tokenharbor/claude-fable-5.2",
+          "tokenharbor/claude-fable-5.2-fast"
         ],
         "removed": []
       },
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 96,
+        "latency_ms": 474,
         "models_listed": 275,
         "chat_models": 252,
         "free_models": 23,
@@ -38339,7 +38454,7 @@
     "skipped": 2
   },
   "summary": {
-    "total": 919,
+    "total": 922,
     "free_active": 196,
     "by_gateway": {
       "cerebras": 3,
