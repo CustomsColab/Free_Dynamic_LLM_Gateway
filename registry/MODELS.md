@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-11-10T07:24:05Z** | source: **live** | table format v2 | **196** free models on **7** gateways
+Updated **2026-11-10T19:47:08Z** | source: **live** | table format v2 | **197** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -8,7 +8,7 @@ Updated **2026-11-10T07:24:05Z** | source: **live** | table format v2 | **196** 
 
 | Class | Tokens | About | Use it for | Notes | Models |
 |---|---|---|---|---|---|
-| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 81 |
+| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 82 |
 | **long** | 32K - 200K | ~25K-150K words | long reports, contracts, notices, big code files, many RAG chunks | Task `long_doc` picks from here. Send only what you need: quality drops near the limit | 16 |
 | **medium** | 8K - 32K | ~6K-25K words | RAG answers with a few chunks, one document, code review | Good default for most apps | 4 |
 | **short** | up to 8K | up to ~6K words | chat, classification, SQL/JSON generation, short Q&A | Fastest and cheapest on quota. Use task `fast` | 10 |
@@ -22,7 +22,7 @@ Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app ca
 |---|---:|---:|---:|---:|---:|---:|
 | cerebras | – | 2 | 1 | – | – | **3** |
 | fastrouter | 5 | 7 | 1 | 9 | 1 | **23** |
-| gemini | 37 | – | – | – | 13 | **50** |
+| gemini | 38 | – | – | – | 13 | **51** |
 | groq | – | 3 | – | 1 | – | **4** |
 | mistral | 25 | 2 | 2 | – | – | **29** |
 | nvidia | – | – | – | – | 71 | **71** |
@@ -34,7 +34,7 @@ Free models by **intelligence** and context class (pick the row you need, then t
 |---|---:|---:|---:|---:|---:|---:|
 | ★★★★★ Top | 8 | 5 | – | – | 10 | **23** |
 | ★★★★☆ Strong | 29 | 2 | 2 | – | 14 | **47** |
-| ★★★☆☆ Good | 22 | 3 | – | – | 12 | **37** |
+| ★★★☆☆ Good | 23 | 3 | – | – | 12 | **38** |
 | ★★☆☆☆ Fair | 2 | 1 | – | 1 | 14 | **18** |
 | ★☆☆☆☆ Basic | 20 | 5 | 2 | 9 | 35 | **71** |
 
@@ -57,7 +57,7 @@ Static ranking (quality, speed, capabilities). Live quota and rate-limit state i
 
 Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared) | – not supported / unknown | ≈ context length is a built-in estimate because the gateway does not report it. **Intelligence** is a 1-5 rating derived from model size (parameters), with family estimates for models that publish no size (Gemini, Mistral Large...) and a small bonus for reasoning models; the number in brackets is the 0-100 score. Tiers: Basic (~1-3B), Fair (~4-12B), Good (~13-30B), Strong (~32-100B), Top (100B+ / frontier). Size is only a rough proxy: newer small models can beat older big ones, and for mixture-of-experts models the size shown is the total, not what runs per token. Speed is a 0-100 heuristic. Neither is a benchmark.
 
-### Ultra context (over 200K), 81 models
+### Ultra context (over 200K), 82 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -107,6 +107,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | gemini | `gemini-3.5-live-translate-preview` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-3.8-live` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-4-argon` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
+| gemini | `gemini-4-carbon` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-nano-banana-2.1` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc, fast |
 | gemini | `gemini-robotics-er-2-preview` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-robotics-er-2-streaming-preview` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
@@ -282,16 +283,16 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 
 | Gateway | Status | HTTP | Free models | Added | Removed | Error |
 |---|---|---:|---:|---:|---:|---|
-| openrouter | ok | 200 | 16 | 1 | 0 |  |
+| openrouter | ok | 200 | 16 | 4 | 0 |  |
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
-| gemini | ok | 200 | 50 | 0 | 0 |  |
+| gemini | ok | 200 | 51 | 1 | 0 |  |
 | mistral | ok | 200 | 29 | 0 | 0 |  |
 | nvidia | ok | 200 | 71 | 0 | 0 |  |
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
-| tokenharbor | no_free_models | 200 | 0 | 2 | 0 |  |
-| fastrouter | ok | 200 | 23 | 0 | 0 |  |
+| tokenharbor | no_free_models | 200 | 0 | 1 | 0 |  |
+| fastrouter | ok | 200 | 23 | 2 | 0 |  |
 
 Full history: [refresh_log.jsonl](refresh_log.jsonl).
 
