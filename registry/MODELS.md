@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-11-12T07:16:06Z** | source: **live** | table format v2 | **198** free models on **7** gateways
+Updated **2026-11-12T19:58:10Z** | source: **live** | table format v2 | **200** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -8,11 +8,11 @@ Updated **2026-11-12T07:16:06Z** | source: **live** | table format v2 | **198** 
 
 | Class | Tokens | About | Use it for | Notes | Models |
 |---|---|---|---|---|---|
-| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 83 |
+| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 86 |
 | **long** | 32K - 200K | ~25K-150K words | long reports, contracts, notices, big code files, many RAG chunks | Task `long_doc` picks from here. Send only what you need: quality drops near the limit | 16 |
 | **medium** | 8K - 32K | ~6K-25K words | RAG answers with a few chunks, one document, code review | Good default for most apps | 4 |
 | **short** | up to 8K | up to ~6K words | chat, classification, SQL/JSON generation, short Q&A | Fastest and cheapest on quota. Use task `fast` | 10 |
-| **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 85 |
+| **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 84 |
 
 Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app can leave this decision to the router: it estimates the prompt size and skips models whose context is too small (`auto_context`, on by default).
 
@@ -22,21 +22,21 @@ Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app ca
 |---|---:|---:|---:|---:|---:|---:|
 | cerebras | – | 2 | 1 | – | – | **3** |
 | fastrouter | 5 | 7 | 1 | 9 | 1 | **23** |
-| gemini | 39 | – | – | – | 13 | **52** |
+| gemini | 40 | – | – | – | 13 | **53** |
 | groq | – | 3 | – | 1 | – | **4** |
-| mistral | 25 | 2 | 2 | – | – | **29** |
-| nvidia | – | – | – | – | 71 | **71** |
-| openrouter | 14 | 2 | – | – | – | **16** |
+| mistral | 26 | 2 | 2 | – | – | **30** |
+| nvidia | – | – | – | – | 70 | **70** |
+| openrouter | 15 | 2 | – | – | – | **17** |
 
 Free models by **intelligence** and context class (pick the row you need, then the context you need):
 
 | Intelligence | ultra | long | medium | short | unknown | Total |
 |---|---:|---:|---:|---:|---:|---:|
 | ★★★★★ Top | 8 | 5 | – | – | 10 | **23** |
-| ★★★★☆ Strong | 29 | 2 | 2 | – | 14 | **47** |
-| ★★★☆☆ Good | 23 | 3 | – | – | 12 | **38** |
+| ★★★★☆ Strong | 30 | 2 | 2 | – | 14 | **48** |
+| ★★★☆☆ Good | 24 | 3 | – | – | 11 | **38** |
 | ★★☆☆☆ Fair | 2 | 1 | – | 1 | 14 | **18** |
-| ★☆☆☆☆ Basic | 21 | 5 | 2 | 9 | 35 | **72** |
+| ★☆☆☆☆ Basic | 22 | 5 | 2 | 9 | 35 | **73** |
 
 ## 3. Best picks per task
 
@@ -57,7 +57,7 @@ Static ranking (quality, speed, capabilities). Live quota and rate-limit state i
 
 Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared) | – not supported / unknown | ≈ context length is a built-in estimate because the gateway does not report it. **Intelligence** is a 1-5 rating derived from model size (parameters), with family estimates for models that publish no size (Gemini, Mistral Large...) and a small bonus for reasoning models; the number in brackets is the 0-100 score. Tiers: Basic (~1-3B), Fair (~4-12B), Good (~13-30B), Strong (~32-100B), Top (100B+ / frontier). Size is only a rough proxy: newer small models can beat older big ones, and for mixture-of-experts models the size shown is the total, not what runs per token. Speed is a 0-100 heuristic. Neither is a benchmark.
 
-### Ultra context (over 200K), 83 models
+### Ultra context (over 200K), 86 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -71,6 +71,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | gemini | `gemini-pro-latest` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★★★ Top (90) | 49 | free tier | vision, extraction, agent, long_doc |
 | mistral | `mistral-large-4` | unknown | 1M | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
 | mistral | `mistral-large-4-0` | unknown | 1M | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
+| mistral | `mistral-large-latest` | unknown | 1M | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
 | mistral | `mistral-medium` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
 | mistral | `mistral-medium-2604` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
 | mistral | `mistral-medium-3` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★★★★☆ Strong (82) | 44 | free tier | vision, extraction, agent, long_doc |
@@ -107,6 +108,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | gemini | `gemini-3.8-live` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-4-argon` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-4-carbon` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
+| gemini | `gemini-4-hydrogen` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-decision-1` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
 | gemini | `gemini-nano-banana-2.1` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc, fast |
 | gemini | `gemini-robotics-er-2-preview` | unknown | 1M≈ | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (70) | 49 | free tier | vision, extraction, agent, long_doc |
@@ -137,6 +139,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | mistral | `mistral-vibe-cli-fast` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc, fast |
 | mistral | `mistral-vibe-cli-latest` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc |
 | mistral | `mistral-vibe-cli-with-tools` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc |
+| openrouter | `apodex/apodex-1.1-mini:free` | unknown | 256K | ✅ | ✅ | – | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | extraction, agent, long_doc, fast |
 | openrouter | `baidu/ernie-5.5-flash-preview:free` | unknown | 1M | ✅ | ✅ | – | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | extraction, agent, long_doc, fast |
 | openrouter | `cohere/north-mini-code:free` | unknown | 250K | ✅ | – | – | ✅ | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | coding, agent, long_doc, fast |
 | openrouter | `dots-studio/dots-3-note-preview:free` | unknown | 500K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, agent, long_doc |
@@ -190,7 +193,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | fastrouter | `wanx/wan-v2-7` | unknown | 4K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision |
 | fastrouter | `wanx/wan-v3-0` | unknown | 4K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision |
 
-### Unknown context (not reported), 85 models
+### Unknown context (not reported), 84 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -224,7 +227,6 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | nvidia | `meta/muse-glimmer-30b` | 30B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (74) | 30 | free tier | extraction, agent |
 | nvidia | `openai/gpt-oss-20b` | 20B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★☆☆ Good (73) | 34 | free tier | reasoning, extraction, agent |
 | gemini | `gemma-4-26b-a4b-it` | 26B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (72) | 46 | free tier | extraction, agent |
-| nvidia | `google/diffusiongemma-26b-a4b-it` | 26B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (72) | 31 | free tier | extraction, agent |
 | nvidia | `mistralai/codestral-22b-instruct-v0.1` | 22B | ? | ✅~ | ✅~ | – | ✅~ | – | ★★★☆☆ Good (70) | 33 | free tier | coding, extraction, agent |
 | nvidia | `nvidia/neva-22b` | 22B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (70) | 33 | free tier | extraction, agent |
 | nvidia | `bigcode/starcoder2-15b` | 15B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (64) | 38 | free tier | extraction, agent |
@@ -284,16 +286,16 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 
 | Gateway | Status | HTTP | Free models | Added | Removed | Error |
 |---|---|---:|---:|---:|---:|---|
-| openrouter | ok | 200 | 16 | 2 | 0 |  |
+| openrouter | ok | 200 | 17 | 5 | 0 |  |
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
-| gemini | ok | 200 | 52 | 0 | 0 |  |
-| mistral | ok | 200 | 29 | 0 | 0 |  |
-| nvidia | ok | 200 | 71 | 0 | 0 |  |
+| gemini | ok | 200 | 53 | 1 | 0 |  |
+| mistral | ok | 200 | 30 | 1 | 0 |  |
+| nvidia | ok | 200 | 70 | 0 | 1 |  |
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
 | tokenharbor | no_free_models | 200 | 0 | 0 | 0 |  |
-| fastrouter | ok | 200 | 23 | 0 | 0 |  |
+| fastrouter | ok | 200 | 23 | 5 | 0 |  |
 
 Full history: [refresh_log.jsonl](refresh_log.jsonl).
 
