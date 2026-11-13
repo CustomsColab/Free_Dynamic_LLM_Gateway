@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-11-13T06:50:22Z",
+  "updated_at": "2026-11-13T19:46:25Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -14266,10 +14266,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 44,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-29T22:47:59Z",
-      "missing_since": null
+      "missing_since": "2026-11-13T19:46:25Z"
     },
     {
       "uid": "mistral/mistral-large-4-0",
@@ -14308,10 +14308,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 44,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-29T22:47:59Z",
-      "missing_since": null
+      "missing_since": "2026-11-13T19:46:25Z"
     },
     {
       "uid": "mistral/mistral-large-latest",
@@ -14350,10 +14350,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 44,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-11-12T19:58:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-13T19:46:25Z"
     },
     {
       "uid": "mistral/mistral-medium",
@@ -19232,10 +19232,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-11-12T19:58:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-13T19:46:25Z"
     },
     {
       "uid": "openrouter/baidu/ernie-5.5-flash-preview",
@@ -19964,8 +19964,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.2e-07,
-      "output_price": 8.9e-07,
+      "input_price": 2.574e-07,
+      "output_price": 1.0287e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22556,8 +22556,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9e-08,
-      "output_price": 3e-07,
+      "input_price": 6.75e-08,
+      "output_price": 2.25e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22847,7 +22847,7 @@
       "is_free": false,
       "free_kind": "paid",
       "input_price": 6e-08,
-      "output_price": 1.5e-07,
+      "output_price": 2.5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22951,10 +22951,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-11-12T19:58:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-13T19:46:25Z"
     },
     {
       "uid": "openrouter/inclusionai/ling-3.0-flash-sante",
@@ -22992,10 +22992,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-11-12T19:58:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-13T19:46:25Z"
     },
     {
       "uid": "openrouter/inclusionai/ling-3.0-flash-vl",
@@ -23123,6 +23123,49 @@
       "missing_since": null
     },
     {
+      "uid": "openrouter/inclusionai/ling-3.2-flash:free",
+      "gateway": "openrouter",
+      "model_id": "inclusionai/ling-3.2-flash:free",
+      "display_name": "inclusionAI: Ling 3.2 Flash (free)",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": true,
+      "free_kind": "zero_price",
+      "input_price": 0.0,
+      "output_price": 0.0,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc",
+        "fast"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-11-13T19:46:25Z",
+      "missing_since": null
+    },
+    {
       "uid": "openrouter/inference-net/schematron-v2-small",
       "gateway": "openrouter",
       "model_id": "inference-net/schematron-v2-small",
@@ -23224,7 +23267,7 @@
       "capabilities": {
         "chat": true,
         "json": true,
-        "tools": false,
+        "tools": true,
         "vision": false,
         "coding": false,
         "reasoning": false
@@ -23233,6 +23276,7 @@
       "categories": [
         "general",
         "extraction",
+        "agent",
         "long_doc"
       ],
       "quality_hint": 35,
@@ -23279,10 +23323,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 53,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-13T19:46:25Z"
     },
     {
       "uid": "openrouter/liquid/lfm-2.5-24b-a2b",
@@ -24154,14 +24198,14 @@
       "size_b": null,
       "size_label": "unknown",
       "size_class": "unknown",
-      "context_length": 200000,
+      "context_length": 198000,
       "context_class": "long",
       "long_context": true,
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
       "input_price": 2.7e-07,
-      "output_price": 1.08e-06,
+      "output_price": 9.5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -24284,8 +24328,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.5e-07,
-      "output_price": 6e-07,
+      "input_price": 7.5e-08,
+      "output_price": 3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -25907,7 +25951,7 @@
       "capabilities": {
         "chat": true,
         "json": true,
-        "tools": false,
+        "tools": true,
         "vision": false,
         "coding": false,
         "reasoning": false
@@ -25916,6 +25960,7 @@
       "categories": [
         "general",
         "extraction",
+        "agent",
         "long_doc"
       ],
       "quality_hint": 35,
@@ -31474,8 +31519,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.8e-08,
-      "output_price": 1.29e-07,
+      "input_price": 1.36e-07,
+      "output_price": 2e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33193,8 +33238,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.32e-07,
-      "output_price": 5.28e-07,
+      "input_price": 8.25e-08,
+      "output_price": 3.3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33316,8 +33361,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.34e-07,
-      "output_price": 2.501e-06,
+      "input_price": 7.506e-07,
+      "output_price": 2.2509e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -35145,8 +35190,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.22e-07,
-      "output_price": 9.89e-07,
+      "input_price": 3.47e-07,
+      "output_price": 1.068e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -39612,28 +39657,32 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-11-13T06:50:22Z",
+    "time": "2026-11-13T19:46:25Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 321,
-        "models_listed": 439,
-        "chat_models": 437,
-        "free_models": 18,
+        "latency_ms": 567,
+        "models_listed": 436,
+        "chat_models": 434,
+        "free_models": 17,
         "error": null,
-        "added_count": 2,
-        "removed_count": 0,
+        "added_count": 1,
+        "removed_count": 4,
         "added": [
-          "openrouter/particle-ai/particle-1:free",
-          "openrouter/thinkingmachines/inkling-2-small"
+          "openrouter/inclusionai/ling-3.2-flash:free"
         ],
-        "removed": []
+        "removed": [
+          "openrouter/apodex/apodex-1.1-mini:free",
+          "openrouter/inclusionai/ling-3.0-flash-fin",
+          "openrouter/inclusionai/ling-3.0-flash-sante",
+          "openrouter/liquid/lfm-2.5-2.6b:free"
+        ]
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 93,
+        "latency_ms": 150,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -39655,7 +39704,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 200,
+        "latency_ms": 135,
         "models_listed": 64,
         "chat_models": 53,
         "free_models": 53,
@@ -39668,20 +39717,24 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 298,
-        "models_listed": 56,
-        "chat_models": 30,
-        "free_models": 30,
+        "latency_ms": 316,
+        "models_listed": 53,
+        "chat_models": 27,
+        "free_models": 27,
         "error": null,
         "added_count": 0,
-        "removed_count": 0,
+        "removed_count": 3,
         "added": [],
-        "removed": []
+        "removed": [
+          "mistral/mistral-large-4",
+          "mistral/mistral-large-4-0",
+          "mistral/mistral-large-latest"
+        ]
       },
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 93,
+        "latency_ms": 126,
         "models_listed": 83,
         "chat_models": 70,
         "free_models": 70,
@@ -39694,7 +39747,7 @@
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 55,
+        "latency_ms": 104,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -39712,22 +39765,20 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 670,
+        "latency_ms": 2192,
         "models_listed": 83,
         "chat_models": 83,
         "free_models": 0,
         "error": null,
-        "added_count": 1,
+        "added_count": 0,
         "removed_count": 0,
-        "added": [
-          "tokenharbor/gemini-4-hydrogen"
-        ],
+        "added": [],
         "removed": []
       },
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 388,
+        "latency_ms": 294,
         "models_listed": 290,
         "chat_models": 266,
         "free_models": 23,
@@ -39743,16 +39794,16 @@
     "skipped": 2
   },
   "summary": {
-    "total": 953,
-    "free_active": 201,
+    "total": 954,
+    "free_active": 197,
     "by_gateway": {
       "cerebras": 3,
       "fastrouter": 23,
       "gemini": 53,
       "groq": 4,
-      "mistral": 30,
+      "mistral": 27,
       "nvidia": 70,
-      "openrouter": 18,
+      "openrouter": 17,
       "tokenharbor": 0
     }
   }
