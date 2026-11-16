@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-11-15T18:54:03Z",
+  "updated_at": "2026-11-16T06:36:16Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -14937,10 +14937,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/adept/fuyu-8b",
@@ -14978,10 +14978,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 45,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/ai21labs/jamba-1.5-large-instruct",
@@ -15018,10 +15018,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/aisingapore/sea-lion-7b-instruct",
@@ -15059,10 +15059,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 47,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/bigcode/starcoder2-15b",
@@ -15139,10 +15139,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/deepseek-ai/deepseek-coder-6.7b-instruct",
@@ -15179,10 +15179,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 47,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/deepseek-ai/deepseek-v4.1-flash",
@@ -15193,10 +15193,10 @@
       "size_b": null,
       "size_label": "unknown",
       "size_class": "unknown",
-      "context_length": null,
-      "context_class": "unknown",
-      "long_context": false,
-      "context_source": "unknown",
+      "context_length": 1048576,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
       "is_free": true,
       "free_kind": "free_tier",
       "input_price": null,
@@ -15209,12 +15209,13 @@
         "coding": true,
         "reasoning": false
       },
-      "capability_source": "inferred",
+      "capability_source": "declared",
       "categories": [
         "general",
         "coding",
         "extraction",
         "agent",
+        "long_doc",
         "fast"
       ],
       "quality_hint": 35,
@@ -15262,10 +15263,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 47,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/google/codegemma-7b",
@@ -15303,10 +15304,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 47,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/google/deplot",
@@ -15343,50 +15344,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
-      "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
-    },
-    {
-      "uid": "nvidia/google/diffusiongemma-26b-a4b-it",
-      "gateway": "nvidia",
-      "model_id": "google/diffusiongemma-26b-a4b-it",
-      "display_name": "google/diffusiongemma-26b-a4b-it",
-      "kind": "chat",
-      "size_b": 26.0,
-      "size_label": "26B",
-      "size_class": "medium",
-      "context_length": null,
-      "context_class": "unknown",
-      "long_context": false,
-      "context_source": "unknown",
-      "is_free": true,
-      "free_kind": "free_tier",
-      "input_price": null,
-      "output_price": null,
-      "capabilities": {
-        "chat": true,
-        "json": true,
-        "tools": true,
-        "vision": false,
-        "coding": false,
-        "reasoning": false
-      },
-      "capability_source": "inferred",
-      "categories": [
-        "general",
-        "extraction",
-        "agent"
-      ],
-      "quality_hint": 72,
-      "intelligence_tier": 3,
-      "intelligence_label": "Good",
-      "speed_hint": 31,
       "status": "missing",
       "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": "2026-11-12T19:58:10Z"
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/google/gemma-2b",
@@ -15422,10 +15383,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 61,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/google/gemma-3-12b-it",
@@ -15583,10 +15544,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 61,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/ibm/granite-3.0-3b-a800m-instruct",
@@ -15622,10 +15583,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 56,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/ibm/granite-3.0-8b-instruct",
@@ -15663,10 +15624,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 45,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/ibm/granite-34b-code-instruct",
@@ -15704,10 +15665,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 28,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/ibm/granite-8b-code-instruct",
@@ -15746,10 +15707,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 45,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/meta/codellama-70b",
@@ -15786,10 +15747,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 20,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/meta/llama-3.2-90b-vision-instruct",
@@ -15867,10 +15828,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 20,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/meta/muse-glimmer-30b",
@@ -15947,10 +15908,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/microsoft/phi-3-vision-128k-instruct",
@@ -15988,10 +15949,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/microsoft/phi-3.5-moe-instruct",
@@ -16028,10 +15989,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/minimaxai/minimax-m3.1-flash",
@@ -16110,10 +16071,10 @@
       "intelligence_tier": 3,
       "intelligence_label": "Good",
       "speed_hint": 33,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/mistralai/mistral-7b-instruct-v0.3",
@@ -16151,10 +16112,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 47,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/mistralai/mistral-large",
@@ -16191,10 +16152,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/mistralai/mistral-large-2-instruct",
@@ -16231,10 +16192,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/mistralai/mistral-large-4-1t-a52b",
@@ -16311,10 +16272,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 9,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/moonshotai/kimi-k2.6",
@@ -16351,10 +16312,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nv-mistralai/mistral-nemo-12b-instruct",
@@ -16392,10 +16353,10 @@
       "intelligence_tier": 3,
       "intelligence_label": "Good",
       "speed_hint": 40,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/ai-synthetic-video-detector",
@@ -16554,10 +16515,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 24,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/llama-3.1-nemotron-70b-instruct",
@@ -16595,10 +16556,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 20,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/llama-3.1-nemotron-ultra-253b-v1",
@@ -16636,10 +16597,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 5,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/llama3-chatqa-1.5-70b",
@@ -16676,10 +16637,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 20,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/mistral-nemo-minitron-8b-8k-instruct",
@@ -16717,10 +16678,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 45,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
@@ -16800,10 +16761,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 14,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
@@ -17047,10 +17008,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 5,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/nemotron-4-340b-reward",
@@ -17088,10 +17049,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 5,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/nemotron-nano-3-30b-a3b",
@@ -17130,10 +17091,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 30,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/nemotron-parse",
@@ -17252,10 +17213,10 @@
       "intelligence_tier": 3,
       "intelligence_label": "Good",
       "speed_hint": 33,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/nvclip",
@@ -17331,10 +17292,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 53,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/nvidia/riva-translate-4b-instruct-v2",
@@ -17410,10 +17371,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 34,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/openai/gpt-oss-20b",
@@ -17571,10 +17532,10 @@
       "intelligence_tier": 5,
       "intelligence_label": "Top",
       "speed_hint": 14,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/writer/palmyra-fin-70b-32k",
@@ -17611,10 +17572,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 20,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/writer/palmyra-med-70b",
@@ -17651,10 +17612,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 20,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/writer/palmyra-med-70b-32k",
@@ -17691,10 +17652,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 20,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "nvidia/z-ai/glm-5.3-flash",
@@ -17773,10 +17734,10 @@
       "intelligence_tier": 2,
       "intelligence_label": "Fair",
       "speed_hint": 47,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-16T06:36:16Z"
     },
     {
       "uid": "openrouter/aion-labs/aion-2.0",
@@ -20132,8 +20093,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.34e-08,
-      "output_price": 3e-07,
+      "input_price": 6e-08,
+      "output_price": 1.8e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -20346,8 +20307,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5.07e-08,
-      "output_price": 2.028e-07,
+      "input_price": 1.4e-07,
+      "output_price": 4.2e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -20390,8 +20351,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-08,
-      "output_price": 1.08e-07,
+      "input_price": 3.6e-08,
+      "output_price": 5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -20434,8 +20395,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.9e-08,
-      "output_price": 2.53e-07,
+      "input_price": 3.7e-08,
+      "output_price": 3.25e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22388,8 +22349,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 6.75e-08,
-      "output_price": 2.25e-07,
+      "input_price": 9e-08,
+      "output_price": 3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -24036,8 +23997,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.7e-07,
-      "output_price": 9.5e-07,
+      "input_price": 2.95e-07,
+      "output_price": 1.2e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -24160,8 +24121,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.5e-08,
-      "output_price": 3e-07,
+      "input_price": 1.5e-07,
+      "output_price": 6e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -25493,8 +25454,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-06,
-      "output_price": 1e-05,
+      "input_price": 2.403e-07,
+      "output_price": 8.4023e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -29430,8 +29391,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3e-08,
-      "output_price": 1.3e-07,
+      "input_price": 7.5e-08,
+      "output_price": 3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31266,8 +31227,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 6e-07,
-      "output_price": 3.6e-06,
+      "input_price": 4.5e-07,
+      "output_price": 3e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31309,8 +31270,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.7e-08,
-      "output_price": 5.4e-08,
+      "input_price": 5.6e-08,
+      "output_price": 8.2e-08,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32156,6 +32117,48 @@
       "status": "active",
       "available": true,
       "first_seen": "2026-10-08T17:59:10Z",
+      "missing_since": null
+    },
+    {
+      "uid": "openrouter/qwen/qwen4-max",
+      "gateway": "openrouter",
+      "model_id": "qwen/qwen4-max",
+      "display_name": "Qwen: Qwen4 Max",
+      "kind": "chat",
+      "size_b": null,
+      "size_label": "unknown",
+      "size_class": "unknown",
+      "context_length": 1000000,
+      "context_class": "ultra",
+      "long_context": true,
+      "context_source": "api",
+      "is_free": false,
+      "free_kind": "paid",
+      "input_price": 1.5e-06,
+      "output_price": 4.5e-06,
+      "capabilities": {
+        "chat": true,
+        "json": true,
+        "tools": true,
+        "vision": true,
+        "coding": false,
+        "reasoning": false
+      },
+      "capability_source": "declared",
+      "categories": [
+        "general",
+        "vision",
+        "extraction",
+        "agent",
+        "long_doc"
+      ],
+      "quality_hint": 35,
+      "intelligence_tier": 1,
+      "intelligence_label": "Basic",
+      "speed_hint": 29,
+      "status": "active",
+      "available": true,
+      "first_seen": "2026-11-16T06:36:16Z",
       "missing_since": null
     },
     {
@@ -33028,8 +33031,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.25e-08,
-      "output_price": 3.3e-07,
+      "input_price": 1.32e-07,
+      "output_price": 5.28e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33151,8 +33154,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 7.506e-07,
-      "output_price": 2.2509e-06,
+      "input_price": 8.34e-07,
+      "output_price": 2.501e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -34526,8 +34529,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-07,
-      "output_price": 1.1e-06,
+      "input_price": 1.3e-07,
+      "output_price": 8.5e-07,
       "capabilities": {
         "chat": true,
         "json": false,
@@ -34980,8 +34983,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.4e-08,
-      "output_price": 3.6e-06,
+      "input_price": 6.99e-08,
+      "output_price": 1.4e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -35485,8 +35488,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2e-08,
-      "output_price": 1.08e-07,
+      "input_price": 3.6e-08,
+      "output_price": 5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -39445,29 +39448,27 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-11-15T18:54:03Z",
+    "time": "2026-11-16T06:36:16Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 292,
-        "models_listed": 432,
-        "chat_models": 430,
+        "latency_ms": 397,
+        "models_listed": 433,
+        "chat_models": 431,
         "free_models": 17,
         "error": null,
-        "added_count": 0,
-        "removed_count": 3,
-        "added": [],
-        "removed": [
-          "openrouter/qwen/qwen3-vl-30b-a3b-thinking",
-          "openrouter/stepfun/step-3.5-flash",
-          "openrouter/tencent/hunyuan-a13b-instruct"
-        ]
+        "added_count": 1,
+        "removed_count": 0,
+        "added": [
+          "openrouter/qwen/qwen4-max"
+        ],
+        "removed": []
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 133,
+        "latency_ms": 201,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -39489,7 +39490,7 @@
       "gemini": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 110,
+        "latency_ms": 153,
         "models_listed": 64,
         "chat_models": 53,
         "free_models": 53,
@@ -39502,7 +39503,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 520,
+        "latency_ms": 285,
         "models_listed": 53,
         "chat_models": 27,
         "free_models": 27,
@@ -39515,20 +39516,31 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 98,
-        "models_listed": 83,
-        "chat_models": 70,
-        "free_models": 70,
+        "latency_ms": 164,
+        "models_listed": 39,
+        "chat_models": 26,
+        "free_models": 26,
         "error": null,
         "added_count": 0,
-        "removed_count": 0,
+        "removed_count": 44,
         "added": [],
-        "removed": []
+        "removed": [
+          "nvidia/01-ai/yi-large",
+          "nvidia/adept/fuyu-8b",
+          "nvidia/ai21labs/jamba-1.5-large-instruct",
+          "nvidia/aisingapore/sea-lion-7b-instruct",
+          "nvidia/databricks/dbrx-instruct",
+          "nvidia/deepseek-ai/deepseek-coder-6.7b-instruct",
+          "nvidia/google/codegemma-1.1-7b",
+          "nvidia/google/codegemma-7b",
+          "nvidia/google/deplot",
+          "nvidia/google/gemma-2b"
+        ]
       },
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 126,
+        "latency_ms": 151,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -39546,7 +39558,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 924,
+        "latency_ms": 572,
         "models_listed": 84,
         "chat_models": 84,
         "free_models": 0,
@@ -39559,7 +39571,7 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 162,
+        "latency_ms": 412,
         "models_listed": 290,
         "chat_models": 266,
         "free_models": 23,
@@ -39576,14 +39588,14 @@
   },
   "summary": {
     "total": 949,
-    "free_active": 197,
+    "free_active": 153,
     "by_gateway": {
       "cerebras": 3,
       "fastrouter": 23,
       "gemini": 53,
       "groq": 4,
       "mistral": 27,
-      "nvidia": 70,
+      "nvidia": 26,
       "openrouter": 17,
       "tokenharbor": 0
     }

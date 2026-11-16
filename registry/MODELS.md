@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-11-15T18:54:03Z** | source: **live** | table format v2 | **197** free models on **7** gateways
+Updated **2026-11-16T06:36:16Z** | source: **live** | table format v2 | **153** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -8,11 +8,11 @@ Updated **2026-11-15T18:54:03Z** | source: **live** | table format v2 | **197** 
 
 | Class | Tokens | About | Use it for | Notes | Models |
 |---|---|---|---|---|---|
-| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 84 |
+| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 85 |
 | **long** | 32K - 200K | ~25K-150K words | long reports, contracts, notices, big code files, many RAG chunks | Task `long_doc` picks from here. Send only what you need: quality drops near the limit | 15 |
 | **medium** | 8K - 32K | ~6K-25K words | RAG answers with a few chunks, one document, code review | Good default for most apps | 4 |
 | **short** | up to 8K | up to ~6K words | chat, classification, SQL/JSON generation, short Q&A | Fastest and cheapest on quota. Use task `fast` | 10 |
-| **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 84 |
+| **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 39 |
 
 Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app can leave this decision to the router: it estimates the prompt size and skips models whose context is too small (`auto_context`, on by default).
 
@@ -25,18 +25,18 @@ Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app ca
 | gemini | 40 | – | – | – | 13 | **53** |
 | groq | – | 3 | – | 1 | – | **4** |
 | mistral | 23 | 2 | 2 | – | – | **27** |
-| nvidia | – | – | – | – | 70 | **70** |
+| nvidia | 1 | – | – | – | 25 | **26** |
 | openrouter | 16 | 1 | – | – | – | **17** |
 
 Free models by **intelligence** and context class (pick the row you need, then the context you need):
 
 | Intelligence | ultra | long | medium | short | unknown | Total |
 |---|---:|---:|---:|---:|---:|---:|
-| ★★★★★ Top | 8 | 5 | – | – | 10 | **23** |
-| ★★★★☆ Strong | 27 | 2 | 2 | – | 14 | **45** |
-| ★★★☆☆ Good | 24 | 3 | – | – | 11 | **38** |
-| ★★☆☆☆ Fair | 2 | 1 | – | 1 | 14 | **18** |
-| ★☆☆☆☆ Basic | 23 | 4 | 2 | 9 | 35 | **73** |
+| ★★★★★ Top | 8 | 5 | – | – | 3 | **16** |
+| ★★★★☆ Strong | 27 | 2 | 2 | – | 3 | **34** |
+| ★★★☆☆ Good | 24 | 3 | – | – | 8 | **35** |
+| ★★☆☆☆ Fair | 2 | 1 | – | 1 | 3 | **7** |
+| ★☆☆☆☆ Basic | 24 | 4 | 2 | 9 | 22 | **61** |
 
 ## 3. Best picks per task
 
@@ -46,7 +46,7 @@ Static ranking (quality, speed, capabilities). Live quota and rate-limit state i
 |---|---|---|---|---|
 | **chat** | general questions and writing | `cerebras/gpt-oss-120b` (120B, 128K≈, Top) | `cerebras/qwen-3-32b` (32B, 32K≈, Strong) | `groq/openai/gpt-oss-120b` (120B, 128K, Top) |
 | **fast** | quick, cheap, short calls | `cerebras/llama3.1-8b` (8B, 128K≈, Fair) | `groq/allam-2-7b` (7B, 4K, Fair) | `mistral/ministral-3b-2512` (3B, 128K, Basic) |
-| **coding** | write / fix code | `nvidia/ibm/granite-34b-code-instruct` (34B, ?, Strong) | `mistral/codestral-2508` (unknown, 250K, Good) | `mistral/codestral-latest` (unknown, 250K, Good) |
+| **coding** | write / fix code | `mistral/codestral-2508` (unknown, 250K, Good) | `mistral/codestral-latest` (unknown, 250K, Good) | `mistral/mistral-code-fim-latest` (unknown, 250K, Basic) |
 | **reasoning** | multi-step logic, maths, planning | `cerebras/gpt-oss-120b` (120B, 128K≈, Top) | `groq/openai/gpt-oss-120b` (120B, 128K, Top) | `fastrouter/nvidia/nemotron-3-super:free` (120B, 256K, Top) |
 | **extraction** | JSON, SQL, ontology / structured output | `cerebras/gpt-oss-120b` (120B, 128K≈, Top) | `cerebras/qwen-3-32b` (32B, 32K≈, Strong) | `groq/openai/gpt-oss-120b` (120B, 128K, Top) |
 | **vision** | images and screenshots | `gemini/gemini-2.5-pro` (unknown, 1M≈, Top) | `gemini/gemini-3-pro-image` (unknown, 1M≈, Top) | `gemini/gemini-3-pro-image-preview` (unknown, 1M≈, Top) |
@@ -57,7 +57,7 @@ Static ranking (quality, speed, capabilities). Live quota and rate-limit state i
 
 Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared) | – not supported / unknown | ≈ context length is a built-in estimate because the gateway does not report it. **Intelligence** is a 1-5 rating derived from model size (parameters), with family estimates for models that publish no size (Gemini, Mistral Large...) and a small bonus for reasoning models; the number in brackets is the 0-100 score. Tiers: Basic (~1-3B), Fair (~4-12B), Good (~13-30B), Strong (~32-100B), Top (100B+ / frontier). Size is only a rough proxy: newer small models can beat older big ones, and for mixture-of-experts models the size shown is the total, not what runs per token. Speed is a 0-100 heuristic. Neither is a benchmark.
 
-### Ultra context (over 200K), 84 models
+### Ultra context (over 200K), 85 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -136,6 +136,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | mistral | `mistral-vibe-cli-fast` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc, fast |
 | mistral | `mistral-vibe-cli-latest` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc |
 | mistral | `mistral-vibe-cli-with-tools` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc |
+| nvidia | `deepseek-ai/deepseek-v4.1-flash` | unknown | 1M | ✅ | ✅ | – | ✅ | – | ★☆☆☆☆ Basic (35) | 34 | free tier | coding, extraction, agent, long_doc, fast |
 | openrouter | `baidu/ernie-5.5-flash-preview:free` | unknown | 1M | ✅ | ✅ | – | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | extraction, agent, long_doc, fast |
 | openrouter | `cohere/north-mini-code:free` | unknown | 250K | ✅ | – | – | ✅ | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | coding, agent, long_doc, fast |
 | openrouter | `dots-studio/dots-3-note-preview:free` | unknown | 500K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, agent, long_doc |
@@ -190,60 +191,27 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | fastrouter | `wanx/wan-v2-7` | unknown | 4K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision |
 | fastrouter | `wanx/wan-v3-0` | unknown | 4K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision |
 
-### Unknown context (not reported), 84 models
+### Unknown context (not reported), 39 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
-| nvidia | `nvidia/llama-3.1-nemotron-ultra-253b-v1` | 253B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★★ Top (100) | 5 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-3-ultra-550b-a55b` | 550B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★★ Top (100) | 5 | free tier | reasoning, extraction, agent |
-| nvidia | `nvidia/nemotron-4-340b-instruct` | 340B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★★ Top (100) | 5 | free tier | reasoning, extraction, agent |
-| nvidia | `nvidia/nemotron-4-340b-reward` | 340B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★★ Top (100) | 5 | free tier | reasoning, extraction, agent |
-| nvidia | `nvidia/nemotron-3-super-120b-a12b` | 120B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★★ Top (99) | 14 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-3.5-super-vl-120b-a12b` | 120B | ? | ✅~ | ✅~ | ✅~ | – | ✅~ | ★★★★★ Top (99) | 14 | free tier | reasoning, vision, extraction, agent |
-| nvidia | `mistralai/mixtral-8x22b-v0.1` | 176B | ? | ✅~ | ✅~ | – | – | – | ★★★★★ Top (95) | 9 | free tier | extraction, agent |
-| nvidia | `writer/palmyra-creative-122b` | 122B | ? | ✅~ | ✅~ | – | – | – | ★★★★★ Top (94) | 14 | free tier | extraction, agent |
-| nvidia | `nvidia/llama-3.1-nemotron-70b-instruct` | 70B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★★ Top (91) | 20 | free tier | reasoning, extraction, agent |
 | nvidia | `meta/llama-3.2-90b-vision-instruct` | 90B | ? | ✅~ | ✅~ | ✅~ | – | – | ★★★★★ Top (90) | 17 | free tier | vision, extraction, agent |
-| nvidia | `nvidia/llama-3.1-nemotron-51b-instruct` | 51B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★☆ Strong (87) | 24 | free tier | reasoning, extraction, agent |
-| nvidia | `meta/codellama-70b` | 70B | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (86) | 20 | free tier | extraction, agent |
-| nvidia | `meta/llama2-70b` | 70B | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (86) | 20 | free tier | extraction, agent |
-| nvidia | `nvidia/llama3-chatqa-1.5-70b` | 70B | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (86) | 20 | free tier | extraction, agent |
-| nvidia | `writer/palmyra-fin-70b-32k` | 70B | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (86) | 20 | free tier | extraction, agent |
-| nvidia | `writer/palmyra-med-70b` | 70B | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (86) | 20 | free tier | extraction, agent |
-| nvidia | `writer/palmyra-med-70b-32k` | 70B | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (86) | 20 | free tier | extraction, agent |
-| nvidia | `mistralai/mistral-large` | unknown | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (82) | 34 | free tier | extraction, agent |
-| nvidia | `mistralai/mistral-large-2-instruct` | unknown | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (82) | 34 | free tier | extraction, agent |
 | nvidia | `mistralai/mistral-large-4-1t-a52b` | unknown | ? | ✅~ | ✅~ | – | – | – | ★★★★☆ Strong (82) | 34 | free tier | extraction, agent |
 | nvidia | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning` | 30B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★☆ Strong (79) | 30 | free tier | reasoning, extraction, agent, fast |
 | nvidia | `nvidia/nemotron-3.5-lightning-30b-a3b` | 30B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★☆ Strong (79) | 30 | free tier | reasoning, extraction, agent |
-| nvidia | `nvidia/nemotron-nano-3-30b-a3b` | 30B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★☆ Strong (79) | 30 | free tier | reasoning, extraction, agent, fast |
-| nvidia | `ibm/granite-34b-code-instruct` | 34B | ? | ✅~ | ✅~ | – | ✅~ | – | ★★★★☆ Strong (76) | 28 | free tier | coding, extraction, agent |
 | gemini | `gemma-4-31b-it` | 31B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (75) | 44 | free tier | extraction, agent |
 | nvidia | `google/gemma-4-31b-it` | 31B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (75) | 29 | free tier | extraction, agent |
 | nvidia | `nvidia/ising-calibration-1.5-31b` | 31B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (75) | 29 | free tier | extraction, agent |
 | nvidia | `meta/muse-glimmer-30b` | 30B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (74) | 30 | free tier | extraction, agent |
 | nvidia | `openai/gpt-oss-20b` | 20B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★☆☆ Good (73) | 34 | free tier | reasoning, extraction, agent |
 | gemini | `gemma-4-26b-a4b-it` | 26B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (72) | 46 | free tier | extraction, agent |
-| nvidia | `mistralai/codestral-22b-instruct-v0.1` | 22B | ? | ✅~ | ✅~ | – | ✅~ | – | ★★★☆☆ Good (70) | 33 | free tier | coding, extraction, agent |
-| nvidia | `nvidia/neva-22b` | 22B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (70) | 33 | free tier | extraction, agent |
 | nvidia | `bigcode/starcoder2-15b` | 15B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (64) | 38 | free tier | extraction, agent |
 | nvidia | `google/gemma-3-12b-it` | 12B | ? | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (61) | 40 | free tier | vision, extraction, agent, fast |
-| nvidia | `nv-mistralai/mistral-nemo-12b-instruct` | 12B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (61) | 40 | free tier | extraction, agent, fast |
-| nvidia | `adept/fuyu-8b` | 8B | ? | ✅~ | ✅~ | – | – | – | ★★☆☆☆ Fair (55) | 45 | free tier | extraction, agent, fast |
-| nvidia | `ibm/granite-3.0-8b-instruct` | 8B | ? | ✅~ | ✅~ | – | – | – | ★★☆☆☆ Fair (55) | 45 | free tier | extraction, agent, fast |
-| nvidia | `ibm/granite-8b-code-instruct` | 8B | ? | ✅~ | ✅~ | – | ✅~ | – | ★★☆☆☆ Fair (55) | 45 | free tier | coding, extraction, agent, fast |
 | nvidia | `nvidia/cosmos-reason2-8b` | 8B | ? | ✅~ | ✅~ | – | – | – | ★★☆☆☆ Fair (55) | 45 | free tier | extraction, agent, fast |
-| nvidia | `nvidia/mistral-nemo-minitron-8b-8k-instruct` | 8B | ? | ✅~ | ✅~ | – | – | – | ★★☆☆☆ Fair (55) | 45 | free tier | extraction, agent, fast |
-| nvidia | `aisingapore/sea-lion-7b-instruct` | 7B | ? | ✅~ | ✅~ | – | – | – | ★★☆☆☆ Fair (53) | 47 | free tier | extraction, agent, fast |
-| nvidia | `google/codegemma-1.1-7b` | 7B | ? | ✅~ | ✅~ | – | – | – | ★★☆☆☆ Fair (53) | 47 | free tier | extraction, agent, fast |
-| nvidia | `google/codegemma-7b` | 7B | ? | ✅~ | ✅~ | – | – | – | ★★☆☆☆ Fair (53) | 47 | free tier | extraction, agent, fast |
-| nvidia | `mistralai/mistral-7b-instruct-v0.3` | 7B | ? | ✅~ | ✅~ | – | – | – | ★★☆☆☆ Fair (53) | 47 | free tier | extraction, agent, fast |
-| nvidia | `zyphra/zamba2-7b-instruct` | 7B | ? | ✅~ | ✅~ | – | – | – | ★★☆☆☆ Fair (53) | 47 | free tier | extraction, agent, fast |
-| nvidia | `deepseek-ai/deepseek-coder-6.7b-instruct` | 6.7B | ? | – | ✅~ | – | ✅~ | – | ★★☆☆☆ Fair (52) | 47 | free tier | coding, fast |
 | nvidia | `google/gemma-3-4b-it` | 4B | ? | – | ✅~ | ✅~ | – | – | ★★☆☆☆ Fair (45) | 53 | free tier | vision, fast |
-| nvidia | `nvidia/riva-translate-4b-instruct` | 4B | ? | – | ✅~ | – | – | – | ★★☆☆☆ Fair (45) | 53 | free tier | fast |
 | nvidia | `nvidia/riva-translate-4b-instruct-v2` | 4B | ? | – | ✅~ | – | – | – | ★★☆☆☆ Fair (45) | 53 | free tier | fast |
-| nvidia | `ibm/granite-3.0-3b-a800m-instruct` | 3B | ? | – | ✅~ | – | – | – | ★☆☆☆☆ Basic (41) | 56 | free tier | fast |
 | nvidia | `nvidia/nemotron-3.5-bolt-e4b` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-3.5-content-safety` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
 | nvidia | `nvidia/nemotron-parse` | unknown | ? | ✅~ | ✅~ | – | – | ✅~ | ★☆☆☆☆ Basic (40) | 34 | free tier | reasoning, extraction, agent |
@@ -260,21 +228,9 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | gemini | `lyria-3.5` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 49 | free tier | extraction, agent |
 | gemini | `lyria-realtime-exp` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 49 | free tier | extraction, agent |
 | gemini | `nano-banana-pro-preview` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 49 | free tier | extraction, agent, fast |
-| nvidia | `01-ai/yi-large` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
-| nvidia | `ai21labs/jamba-1.5-large-instruct` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
-| nvidia | `databricks/dbrx-instruct` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
-| nvidia | `deepseek-ai/deepseek-v4.1-flash` | unknown | ? | ✅~ | ✅~ | – | ✅~ | – | ★☆☆☆☆ Basic (35) | 34 | free tier | coding, extraction, agent, fast |
-| nvidia | `google/deplot` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
-| nvidia | `google/gemma-2b` | 2B | ? | – | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 61 | free tier | fast |
-| nvidia | `google/recurrentgemma-2b` | 2B | ? | – | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 61 | free tier | fast |
-| nvidia | `microsoft/kosmos-2` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
-| nvidia | `microsoft/phi-3-vision-128k-instruct` | unknown | ? | ✅~ | ✅~ | ✅~ | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | vision, extraction, agent |
-| nvidia | `microsoft/phi-3.5-moe-instruct` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
 | nvidia | `minimaxai/minimax-m3.1-flash` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent, fast |
-| nvidia | `moonshotai/kimi-k2.6` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
 | nvidia | `nvidia/ai-synthetic-video-detector` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
 | nvidia | `nvidia/nvclip` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
-| nvidia | `nvidia/vila` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
 | nvidia | `poolside/laguna-xs-2.1` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
 | nvidia | `stepfun-ai/step-5-preview` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent |
 | nvidia | `z-ai/glm-5.3-flash` | unknown | ? | ✅~ | ✅~ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent, fast |
@@ -283,12 +239,12 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 
 | Gateway | Status | HTTP | Free models | Added | Removed | Error |
 |---|---|---:|---:|---:|---:|---|
-| openrouter | ok | 200 | 17 | 0 | 3 |  |
+| openrouter | ok | 200 | 17 | 1 | 0 |  |
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 53 | 0 | 0 |  |
 | mistral | ok | 200 | 27 | 0 | 0 |  |
-| nvidia | ok | 200 | 70 | 0 | 0 |  |
+| nvidia | ok | 200 | 26 | 0 | 44 |  |
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
 | tokenharbor | no_free_models | 200 | 0 | 0 | 0 |  |
