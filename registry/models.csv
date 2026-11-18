@@ -44,9 +44,8 @@ Rank,Model,Intelligence,Tier (1-5),Size,Gateway,Gateway model id,Context class,C
 35,gemma-4-31b-it,🔵 Good,3,31B,nvidia,google/gemma-4-31b-it,⚪ Unknown,,Text,Yes~,Yes~,No,No,29,Free tier,"extraction, agent",3
 36,ising-calibration-1.5-31b,🔵 Good,3,31B,nvidia,nvidia/ising-calibration-1.5-31b,⚪ Unknown,,Text,Yes~,Yes~,No,No,29,Free tier,"extraction, agent",1
 37,muse-glimmer-30b,🔵 Good,3,30B,nvidia,meta/muse-glimmer-30b,⚪ Unknown,,Text,Yes~,Yes~,No,No,30,Free tier,"extraction, agent",1
-38,gpt-oss-20b,🔵 Good,3,20B,groq,openai/gpt-oss-20b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,Yes~,No,74,Free tier,"reasoning, extraction, agent, long_doc",3
-38,gpt-oss-20b,🔵 Good,3,20B,fastrouter,openai/gpt-oss-20b:free,🟢 Long (32K-200K),131072,Text,Yes,Yes,Yes,No,39,Price 0,"reasoning, extraction, agent, long_doc",3
-38,gpt-oss-20b,🔵 Good,3,20B,nvidia,openai/gpt-oss-20b,⚪ Unknown,,Text,Yes~,Yes~,Yes~,No,34,Free tier,"reasoning, extraction, agent",3
+38,gpt-oss-20b,🔵 Good,3,20B,groq,openai/gpt-oss-20b,🟢 Long (32K-200K),131072,Text,Yes~,Yes~,Yes~,No,74,Free tier,"reasoning, extraction, agent, long_doc",2
+38,gpt-oss-20b,🔵 Good,3,20B,fastrouter,openai/gpt-oss-20b:free,🟢 Long (32K-200K),131072,Text,Yes,Yes,Yes,No,39,Price 0,"reasoning, extraction, agent, long_doc",2
 39,gemma-4-26b-a4b-it,🔵 Good,3,26B,openrouter,google/gemma-4-26b-a4b-it:free,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,26,Price 0,"vision, extraction, agent, long_doc",3
 39,gemma-4-26b-a4b-it,🔵 Good,3,26B,fastrouter,google/gemma-4-26b-a4b-it,🟢 Long (32K-200K),131072,Text + Vision,Yes,No,No,No,36,Price 0,"vision, agent, long_doc",3
 39,gemma-4-26b-a4b-it,🔵 Good,3,26B,gemini,gemma-4-26b-a4b-it,⚪ Unknown,,Text,Yes~,Yes~,No,No,46,Free tier,"extraction, agent",3
