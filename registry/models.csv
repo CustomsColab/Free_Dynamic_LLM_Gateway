@@ -104,28 +104,28 @@ Rank,Model,Intelligence,Tier (1-5),Size,Gateway,Gateway model id,Context class,C
 90,mistral-vibe-cli-with-tools,🔴 Basic,1,unknown,mistral,mistral-vibe-cli-with-tools,🔵 Ultra (>200K),262144,Text + Vision,Yes,Yes,No,No,44,Free tier,"vision, extraction, agent, long_doc",1
 91,mistral-code-fim-latest,🔴 Basic,1,unknown,mistral,mistral-code-fim-latest,🔵 Ultra (>200K),256000,Text,Yes,Yes,No,Yes,44,Free tier,"coding, extraction, agent, long_doc",1
 92,mistral-code-latest,🔴 Basic,1,unknown,mistral,mistral-code-latest,🔵 Ultra (>200K),256000,Text,Yes,Yes,No,Yes,44,Free tier,"coding, extraction, agent, long_doc",1
-93,north-mini-code,🔴 Basic,1,unknown,openrouter,cohere/north-mini-code:free,🔵 Ultra (>200K),256000,Text,Yes,No,No,Yes,29,Price 0,"coding, agent, long_doc, fast",1
-94,free,🔴 Basic,1,unknown,openrouter,openrouter/free,🟢 Long (32K-200K),200000,Text + Vision,Yes,Yes,No,No,29,Price 0,"vision, extraction, agent, long_doc",1
-95,gpt-live-1,🔴 Basic,1,unknown,fastrouter,openai/gpt-live-1,🟢 Long (32K-200K),128000,Text,No,No,No,No,39,Price 0,long_doc,1
-96,voxtral-small-2507,🔴 Basic,1,unknown,mistral,voxtral-small-2507,🟡 Medium (8K-32K),32768,Text,Yes,Yes,No,No,44,Free tier,"extraction, agent, fast",1
-97,voxtral-small-latest,🔴 Basic,1,unknown,mistral,voxtral-small-latest,🟡 Medium (8K-32K),32768,Text,Yes,Yes,No,No,44,Free tier,"extraction, agent, fast",1
-98,happyhorse-1.1,🔴 Basic,1,unknown,fastrouter,alibaba/happyhorse-1.1,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
-99,lucid-origin,🔴 Basic,1,unknown,fastrouter,leonardo-ai/lucid-origin,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
-100,lucid-realism,🔴 Basic,1,unknown,fastrouter,leonardo-ai/lucid-realism,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
-101,nova-3,🔴 Basic,1,unknown,fastrouter,deepgram/nova-3,🟠 Short (<=8K),4096,Text,No,Yes,No,No,39,Price 0,extraction,1
-102,phoenix,🔴 Basic,1,unknown,fastrouter,leonardo-ai/phoenix,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
-103,seedream-4.0,🔴 Basic,1,unknown,fastrouter,bytedance/seedream-4.0,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
-104,seedream-4.5,🔴 Basic,1,unknown,fastrouter,bytedance/seedream-4.5,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
-105,wan-v2-7,🔴 Basic,1,unknown,fastrouter,wanx/wan-v2-7,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
-106,wan-v3-0,🔴 Basic,1,unknown,fastrouter,wanx/wan-v3-0,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
-107,ai-synthetic-video-detector,🔴 Basic,1,unknown,nvidia,nvidia/ai-synthetic-video-detector,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
-108,antigravity-preview-05-2026,🔴 Basic,1,unknown,gemini,antigravity-preview-05-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-109,antigravity-preview-09-2026,🔴 Basic,1,unknown,gemini,antigravity-preview-09-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-110,antigravity-preview-latest,🔴 Basic,1,unknown,gemini,antigravity-preview-latest,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-111,deep-research-max-preview-04-2026,🔴 Basic,1,unknown,gemini,deep-research-max-preview-04-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-112,deep-research-preview-04-2026,🔴 Basic,1,unknown,gemini,deep-research-preview-04-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-113,deep-research-pro-preview-12-2025,🔴 Basic,1,unknown,gemini,deep-research-pro-preview-12-2025,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
-114,genie-4,🔴 Basic,1,unknown,gemini,genie-4,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+93,free,🔴 Basic,1,unknown,openrouter,openrouter/free,🟢 Long (32K-200K),200000,Text + Vision,Yes,Yes,No,No,29,Price 0,"vision, extraction, agent, long_doc",1
+94,gpt-live-1,🔴 Basic,1,unknown,fastrouter,openai/gpt-live-1,🟢 Long (32K-200K),128000,Text,No,No,No,No,39,Price 0,long_doc,1
+95,voxtral-small-2507,🔴 Basic,1,unknown,mistral,voxtral-small-2507,🟡 Medium (8K-32K),32768,Text,Yes,Yes,No,No,44,Free tier,"extraction, agent, fast",1
+96,voxtral-small-latest,🔴 Basic,1,unknown,mistral,voxtral-small-latest,🟡 Medium (8K-32K),32768,Text,Yes,Yes,No,No,44,Free tier,"extraction, agent, fast",1
+97,happyhorse-1.1,🔴 Basic,1,unknown,fastrouter,alibaba/happyhorse-1.1,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
+98,lucid-origin,🔴 Basic,1,unknown,fastrouter,leonardo-ai/lucid-origin,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
+99,lucid-realism,🔴 Basic,1,unknown,fastrouter,leonardo-ai/lucid-realism,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
+100,nova-3,🔴 Basic,1,unknown,fastrouter,deepgram/nova-3,🟠 Short (<=8K),4096,Text,No,Yes,No,No,39,Price 0,extraction,1
+101,phoenix,🔴 Basic,1,unknown,fastrouter,leonardo-ai/phoenix,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
+102,seedream-4.0,🔴 Basic,1,unknown,fastrouter,bytedance/seedream-4.0,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
+103,seedream-4.5,🔴 Basic,1,unknown,fastrouter,bytedance/seedream-4.5,🟠 Short (<=8K),4096,Text,No,No,No,No,39,Price 0,general,1
+104,wan-v2-7,🔴 Basic,1,unknown,fastrouter,wanx/wan-v2-7,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
+105,wan-v3-0,🔴 Basic,1,unknown,fastrouter,wanx/wan-v3-0,🟠 Short (<=8K),4096,Text + Vision,No,No,No,No,39,Price 0,vision,1
+106,ai-synthetic-video-detector,🔴 Basic,1,unknown,nvidia,nvidia/ai-synthetic-video-detector,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
+107,antigravity-preview-05-2026,🔴 Basic,1,unknown,gemini,antigravity-preview-05-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+108,antigravity-preview-09-2026,🔴 Basic,1,unknown,gemini,antigravity-preview-09-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+109,antigravity-preview-latest,🔴 Basic,1,unknown,gemini,antigravity-preview-latest,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+110,deep-research-max-preview-04-2026,🔴 Basic,1,unknown,gemini,deep-research-max-preview-04-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+111,deep-research-preview-04-2026,🔴 Basic,1,unknown,gemini,deep-research-preview-04-2026,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+112,deep-research-pro-preview-12-2025,🔴 Basic,1,unknown,gemini,deep-research-pro-preview-12-2025,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+113,genie-4,🔴 Basic,1,unknown,gemini,genie-4,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
+114,gliner2-pii,🔴 Basic,1,unknown,nvidia,fastino/gliner2-pii,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
 115,glm-5.3-flash,🔴 Basic,1,unknown,nvidia,z-ai/glm-5.3-flash,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent, fast",1
 116,laguna-xs-2.1,🔴 Basic,1,unknown,nvidia,poolside/laguna-xs-2.1,⚪ Unknown,,Text,Yes~,Yes~,No,No,34,Free tier,"extraction, agent",1
 117,lyria-3.5,🔴 Basic,1,unknown,gemini,lyria-3.5,⚪ Unknown,,Text,Yes~,Yes~,No,No,49,Free tier,"extraction, agent",1
