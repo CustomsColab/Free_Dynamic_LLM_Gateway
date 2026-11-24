@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "live",
-  "updated_at": "2026-11-24T09:58:16Z",
+  "updated_at": "2026-11-24T22:29:55Z",
   "gateways": {
     "openrouter": {
       "base_url": "https://openrouter.ai/api/v1",
@@ -15175,10 +15175,10 @@
       "intelligence_tier": 3,
       "intelligence_label": "Good",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-24T22:29:55Z"
     },
     {
       "uid": "nvidia/meta/muse-glimmer-30b",
@@ -15215,10 +15215,10 @@
       "intelligence_tier": 3,
       "intelligence_label": "Good",
       "speed_hint": 30,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-24T22:29:55Z"
     },
     {
       "uid": "nvidia/minimaxai/minimax-m3.1-flash",
@@ -18181,7 +18181,7 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.7e-08,
+      "input_price": 4.56e-08,
       "output_price": 3e-07,
       "capabilities": {
         "chat": true,
@@ -18267,8 +18267,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.156e-07,
-      "output_price": 6.468e-07,
+      "input_price": 4.4e-07,
+      "output_price": 1.32e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -18353,8 +18353,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.9e-07,
-      "output_price": 8e-06,
+      "input_price": 1.11e-07,
+      "output_price": 4.44e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -18395,8 +18395,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.4e-07,
-      "output_price": 4.2e-07,
+      "input_price": 5.07e-08,
+      "output_price": 2.028e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -18593,10 +18593,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-24T22:29:55Z"
     },
     {
       "uid": "openrouter/elorian/glimpse",
@@ -20521,8 +20521,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 9e-08,
-      "output_price": 3e-07,
+      "input_price": 7.65e-08,
+      "output_price": 2.55e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -21963,14 +21963,14 @@
       "size_b": null,
       "size_label": "unknown",
       "size_class": "unknown",
-      "context_length": 198000,
+      "context_length": 65536,
       "context_class": "long",
       "long_context": true,
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 2.7e-07,
-      "output_price": 9.5e-07,
+      "input_price": 3e-07,
+      "output_price": 1.2e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -22576,10 +22576,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-24T22:29:55Z"
     },
     {
       "uid": "openrouter/mistralai/mistral-medium-3-5",
@@ -22702,10 +22702,10 @@
       "intelligence_tier": 4,
       "intelligence_label": "Strong",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-24T22:29:55Z"
     },
     {
       "uid": "openrouter/mistralai/mistral-nemo",
@@ -29794,8 +29794,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 5e-08,
-      "output_price": 7e-07,
+      "input_price": 1e-07,
+      "output_price": 8.9e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -30138,8 +30138,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 3.5e-08,
-      "output_price": 1.5e-06,
+      "input_price": 6e-08,
+      "output_price": 1.96e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31299,8 +31299,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.32e-07,
-      "output_price": 5.28e-07,
+      "input_price": 8.25e-08,
+      "output_price": 3.3e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -31425,8 +31425,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 8.34e-07,
-      "output_price": 2.501e-06,
+      "input_price": 7.506e-07,
+      "output_price": 2.2509e-06,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -32530,10 +32530,10 @@
       "intelligence_tier": 1,
       "intelligence_label": "Basic",
       "speed_hint": 29,
-      "status": "active",
-      "available": true,
+      "status": "missing",
+      "available": false,
       "first_seen": "2026-10-08T17:59:10Z",
-      "missing_since": null
+      "missing_since": "2026-11-24T22:29:55Z"
     },
     {
       "uid": "openrouter/xiaomi/mimo-v2.5-pro",
@@ -33254,8 +33254,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 1.2e-07,
-      "output_price": 3.8e-07,
+      "input_price": 1.5e-07,
+      "output_price": 5e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -33804,8 +33804,8 @@
       "context_source": "api",
       "is_free": false,
       "free_kind": "paid",
-      "input_price": 4.7e-08,
-      "output_price": 3e-07,
+      "input_price": 4.532e-08,
+      "output_price": 1.3596e-07,
       "capabilities": {
         "chat": true,
         "json": true,
@@ -37916,29 +37916,30 @@
     }
   ],
   "last_refresh": {
-    "time": "2026-11-24T09:58:16Z",
+    "time": "2026-11-24T22:29:55Z",
     "gateways": {
       "openrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 938,
-        "models_listed": 438,
-        "chat_models": 436,
-        "free_models": 15,
+        "latency_ms": 592,
+        "models_listed": 434,
+        "chat_models": 432,
+        "free_models": 14,
         "error": null,
         "added_count": 0,
-        "removed_count": 3,
+        "removed_count": 4,
         "added": [],
         "removed": [
-          "openrouter/moonshotai/kimi-k2",
-          "openrouter/moonshotai/kimi-k2-0905",
-          "openrouter/moonshotai/kimi-k2-thinking"
+          "openrouter/dots-studio/dots-3-note-preview:free",
+          "openrouter/mistralai/mistral-medium-3",
+          "openrouter/mistralai/mistral-medium-3.1",
+          "openrouter/xiaomi/mimo-v2.5"
         ]
       },
       "groq": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 109,
+        "latency_ms": 49,
         "models_listed": 11,
         "chat_models": 4,
         "free_models": 4,
@@ -37973,7 +37974,7 @@
       "mistral": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 275,
+        "latency_ms": 629,
         "models_listed": 51,
         "chat_models": 25,
         "free_models": 25,
@@ -37986,20 +37987,23 @@
       "nvidia": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 112,
-        "models_listed": 32,
-        "chat_models": 23,
-        "free_models": 23,
+        "latency_ms": 37,
+        "models_listed": 30,
+        "chat_models": 21,
+        "free_models": 21,
         "error": null,
         "added_count": 0,
-        "removed_count": 0,
+        "removed_count": 2,
         "added": [],
-        "removed": []
+        "removed": [
+          "nvidia/google/gemma-4-31b-it",
+          "nvidia/meta/muse-glimmer-30b"
+        ]
       },
       "together": {
         "status": "error",
         "http_status": 401,
-        "latency_ms": 115,
+        "latency_ms": 76,
         "models_listed": null,
         "chat_models": null,
         "free_models": null,
@@ -38017,7 +38021,7 @@
       "tokenharbor": {
         "status": "no_free_models",
         "http_status": 200,
-        "latency_ms": 591,
+        "latency_ms": 611,
         "models_listed": 90,
         "chat_models": 90,
         "free_models": 0,
@@ -38030,7 +38034,7 @@
       "fastrouter": {
         "status": "ok",
         "http_status": 200,
-        "latency_ms": 254,
+        "latency_ms": 191,
         "models_listed": 296,
         "chat_models": 272,
         "free_models": 23,
@@ -38047,15 +38051,15 @@
   },
   "summary": {
     "total": 911,
-    "free_active": 147,
+    "free_active": 144,
     "by_gateway": {
       "cerebras": 3,
       "fastrouter": 23,
       "gemini": 54,
       "groq": 4,
       "mistral": 25,
-      "nvidia": 23,
-      "openrouter": 15,
+      "nvidia": 21,
+      "openrouter": 14,
       "tokenharbor": 0
     }
   }

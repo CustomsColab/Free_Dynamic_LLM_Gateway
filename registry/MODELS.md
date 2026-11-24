@@ -1,6 +1,6 @@
 # Free LLM models: decision tables
 
-Updated **2026-11-24T09:58:16Z** | source: **live** | table format v2 | **147** free models on **7** gateways
+Updated **2026-11-24T22:29:55Z** | source: **live** | table format v2 | **144** free models on **7** gateways
 
 > Generated file. Do not edit by hand: it is rebuilt after every registry refresh. Grouped, colour-coded decision table: [models.csv](models.csv) (view on GitHub) and [models.xlsx](models.xlsx) (download, real colours + filters).
 
@@ -8,11 +8,11 @@ Updated **2026-11-24T09:58:16Z** | source: **live** | table format v2 | **147** 
 
 | Class | Tokens | About | Use it for | Notes | Models |
 |---|---|---|---|---|---|
-| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 82 |
+| **ultra** | over 200K | ~150K+ words | whole books, huge codebases, dozens of documents at once | Few models (mostly Gemini). Slowest, and free token-per-minute limits bite first | 81 |
 | **long** | 32K - 200K | ~25K-150K words | long reports, contracts, notices, big code files, many RAG chunks | Task `long_doc` picks from here. Send only what you need: quality drops near the limit | 15 |
 | **medium** | 8K - 32K | ~6K-25K words | RAG answers with a few chunks, one document, code review | Good default for most apps | 4 |
 | **short** | up to 8K | up to ~6K words | chat, classification, SQL/JSON generation, short Q&A | Fastest and cheapest on quota. Use task `fast` | 10 |
-| **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 36 |
+| **unknown** | not reported | ? | treat as short until tested | The gateway does not report context length and no safe default is known | 34 |
 
 Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app can leave this decision to the router: it estimates the prompt size and skips models whose context is too small (`auto_context`, on by default).
 
@@ -25,8 +25,8 @@ Rule of thumb: 1 token is about 4 characters, or 0.75 English words. Your app ca
 | gemini | 41 | – | – | – | 13 | **54** |
 | groq | – | 3 | – | 1 | – | **4** |
 | mistral | 21 | 2 | 2 | – | – | **25** |
-| nvidia | 1 | – | – | – | 22 | **23** |
-| openrouter | 14 | 1 | – | – | – | **15** |
+| nvidia | 1 | – | – | – | 20 | **21** |
+| openrouter | 13 | 1 | – | – | – | **14** |
 
 Free models by **intelligence** and context class (pick the row you need, then the context you need):
 
@@ -34,9 +34,9 @@ Free models by **intelligence** and context class (pick the row you need, then t
 |---|---:|---:|---:|---:|---:|---:|
 | ★★★★★ Top | 8 | 5 | – | – | 2 | **15** |
 | ★★★★☆ Strong | 27 | 2 | 2 | – | 3 | **34** |
-| ★★★☆☆ Good | 25 | 3 | – | – | 7 | **35** |
+| ★★★☆☆ Good | 25 | 3 | – | – | 5 | **33** |
 | ★★☆☆☆ Fair | 2 | 1 | – | 1 | 3 | **7** |
-| ★☆☆☆☆ Basic | 20 | 4 | 2 | 9 | 21 | **56** |
+| ★☆☆☆☆ Basic | 19 | 4 | 2 | 9 | 21 | **55** |
 
 ## 3. Best picks per task
 
@@ -57,7 +57,7 @@ Static ranking (quality, speed, capabilities). Live quota and rate-limit state i
 
 Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared) | – not supported / unknown | ≈ context length is a built-in estimate because the gateway does not report it. **Intelligence** is a 1-5 rating derived from model size (parameters), with family estimates for models that publish no size (Gemini, Mistral Large...) and a small bonus for reasoning models; the number in brackets is the 0-100 score. Tiers: Basic (~1-3B), Fair (~4-12B), Good (~13-30B), Strong (~32-100B), Top (100B+ / frontier). Size is only a rough proxy: newer small models can beat older big ones, and for mixture-of-experts models the size shown is the total, not what runs per token. Speed is a 0-100 heuristic. Neither is a benchmark.
 
-### Ultra context (over 200K), 82 models
+### Ultra context (over 200K), 81 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -136,7 +136,6 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | mistral | `mistral-vibe-cli-with-tools` | unknown | 256K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 44 | free tier | vision, extraction, agent, long_doc |
 | nvidia | `moonshotai/kimi-k3.1-pro` | unknown | 1M | ✅ | ✅ | – | – | – | ★☆☆☆☆ Basic (35) | 34 | free tier | extraction, agent, long_doc |
 | openrouter | `baidu/ernie-5.5-flash-preview:free` | unknown | 1M | ✅ | ✅ | – | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | extraction, agent, long_doc, fast |
-| openrouter | `dots-studio/dots-3-note-preview:free` | unknown | 500K | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, agent, long_doc |
 | openrouter | `google/lyria-3-clip-preview` | unknown | 1M | – | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, long_doc |
 | openrouter | `google/lyria-3-pro-preview` | unknown | 1M | – | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, long_doc |
 | openrouter | `inclusionai/ling-3.2-flash:free` | unknown | 1M | ✅ | ✅ | ✅ | – | – | ★☆☆☆☆ Basic (35) | 29 | price 0 | vision, extraction, agent, long_doc, fast |
@@ -188,7 +187,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | fastrouter | `wanx/wan-v2-7` | unknown | 4K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision |
 | fastrouter | `wanx/wan-v3-0` | unknown | 4K | – | – | ✅ | – | – | ★☆☆☆☆ Basic (35) | 39 | price 0 | vision |
 
-### Unknown context (not reported), 36 models
+### Unknown context (not reported), 34 models
 
 | Gateway | Model | Size | Context | Tools | JSON | Vision | Code | Reasoning | Intelligence | Speed | Free type | Best for |
 |---|---|---:|---:|:-:|:-:|:-:|:-:|:-:|---|---:|---|---|
@@ -198,9 +197,7 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 | nvidia | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning` | 30B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★☆ Strong (79) | 30 | free tier | reasoning, extraction, agent, fast |
 | nvidia | `nvidia/nemotron-3.5-lightning-30b-a3b` | 30B | ? | ✅~ | ✅~ | – | – | ✅~ | ★★★★☆ Strong (79) | 30 | free tier | reasoning, extraction, agent |
 | gemini | `gemma-4-31b-it` | 31B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (75) | 44 | free tier | extraction, agent |
-| nvidia | `google/gemma-4-31b-it` | 31B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (75) | 29 | free tier | extraction, agent |
 | nvidia | `nvidia/ising-calibration-1.5-31b` | 31B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (75) | 29 | free tier | extraction, agent |
-| nvidia | `meta/muse-glimmer-30b` | 30B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (74) | 30 | free tier | extraction, agent |
 | gemini | `gemma-4-26b-a4b-it` | 26B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (72) | 46 | free tier | extraction, agent |
 | nvidia | `bigcode/starcoder2-15b` | 15B | ? | ✅~ | ✅~ | – | – | – | ★★★☆☆ Good (64) | 38 | free tier | extraction, agent |
 | nvidia | `google/gemma-3-12b-it` | 12B | ? | ✅~ | ✅~ | ✅~ | – | – | ★★★☆☆ Good (61) | 40 | free tier | vision, extraction, agent, fast |
@@ -233,12 +230,12 @@ Legend: ✅ declared by the gateway | ✅~ inferred from the name (not declared)
 
 | Gateway | Status | HTTP | Free models | Added | Removed | Error |
 |---|---|---:|---:|---:|---:|---|
-| openrouter | ok | 200 | 15 | 0 | 3 |  |
+| openrouter | ok | 200 | 14 | 0 | 4 |  |
 | groq | ok | 200 | 4 | 0 | 0 |  |
 | cerebras | skipped | – | – | – | – | API key not configured |
 | gemini | ok | 200 | 54 | 0 | 0 |  |
 | mistral | ok | 200 | 25 | 0 | 0 |  |
-| nvidia | ok | 200 | 23 | 0 | 0 |  |
+| nvidia | ok | 200 | 21 | 0 | 2 |  |
 | together | error | 401 | – | – | – | Client error '401 Unauthorized' for url 'https://api.together.xyz/v1/m |
 | fireworks | skipped | – | – | – | – | API key not configured |
 | tokenharbor | no_free_models | 200 | 0 | 0 | 0 |  |
